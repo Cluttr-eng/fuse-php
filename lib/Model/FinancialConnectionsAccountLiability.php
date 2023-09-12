@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsAccountLiability Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,14 +60,14 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
         'remote_id' => 'string',
         'currency' => 'string',
         'fingerprint' => 'string',
-        'institution' => '\OpenAPI\Client\Model\FinancialConnectionsAccountInstitution',
+        'institution' => '\FuseClient\Model\FinancialConnectionsAccountInstitution',
         'mask' => 'string',
         'name' => 'string',
-        'type' => '\OpenAPI\Client\Model\AccountType',
-        'subtype' => '\OpenAPI\Client\Model\AccountSubtype',
-        'balance' => '\OpenAPI\Client\Model\FinancialConnectionsAccountCachedBalance',
+        'type' => '\FuseClient\Model\AccountType',
+        'subtype' => '\FuseClient\Model\AccountSubtype',
+        'balance' => '\FuseClient\Model\FinancialConnectionsAccountCachedBalance',
         'remote_data' => 'mixed',
-        'aprs' => '\OpenAPI\Client\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]',
+        'aprs' => '\FuseClient\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]',
         'interest_rate_percentage' => 'float',
         'origination_principal_amount' => 'float',
         'next_payment_due_date' => 'string',
@@ -506,7 +506,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Gets institution
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountInstitution|null
+     * @return \FuseClient\Model\FinancialConnectionsAccountInstitution|null
      */
     public function getInstitution()
     {
@@ -516,7 +516,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Sets institution
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountInstitution|null $institution institution
+     * @param \FuseClient\Model\FinancialConnectionsAccountInstitution|null $institution institution
      *
      * @return self
      */
@@ -587,7 +587,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\AccountType
+     * @return \FuseClient\Model\AccountType
      */
     public function getType()
     {
@@ -597,7 +597,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\AccountType $type type
+     * @param \FuseClient\Model\AccountType $type type
      *
      * @return self
      */
@@ -614,7 +614,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Gets subtype
      *
-     * @return \OpenAPI\Client\Model\AccountSubtype|null
+     * @return \FuseClient\Model\AccountSubtype|null
      */
     public function getSubtype()
     {
@@ -624,7 +624,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Sets subtype
      *
-     * @param \OpenAPI\Client\Model\AccountSubtype|null $subtype subtype
+     * @param \FuseClient\Model\AccountSubtype|null $subtype subtype
      *
      * @return self
      */
@@ -648,7 +648,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Gets balance
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountCachedBalance
+     * @return \FuseClient\Model\FinancialConnectionsAccountCachedBalance
      */
     public function getBalance()
     {
@@ -658,7 +658,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Sets balance
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountCachedBalance $balance balance
+     * @param \FuseClient\Model\FinancialConnectionsAccountCachedBalance $balance balance
      *
      * @return self
      */
@@ -709,7 +709,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Gets aprs
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]|null
+     * @return \FuseClient\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]|null
      */
     public function getAprs()
     {
@@ -719,7 +719,7 @@ class FinancialConnectionsAccountLiability implements ModelInterface, ArrayAcces
     /**
      * Sets aprs
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]|null $aprs The various interest rates that apply to the account. If APR data is not available, this array will be empty.
+     * @param \FuseClient\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]|null $aprs The various interest rates that apply to the account. If APR data is not available, this array will be empty.
      *
      * @return self
      */

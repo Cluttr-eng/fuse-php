@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace FuseClient\Model;
+use \FuseClient\ObjectSerializer;
 
 /**
  * Aggregator Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -60,6 +60,8 @@ class Aggregator
 
     public const PLAID = 'plaid';
 
+    public const SALTEDGE = 'saltedge';
+
     public const SNAPTRADE = 'snaptrade';
 
     public const TELLER = 'teller';
@@ -82,6 +84,7 @@ class Aggregator
             self::MONO,
             self::MX,
             self::PLAID,
+            self::SALTEDGE,
             self::SNAPTRADE,
             self::TELLER,
             self::TRUELAYER

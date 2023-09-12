@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetFinancialConnectionsBalanceResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetFinancialConnectionsBalanceResponse implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'balances' => '\OpenAPI\Client\Model\FinancialConnectionsAccountBalance[]',
+        'balances' => '\FuseClient\Model\FinancialConnectionsAccountBalance[]',
         'request_id' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class GetFinancialConnectionsBalanceResponse implements ModelInterface, ArrayAcc
     /**
      * Gets balances
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountBalance[]
+     * @return \FuseClient\Model\FinancialConnectionsAccountBalance[]
      */
     public function getBalances()
     {
@@ -315,7 +315,7 @@ class GetFinancialConnectionsBalanceResponse implements ModelInterface, ArrayAcc
     /**
      * Sets balances
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountBalance[] $balances balances
+     * @param \FuseClient\Model\FinancialConnectionsAccountBalance[] $balances balances
      *
      * @return self
      */

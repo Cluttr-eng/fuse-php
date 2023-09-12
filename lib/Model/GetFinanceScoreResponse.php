@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetFinanceScoreResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetFinanceScoreResponse implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'finance_score' => '\OpenAPI\Client\Model\FinanceScore',
+        'finance_score' => '\FuseClient\Model\FinanceScore',
         'request_id' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class GetFinanceScoreResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets finance_score
      *
-     * @return \OpenAPI\Client\Model\FinanceScore
+     * @return \FuseClient\Model\FinanceScore
      */
     public function getFinanceScore()
     {
@@ -315,7 +315,7 @@ class GetFinanceScoreResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets finance_score
      *
-     * @param \OpenAPI\Client\Model\FinanceScore $finance_score finance_score
+     * @param \FuseClient\Model\FinanceScore $finance_score finance_score
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * MigrateFinancialConnectionsTokenResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class MigrateFinancialConnectionsTokenResponse implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'connection_data' => '\OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionData',
+        'connection_data' => '\FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionData',
         'fuse_access_token' => 'string',
         'fuse_financial_connection_id' => 'string',
         'request_id' => 'string'
@@ -322,7 +322,7 @@ class MigrateFinancialConnectionsTokenResponse implements ModelInterface, ArrayA
     /**
      * Gets connection_data
      *
-     * @return \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionData
+     * @return \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionData
      */
     public function getConnectionData()
     {
@@ -332,7 +332,7 @@ class MigrateFinancialConnectionsTokenResponse implements ModelInterface, ArrayA
     /**
      * Sets connection_data
      *
-     * @param \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionData $connection_data connection_data
+     * @param \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionData $connection_data connection_data
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FuseApiWarningData Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class FuseApiWarningData implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aggregator' => '\OpenAPI\Client\Model\Aggregator',
-        'warnings' => '\OpenAPI\Client\Model\FuseApiWarningDataWarningsInner[]'
+        'aggregator' => '\FuseClient\Model\Aggregator',
+        'warnings' => '\FuseClient\Model\FuseApiWarningDataWarningsInner[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class FuseApiWarningData implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets aggregator
      *
-     * @return \OpenAPI\Client\Model\Aggregator|null
+     * @return \FuseClient\Model\Aggregator|null
      */
     public function getAggregator()
     {
@@ -309,7 +309,7 @@ class FuseApiWarningData implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets aggregator
      *
-     * @param \OpenAPI\Client\Model\Aggregator|null $aggregator aggregator
+     * @param \FuseClient\Model\Aggregator|null $aggregator aggregator
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class FuseApiWarningData implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets warnings
      *
-     * @return \OpenAPI\Client\Model\FuseApiWarningDataWarningsInner[]|null
+     * @return \FuseClient\Model\FuseApiWarningDataWarningsInner[]|null
      */
     public function getWarnings()
     {
@@ -336,7 +336,7 @@ class FuseApiWarningData implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets warnings
      *
-     * @param \OpenAPI\Client\Model\FuseApiWarningDataWarningsInner[]|null $warnings warnings
+     * @param \FuseClient\Model\FuseApiWarningDataWarningsInner[]|null $warnings warnings
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * AssetReportResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AssetReportResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'report' => '\OpenAPI\Client\Model\AssetReport',
+        'report' => '\FuseClient\Model\AssetReport',
         'request_id' => 'string'
     ];
 
@@ -299,7 +299,7 @@ class AssetReportResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets report
      *
-     * @return \OpenAPI\Client\Model\AssetReport|null
+     * @return \FuseClient\Model\AssetReport|null
      */
     public function getReport()
     {
@@ -309,7 +309,7 @@ class AssetReportResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets report
      *
-     * @param \OpenAPI\Client\Model\AssetReport|null $report report
+     * @param \FuseClient\Model\AssetReport|null $report report
      *
      * @return self
      */

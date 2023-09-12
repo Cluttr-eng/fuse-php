@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * AddAccountEventsRequestEventsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class AddAccountEventsRequestEventsInner implements ModelInterface, ArrayAccess,
     protected static $openAPITypes = [
         'id' => 'string',
         'event_type' => 'string',
-        'status' => '\OpenAPI\Client\Model\InAppTransactionEventStatus',
+        'status' => '\FuseClient\Model\InAppTransactionEventStatus',
         'amount' => 'float',
         'country_code' => 'string',
         'iso_currency_code' => 'string',
-        'transaction_type' => '\OpenAPI\Client\Model\TransactionEventType',
+        'transaction_type' => '\FuseClient\Model\TransactionEventType',
         'transaction_description' => 'string',
         'transaction_owner_type' => 'string',
         'merchant_name' => 'string',
@@ -514,7 +514,7 @@ class AddAccountEventsRequestEventsInner implements ModelInterface, ArrayAccess,
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\InAppTransactionEventStatus
+     * @return \FuseClient\Model\InAppTransactionEventStatus
      */
     public function getStatus()
     {
@@ -524,7 +524,7 @@ class AddAccountEventsRequestEventsInner implements ModelInterface, ArrayAccess,
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\InAppTransactionEventStatus $status status
+     * @param \FuseClient\Model\InAppTransactionEventStatus $status status
      *
      * @return self
      */
@@ -622,7 +622,7 @@ class AddAccountEventsRequestEventsInner implements ModelInterface, ArrayAccess,
     /**
      * Gets transaction_type
      *
-     * @return \OpenAPI\Client\Model\TransactionEventType|null
+     * @return \FuseClient\Model\TransactionEventType|null
      */
     public function getTransactionType()
     {
@@ -632,7 +632,7 @@ class AddAccountEventsRequestEventsInner implements ModelInterface, ArrayAccess,
     /**
      * Sets transaction_type
      *
-     * @param \OpenAPI\Client\Model\TransactionEventType|null $transaction_type transaction_type
+     * @param \FuseClient\Model\TransactionEventType|null $transaction_type transaction_type
      *
      * @return self
      */

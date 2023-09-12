@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **end_date** | **string** | The latest date for which data should be returned. Dates should be formatted as YYYY-MM-DD. |
 **page** | **int** | Specify current page. |
 **records_per_page** | **int** | Number of items per page. | [default to 25]
-**options** | [**\OpenAPI\Client\Model\GetInvestmentTransactionsRequestOptions**](GetInvestmentTransactionsRequestOptions.md) |  | [optional]
+**options** | [**\FuseClient\Model\GetInvestmentTransactionsRequestOptions**](GetInvestmentTransactionsRequestOptions.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

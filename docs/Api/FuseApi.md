@@ -1,4 +1,4 @@
-# OpenAPI\Client\FuseApi
+# FuseClient\FuseApi
 
 All URIs are relative to https://sandbox-api.letsfuse.com, except if the operation defines another base path.
 
@@ -37,7 +37,7 @@ All URIs are relative to https://sandbox-api.letsfuse.com, except if the operati
 ## `addAccountEvents()`
 
 ```php
-addAccountEvents($account_id, $add_account_events_request): \OpenAPI\Client\Model\AddAccountEventsResponse
+addAccountEvents($account_id, $add_account_events_request): \FuseClient\Model\AddAccountEventsResponse
 ```
 
 
@@ -50,24 +50,24 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $account_id = 'account_id_example'; // string
-$add_account_events_request = new \OpenAPI\Client\Model\AddAccountEventsRequest(); // \OpenAPI\Client\Model\AddAccountEventsRequest
+$add_account_events_request = new \FuseClient\Model\AddAccountEventsRequest(); // \FuseClient\Model\AddAccountEventsRequest
 
 try {
     $result = $apiInstance->addAccountEvents($account_id, $add_account_events_request);
@@ -82,11 +82,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **account_id** | **string**|  | |
-| **add_account_events_request** | [**\OpenAPI\Client\Model\AddAccountEventsRequest**](../Model/AddAccountEventsRequest.md)|  | [optional] |
+| **add_account_events_request** | [**\FuseClient\Model\AddAccountEventsRequest**](../Model/AddAccountEventsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AddAccountEventsResponse**](../Model/AddAccountEventsResponse.md)
+[**\FuseClient\Model\AddAccountEventsResponse**](../Model/AddAccountEventsResponse.md)
 
 ### Authorization
 
@@ -104,7 +104,7 @@ try {
 ## `createAssetReport()`
 
 ```php
-createAssetReport($create_asset_report_request): \OpenAPI\Client\Model\CreateAssetReportResponse
+createAssetReport($create_asset_report_request): \FuseClient\Model\CreateAssetReportResponse
 ```
 
 
@@ -119,23 +119,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_asset_report_request = new \OpenAPI\Client\Model\CreateAssetReportRequest(); // \OpenAPI\Client\Model\CreateAssetReportRequest
+$create_asset_report_request = new \FuseClient\Model\CreateAssetReportRequest(); // \FuseClient\Model\CreateAssetReportRequest
 
 try {
     $result = $apiInstance->createAssetReport($create_asset_report_request);
@@ -149,11 +149,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_asset_report_request** | [**\OpenAPI\Client\Model\CreateAssetReportRequest**](../Model/CreateAssetReportRequest.md)|  | [optional] |
+| **create_asset_report_request** | [**\FuseClient\Model\CreateAssetReportRequest**](../Model/CreateAssetReportRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateAssetReportResponse**](../Model/CreateAssetReportResponse.md)
+[**\FuseClient\Model\CreateAssetReportResponse**](../Model/CreateAssetReportResponse.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ try {
 ## `createConsumerRiskReport()`
 
 ```php
-createConsumerRiskReport($create_consumer_risk_report_request): \OpenAPI\Client\Model\CreateConsumerRiskReportResponse
+createConsumerRiskReport($create_consumer_risk_report_request): \FuseClient\Model\CreateConsumerRiskReportResponse
 ```
 
 
@@ -186,23 +186,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_consumer_risk_report_request = new \OpenAPI\Client\Model\CreateConsumerRiskReportRequest(); // \OpenAPI\Client\Model\CreateConsumerRiskReportRequest
+$create_consumer_risk_report_request = new \FuseClient\Model\CreateConsumerRiskReportRequest(); // \FuseClient\Model\CreateConsumerRiskReportRequest
 
 try {
     $result = $apiInstance->createConsumerRiskReport($create_consumer_risk_report_request);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_consumer_risk_report_request** | [**\OpenAPI\Client\Model\CreateConsumerRiskReportRequest**](../Model/CreateConsumerRiskReportRequest.md)|  | [optional] |
+| **create_consumer_risk_report_request** | [**\FuseClient\Model\CreateConsumerRiskReportRequest**](../Model/CreateConsumerRiskReportRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateConsumerRiskReportResponse**](../Model/CreateConsumerRiskReportResponse.md)
+[**\FuseClient\Model\CreateConsumerRiskReportResponse**](../Model/CreateConsumerRiskReportResponse.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ try {
 ## `createConsumerRiskReportCustomization()`
 
 ```php
-createConsumerRiskReportCustomization($create_consumer_risk_report_customization_request): \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse
+createConsumerRiskReportCustomization($create_consumer_risk_report_customization_request): \FuseClient\Model\CreateConsumerRiskReportCustomizationResponse
 ```
 
 
@@ -251,23 +251,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_consumer_risk_report_customization_request = new \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest(); // \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest
+$create_consumer_risk_report_customization_request = new \FuseClient\Model\CreateConsumerRiskReportCustomizationRequest(); // \FuseClient\Model\CreateConsumerRiskReportCustomizationRequest
 
 try {
     $result = $apiInstance->createConsumerRiskReportCustomization($create_consumer_risk_report_customization_request);
@@ -281,11 +281,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_consumer_risk_report_customization_request** | [**\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest**](../Model/CreateConsumerRiskReportCustomizationRequest.md)|  | [optional] |
+| **create_consumer_risk_report_customization_request** | [**\FuseClient\Model\CreateConsumerRiskReportCustomizationRequest**](../Model/CreateConsumerRiskReportCustomizationRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse**](../Model/CreateConsumerRiskReportCustomizationResponse.md)
+[**\FuseClient\Model\CreateConsumerRiskReportCustomizationResponse**](../Model/CreateConsumerRiskReportCustomizationResponse.md)
 
 ### Authorization
 
@@ -303,7 +303,7 @@ try {
 ## `createLinkToken()`
 
 ```php
-createLinkToken($create_link_token_request): \OpenAPI\Client\Model\CreateLinkTokenResponse
+createLinkToken($create_link_token_request): \FuseClient\Model\CreateLinkTokenResponse
 ```
 
 
@@ -318,23 +318,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_link_token_request = new \OpenAPI\Client\Model\CreateLinkTokenRequest(); // \OpenAPI\Client\Model\CreateLinkTokenRequest
+$create_link_token_request = new \FuseClient\Model\CreateLinkTokenRequest(); // \FuseClient\Model\CreateLinkTokenRequest
 
 try {
     $result = $apiInstance->createLinkToken($create_link_token_request);
@@ -348,11 +348,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_link_token_request** | [**\OpenAPI\Client\Model\CreateLinkTokenRequest**](../Model/CreateLinkTokenRequest.md)|  | [optional] |
+| **create_link_token_request** | [**\FuseClient\Model\CreateLinkTokenRequest**](../Model/CreateLinkTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateLinkTokenResponse**](../Model/CreateLinkTokenResponse.md)
+[**\FuseClient\Model\CreateLinkTokenResponse**](../Model/CreateLinkTokenResponse.md)
 
 ### Authorization
 
@@ -370,7 +370,7 @@ try {
 ## `createSession()`
 
 ```php
-createSession($create_session_request): \OpenAPI\Client\Model\CreateSessionResponse
+createSession($create_session_request): \FuseClient\Model\CreateSessionResponse
 ```
 
 
@@ -385,23 +385,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_session_request = new \OpenAPI\Client\Model\CreateSessionRequest(); // \OpenAPI\Client\Model\CreateSessionRequest
+$create_session_request = new \FuseClient\Model\CreateSessionRequest(); // \FuseClient\Model\CreateSessionRequest
 
 try {
     $result = $apiInstance->createSession($create_session_request);
@@ -415,11 +415,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_session_request** | [**\OpenAPI\Client\Model\CreateSessionRequest**](../Model/CreateSessionRequest.md)|  | [optional] |
+| **create_session_request** | [**\FuseClient\Model\CreateSessionRequest**](../Model/CreateSessionRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateSessionResponse**](../Model/CreateSessionResponse.md)
+[**\FuseClient\Model\CreateSessionResponse**](../Model/CreateSessionResponse.md)
 
 ### Authorization
 
@@ -437,7 +437,7 @@ try {
 ## `deleteFinancialConnection()`
 
 ```php
-deleteFinancialConnection($financial_connection_id_to_delete): \OpenAPI\Client\Model\DeleteFinancialConnectionResponse
+deleteFinancialConnection($financial_connection_id_to_delete): \FuseClient\Model\DeleteFinancialConnectionResponse
 ```
 
 Delete a financial connection
@@ -450,17 +450,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -484,7 +484,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeleteFinancialConnectionResponse**](../Model/DeleteFinancialConnectionResponse.md)
+[**\FuseClient\Model\DeleteFinancialConnectionResponse**](../Model/DeleteFinancialConnectionResponse.md)
 
 ### Authorization
 
@@ -502,7 +502,7 @@ try {
 ## `enrichTransactions()`
 
 ```php
-enrichTransactions($fuse_client_id, $fuse_api_key, $enrich_transactions_request): \OpenAPI\Client\Model\EnrichTransactionsResponse
+enrichTransactions($fuse_client_id, $fuse_api_key, $enrich_transactions_request): \FuseClient\Model\EnrichTransactionsResponse
 ```
 
 
@@ -515,17 +515,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -533,7 +533,7 @@ $apiInstance = new OpenAPI\Client\Api\FuseApi(
 );
 $fuse_client_id = 'fuse_client_id_example'; // string
 $fuse_api_key = 'fuse_api_key_example'; // string
-$enrich_transactions_request = new \OpenAPI\Client\Model\EnrichTransactionsRequest(); // \OpenAPI\Client\Model\EnrichTransactionsRequest
+$enrich_transactions_request = new \FuseClient\Model\EnrichTransactionsRequest(); // \FuseClient\Model\EnrichTransactionsRequest
 
 try {
     $result = $apiInstance->enrichTransactions($fuse_client_id, $fuse_api_key, $enrich_transactions_request);
@@ -549,11 +549,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **fuse_client_id** | **string**|  | |
 | **fuse_api_key** | **string**|  | |
-| **enrich_transactions_request** | [**\OpenAPI\Client\Model\EnrichTransactionsRequest**](../Model/EnrichTransactionsRequest.md)|  | [optional] |
+| **enrich_transactions_request** | [**\FuseClient\Model\EnrichTransactionsRequest**](../Model/EnrichTransactionsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\EnrichTransactionsResponse**](../Model/EnrichTransactionsResponse.md)
+[**\FuseClient\Model\EnrichTransactionsResponse**](../Model/EnrichTransactionsResponse.md)
 
 ### Authorization
 
@@ -571,7 +571,7 @@ try {
 ## `exchangeFinancialConnectionsPublicToken()`
 
 ```php
-exchangeFinancialConnectionsPublicToken($exchange_financial_connections_public_token_request): \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse
+exchangeFinancialConnectionsPublicToken($exchange_financial_connections_public_token_request): \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse
 ```
 
 
@@ -586,23 +586,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$exchange_financial_connections_public_token_request = new \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest(); // \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest
+$exchange_financial_connections_public_token_request = new \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest(); // \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest
 
 try {
     $result = $apiInstance->exchangeFinancialConnectionsPublicToken($exchange_financial_connections_public_token_request);
@@ -616,11 +616,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **exchange_financial_connections_public_token_request** | [**\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest**](../Model/ExchangeFinancialConnectionsPublicTokenRequest.md)|  | [optional] |
+| **exchange_financial_connections_public_token_request** | [**\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest**](../Model/ExchangeFinancialConnectionsPublicTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse**](../Model/ExchangeFinancialConnectionsPublicTokenResponse.md)
+[**\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse**](../Model/ExchangeFinancialConnectionsPublicTokenResponse.md)
 
 ### Authorization
 
@@ -638,7 +638,7 @@ try {
 ## `getAssetReport()`
 
 ```php
-getAssetReport($get_asset_report_request): \OpenAPI\Client\Model\RefreshAssetReportResponse
+getAssetReport($get_asset_report_request): \FuseClient\Model\RefreshAssetReportResponse
 ```
 
 
@@ -653,17 +653,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -671,7 +671,7 @@ $apiInstance = new OpenAPI\Client\Api\FuseApi(
 );
 $get_asset_report_request = {
 	"asset_report_token": "fuse_ar_dev_1MV8sa"
-}; // \OpenAPI\Client\Model\GetAssetReportRequest
+}; // \FuseClient\Model\GetAssetReportRequest
 
 try {
     $result = $apiInstance->getAssetReport($get_asset_report_request);
@@ -685,11 +685,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_asset_report_request** | [**\OpenAPI\Client\Model\GetAssetReportRequest**](../Model/GetAssetReportRequest.md)|  | [optional] |
+| **get_asset_report_request** | [**\FuseClient\Model\GetAssetReportRequest**](../Model/GetAssetReportRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RefreshAssetReportResponse**](../Model/RefreshAssetReportResponse.md)
+[**\FuseClient\Model\RefreshAssetReportResponse**](../Model/RefreshAssetReportResponse.md)
 
 ### Authorization
 
@@ -707,7 +707,7 @@ try {
 ## `getConsumerRiskReport()`
 
 ```php
-getConsumerRiskReport($consumer_risk_report_id, $recalculate): \OpenAPI\Client\Model\GetConsumerRiskReportResponse
+getConsumerRiskReport($consumer_risk_report_id, $recalculate): \FuseClient\Model\GetConsumerRiskReportResponse
 ```
 
 Get consumer risk report
@@ -720,17 +720,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -756,7 +756,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetConsumerRiskReportResponse**](../Model/GetConsumerRiskReportResponse.md)
+[**\FuseClient\Model\GetConsumerRiskReportResponse**](../Model/GetConsumerRiskReportResponse.md)
 
 ### Authorization
 
@@ -774,7 +774,7 @@ try {
 ## `getEntity()`
 
 ```php
-getEntity($entity_id): \OpenAPI\Client\Model\GetEntityResponse
+getEntity($entity_id): \FuseClient\Model\GetEntityResponse
 ```
 
 Get entity
@@ -789,17 +789,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -823,7 +823,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetEntityResponse**](../Model/GetEntityResponse.md)
+[**\FuseClient\Model\GetEntityResponse**](../Model/GetEntityResponse.md)
 
 ### Authorization
 
@@ -841,7 +841,7 @@ try {
 ## `getFinanceScore()`
 
 ```php
-getFinanceScore($account_id): \OpenAPI\Client\Model\GetFinanceScoreResponse
+getFinanceScore($account_id): \FuseClient\Model\GetFinanceScoreResponse
 ```
 
 Get finance score
@@ -854,17 +854,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -888,7 +888,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinanceScoreResponse**](../Model/GetFinanceScoreResponse.md)
+[**\FuseClient\Model\GetFinanceScoreResponse**](../Model/GetFinanceScoreResponse.md)
 
 ### Authorization
 
@@ -906,7 +906,7 @@ try {
 ## `getFinancialConnection()`
 
 ```php
-getFinancialConnection($financial_connection_id): \OpenAPI\Client\Model\GetFinancialConnectionResponse
+getFinancialConnection($financial_connection_id): \FuseClient\Model\GetFinancialConnectionResponse
 ```
 
 Get financial connection details
@@ -919,17 +919,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -953,7 +953,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialConnectionResponse**](../Model/GetFinancialConnectionResponse.md)
+[**\FuseClient\Model\GetFinancialConnectionResponse**](../Model/GetFinancialConnectionResponse.md)
 
 ### Authorization
 
@@ -971,7 +971,7 @@ try {
 ## `getFinancialConnectionsAccountDetails()`
 
 ```php
-getFinancialConnectionsAccountDetails($get_financial_connections_account_details_request): \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse
+getFinancialConnectionsAccountDetails($get_financial_connections_account_details_request): \FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse
 ```
 
 Get account details
@@ -984,23 +984,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_financial_connections_account_details_request = new \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest(); // \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest
+$get_financial_connections_account_details_request = new \FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest(); // \FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest
 
 try {
     $result = $apiInstance->getFinancialConnectionsAccountDetails($get_financial_connections_account_details_request);
@@ -1014,11 +1014,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_financial_connections_account_details_request** | [**\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest**](../Model/GetFinancialConnectionsAccountDetailsRequest.md)|  | |
+| **get_financial_connections_account_details_request** | [**\FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest**](../Model/GetFinancialConnectionsAccountDetailsRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse**](../Model/GetFinancialConnectionsAccountDetailsResponse.md)
+[**\FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse**](../Model/GetFinancialConnectionsAccountDetailsResponse.md)
 
 ### Authorization
 
@@ -1036,7 +1036,7 @@ try {
 ## `getFinancialConnectionsAccountStatement()`
 
 ```php
-getFinancialConnectionsAccountStatement($get_financial_connections_account_statement_request): \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse
+getFinancialConnectionsAccountStatement($get_financial_connections_account_statement_request): \FuseClient\Model\GetFinancialConnectionsAccountStatementResponse
 ```
 
 
@@ -1051,23 +1051,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_financial_connections_account_statement_request = new \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest(); // \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest
+$get_financial_connections_account_statement_request = new \FuseClient\Model\GetFinancialConnectionsAccountStatementRequest(); // \FuseClient\Model\GetFinancialConnectionsAccountStatementRequest
 
 try {
     $result = $apiInstance->getFinancialConnectionsAccountStatement($get_financial_connections_account_statement_request);
@@ -1081,11 +1081,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_financial_connections_account_statement_request** | [**\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest**](../Model/GetFinancialConnectionsAccountStatementRequest.md)|  | [optional] |
+| **get_financial_connections_account_statement_request** | [**\FuseClient\Model\GetFinancialConnectionsAccountStatementRequest**](../Model/GetFinancialConnectionsAccountStatementRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse**](../Model/GetFinancialConnectionsAccountStatementResponse.md)
+[**\FuseClient\Model\GetFinancialConnectionsAccountStatementResponse**](../Model/GetFinancialConnectionsAccountStatementResponse.md)
 
 ### Authorization
 
@@ -1103,7 +1103,7 @@ try {
 ## `getFinancialConnectionsAccounts()`
 
 ```php
-getFinancialConnectionsAccounts($get_financial_connections_accounts_request): \OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse
+getFinancialConnectionsAccounts($get_financial_connections_accounts_request): \FuseClient\Model\GetFinancialConnectionsAccountsResponse
 ```
 
 Get accounts
@@ -1116,23 +1116,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_financial_connections_accounts_request = new \OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest(); // \OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest
+$get_financial_connections_accounts_request = new \FuseClient\Model\GetFinancialConnectionsAccountsRequest(); // \FuseClient\Model\GetFinancialConnectionsAccountsRequest
 
 try {
     $result = $apiInstance->getFinancialConnectionsAccounts($get_financial_connections_accounts_request);
@@ -1146,11 +1146,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_financial_connections_accounts_request** | [**\OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest**](../Model/GetFinancialConnectionsAccountsRequest.md)|  | |
+| **get_financial_connections_accounts_request** | [**\FuseClient\Model\GetFinancialConnectionsAccountsRequest**](../Model/GetFinancialConnectionsAccountsRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse**](../Model/GetFinancialConnectionsAccountsResponse.md)
+[**\FuseClient\Model\GetFinancialConnectionsAccountsResponse**](../Model/GetFinancialConnectionsAccountsResponse.md)
 
 ### Authorization
 
@@ -1168,7 +1168,7 @@ try {
 ## `getFinancialConnectionsBalances()`
 
 ```php
-getFinancialConnectionsBalances($get_financial_connections_balance_request): \OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse
+getFinancialConnectionsBalances($get_financial_connections_balance_request): \FuseClient\Model\GetFinancialConnectionsBalanceResponse
 ```
 
 Get balances
@@ -1181,23 +1181,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_financial_connections_balance_request = new \OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest(); // \OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest
+$get_financial_connections_balance_request = new \FuseClient\Model\GetFinancialConnectionsBalanceRequest(); // \FuseClient\Model\GetFinancialConnectionsBalanceRequest
 
 try {
     $result = $apiInstance->getFinancialConnectionsBalances($get_financial_connections_balance_request);
@@ -1211,11 +1211,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_financial_connections_balance_request** | [**\OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest**](../Model/GetFinancialConnectionsBalanceRequest.md)|  | |
+| **get_financial_connections_balance_request** | [**\FuseClient\Model\GetFinancialConnectionsBalanceRequest**](../Model/GetFinancialConnectionsBalanceRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse**](../Model/GetFinancialConnectionsBalanceResponse.md)
+[**\FuseClient\Model\GetFinancialConnectionsBalanceResponse**](../Model/GetFinancialConnectionsBalanceResponse.md)
 
 ### Authorization
 
@@ -1233,7 +1233,7 @@ try {
 ## `getFinancialConnectionsOwners()`
 
 ```php
-getFinancialConnectionsOwners($get_financial_connections_owners_request): \OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse
+getFinancialConnectionsOwners($get_financial_connections_owners_request): \FuseClient\Model\GetFinancialConnectionsOwnersResponse
 ```
 
 Get account owners
@@ -1246,23 +1246,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_financial_connections_owners_request = new \OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest(); // \OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest
+$get_financial_connections_owners_request = new \FuseClient\Model\GetFinancialConnectionsOwnersRequest(); // \FuseClient\Model\GetFinancialConnectionsOwnersRequest
 
 try {
     $result = $apiInstance->getFinancialConnectionsOwners($get_financial_connections_owners_request);
@@ -1276,11 +1276,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_financial_connections_owners_request** | [**\OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest**](../Model/GetFinancialConnectionsOwnersRequest.md)|  | |
+| **get_financial_connections_owners_request** | [**\FuseClient\Model\GetFinancialConnectionsOwnersRequest**](../Model/GetFinancialConnectionsOwnersRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse**](../Model/GetFinancialConnectionsOwnersResponse.md)
+[**\FuseClient\Model\GetFinancialConnectionsOwnersResponse**](../Model/GetFinancialConnectionsOwnersResponse.md)
 
 ### Authorization
 
@@ -1298,7 +1298,7 @@ try {
 ## `getFinancialConnectionsTransactions()`
 
 ```php
-getFinancialConnectionsTransactions($get_financial_connections_transactions_request): \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse
+getFinancialConnectionsTransactions($get_financial_connections_transactions_request): \FuseClient\Model\GetFinancialConnectionsTransactionsResponse
 ```
 
 Get transactions
@@ -1311,23 +1311,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_financial_connections_transactions_request = new \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest(); // \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest
+$get_financial_connections_transactions_request = new \FuseClient\Model\GetFinancialConnectionsTransactionsRequest(); // \FuseClient\Model\GetFinancialConnectionsTransactionsRequest
 
 try {
     $result = $apiInstance->getFinancialConnectionsTransactions($get_financial_connections_transactions_request);
@@ -1341,11 +1341,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_financial_connections_transactions_request** | [**\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest**](../Model/GetFinancialConnectionsTransactionsRequest.md)|  | |
+| **get_financial_connections_transactions_request** | [**\FuseClient\Model\GetFinancialConnectionsTransactionsRequest**](../Model/GetFinancialConnectionsTransactionsRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse**](../Model/GetFinancialConnectionsTransactionsResponse.md)
+[**\FuseClient\Model\GetFinancialConnectionsTransactionsResponse**](../Model/GetFinancialConnectionsTransactionsResponse.md)
 
 ### Authorization
 
@@ -1363,7 +1363,7 @@ try {
 ## `getFinancialInstitution()`
 
 ```php
-getFinancialInstitution($institution_id): \OpenAPI\Client\Model\GetFinancialInstitutionResponse
+getFinancialInstitution($institution_id): \FuseClient\Model\GetFinancialInstitutionResponse
 ```
 
 Get a financial institution
@@ -1378,17 +1378,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1412,7 +1412,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFinancialInstitutionResponse**](../Model/GetFinancialInstitutionResponse.md)
+[**\FuseClient\Model\GetFinancialInstitutionResponse**](../Model/GetFinancialInstitutionResponse.md)
 
 ### Authorization
 
@@ -1430,7 +1430,7 @@ try {
 ## `getInvestmentHoldings()`
 
 ```php
-getInvestmentHoldings($get_investment_holdings_request): \OpenAPI\Client\Model\GetInvestmentHoldingsResponse
+getInvestmentHoldings($get_investment_holdings_request): \FuseClient\Model\GetInvestmentHoldingsResponse
 ```
 
 Get investment holdings
@@ -1443,23 +1443,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_investment_holdings_request = new \OpenAPI\Client\Model\GetInvestmentHoldingsRequest(); // \OpenAPI\Client\Model\GetInvestmentHoldingsRequest
+$get_investment_holdings_request = new \FuseClient\Model\GetInvestmentHoldingsRequest(); // \FuseClient\Model\GetInvestmentHoldingsRequest
 
 try {
     $result = $apiInstance->getInvestmentHoldings($get_investment_holdings_request);
@@ -1473,11 +1473,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_investment_holdings_request** | [**\OpenAPI\Client\Model\GetInvestmentHoldingsRequest**](../Model/GetInvestmentHoldingsRequest.md)|  | |
+| **get_investment_holdings_request** | [**\FuseClient\Model\GetInvestmentHoldingsRequest**](../Model/GetInvestmentHoldingsRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetInvestmentHoldingsResponse**](../Model/GetInvestmentHoldingsResponse.md)
+[**\FuseClient\Model\GetInvestmentHoldingsResponse**](../Model/GetInvestmentHoldingsResponse.md)
 
 ### Authorization
 
@@ -1495,7 +1495,7 @@ try {
 ## `getInvestmentTransactions()`
 
 ```php
-getInvestmentTransactions($get_investment_transactions_request): \OpenAPI\Client\Model\GetInvestmentTransactionsResponse
+getInvestmentTransactions($get_investment_transactions_request): \FuseClient\Model\GetInvestmentTransactionsResponse
 ```
 
 Get investment transactions
@@ -1508,23 +1508,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_investment_transactions_request = new \OpenAPI\Client\Model\GetInvestmentTransactionsRequest(); // \OpenAPI\Client\Model\GetInvestmentTransactionsRequest
+$get_investment_transactions_request = new \FuseClient\Model\GetInvestmentTransactionsRequest(); // \FuseClient\Model\GetInvestmentTransactionsRequest
 
 try {
     $result = $apiInstance->getInvestmentTransactions($get_investment_transactions_request);
@@ -1538,11 +1538,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_investment_transactions_request** | [**\OpenAPI\Client\Model\GetInvestmentTransactionsRequest**](../Model/GetInvestmentTransactionsRequest.md)|  | |
+| **get_investment_transactions_request** | [**\FuseClient\Model\GetInvestmentTransactionsRequest**](../Model/GetInvestmentTransactionsRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetInvestmentTransactionsResponse**](../Model/GetInvestmentTransactionsResponse.md)
+[**\FuseClient\Model\GetInvestmentTransactionsResponse**](../Model/GetInvestmentTransactionsResponse.md)
 
 ### Authorization
 
@@ -1560,7 +1560,7 @@ try {
 ## `migrateFinancialConnection()`
 
 ```php
-migrateFinancialConnection($migrate_financial_connections_token_request): \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse
+migrateFinancialConnection($migrate_financial_connections_token_request): \FuseClient\Model\MigrateFinancialConnectionsTokenResponse
 ```
 
 Migrate financial connection
@@ -1575,23 +1575,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$migrate_financial_connections_token_request = new \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest(); // \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest
+$migrate_financial_connections_token_request = new \FuseClient\Model\MigrateFinancialConnectionsTokenRequest(); // \FuseClient\Model\MigrateFinancialConnectionsTokenRequest
 
 try {
     $result = $apiInstance->migrateFinancialConnection($migrate_financial_connections_token_request);
@@ -1605,11 +1605,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **migrate_financial_connections_token_request** | [**\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest**](../Model/MigrateFinancialConnectionsTokenRequest.md)|  | [optional] |
+| **migrate_financial_connections_token_request** | [**\FuseClient\Model\MigrateFinancialConnectionsTokenRequest**](../Model/MigrateFinancialConnectionsTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse**](../Model/MigrateFinancialConnectionsTokenResponse.md)
+[**\FuseClient\Model\MigrateFinancialConnectionsTokenResponse**](../Model/MigrateFinancialConnectionsTokenResponse.md)
 
 ### Authorization
 
@@ -1627,7 +1627,7 @@ try {
 ## `refreshAssetReport()`
 
 ```php
-refreshAssetReport($refresh_asset_report_request): \OpenAPI\Client\Model\AssetReportResponse
+refreshAssetReport($refresh_asset_report_request): \FuseClient\Model\AssetReportResponse
 ```
 
 
@@ -1642,17 +1642,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1660,7 +1660,7 @@ $apiInstance = new OpenAPI\Client\Api\FuseApi(
 );
 $refresh_asset_report_request = {"asset_report_token": "fca_dev_dev_6f12f5bb-22dd-4855-b918-f47ec439198a",
   "asset_report_id": "1f414183-220c-44f5-b0c8-bc0e6d4053bb",
-  "request_id": "1764d296-b5bc-4e7f-a457-588f77200793"}; // \OpenAPI\Client\Model\RefreshAssetReportRequest
+  "request_id": "1764d296-b5bc-4e7f-a457-588f77200793"}; // \FuseClient\Model\RefreshAssetReportRequest
 
 try {
     $result = $apiInstance->refreshAssetReport($refresh_asset_report_request);
@@ -1674,11 +1674,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **refresh_asset_report_request** | [**\OpenAPI\Client\Model\RefreshAssetReportRequest**](../Model/RefreshAssetReportRequest.md)|  | [optional] |
+| **refresh_asset_report_request** | [**\FuseClient\Model\RefreshAssetReportRequest**](../Model/RefreshAssetReportRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AssetReportResponse**](../Model/AssetReportResponse.md)
+[**\FuseClient\Model\AssetReportResponse**](../Model/AssetReportResponse.md)
 
 ### Authorization
 
@@ -1696,7 +1696,7 @@ try {
 ## `syncFinancialConnectionsData()`
 
 ```php
-syncFinancialConnectionsData($fuse_verification, $body): \OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse
+syncFinancialConnectionsData($fuse_verification, $body): \FuseClient\Model\SyncFinancialConnectionsDataResponse
 ```
 
 Sync financial connections data
@@ -1711,17 +1711,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1747,7 +1747,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse**](../Model/SyncFinancialConnectionsDataResponse.md)
+[**\FuseClient\Model\SyncFinancialConnectionsDataResponse**](../Model/SyncFinancialConnectionsDataResponse.md)
 
 ### Authorization
 
@@ -1765,7 +1765,7 @@ try {
 ## `updateConsumerRiskReportCustomization()`
 
 ```php
-updateConsumerRiskReportCustomization($consumer_risk_report_customization_id, $update_consumer_risk_report_customization_request): \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse
+updateConsumerRiskReportCustomization($consumer_risk_report_customization_id, $update_consumer_risk_report_customization_request): \FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse
 ```
 
 Update consumer risk report customization
@@ -1778,24 +1778,24 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $consumer_risk_report_customization_id = 'consumer_risk_report_customization_id_example'; // string
-$update_consumer_risk_report_customization_request = new \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest(); // \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest
+$update_consumer_risk_report_customization_request = new \FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest(); // \FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest
 
 try {
     $result = $apiInstance->updateConsumerRiskReportCustomization($consumer_risk_report_customization_id, $update_consumer_risk_report_customization_request);
@@ -1810,11 +1810,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **consumer_risk_report_customization_id** | **string**|  | |
-| **update_consumer_risk_report_customization_request** | [**\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest**](../Model/UpdateConsumerRiskReportCustomizationRequest.md)|  | [optional] |
+| **update_consumer_risk_report_customization_request** | [**\FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest**](../Model/UpdateConsumerRiskReportCustomizationRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse**](../Model/UpdateConsumerRiskReportCustomizationResponse.md)
+[**\FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse**](../Model/UpdateConsumerRiskReportCustomizationResponse.md)
 
 ### Authorization
 
@@ -1832,7 +1832,7 @@ try {
 ## `v1FinancialConnectionsLiabilitiesPost()`
 
 ```php
-v1FinancialConnectionsLiabilitiesPost($get_liabilities_request): \OpenAPI\Client\Model\GetLiabilitiesResponse
+v1FinancialConnectionsLiabilitiesPost($get_liabilities_request): \FuseClient\Model\GetLiabilitiesResponse
 ```
 
 Get liabilities
@@ -1845,23 +1845,23 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\FuseApi(
+$apiInstance = new FuseClient\Api\FuseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$get_liabilities_request = new \OpenAPI\Client\Model\GetLiabilitiesRequest(); // \OpenAPI\Client\Model\GetLiabilitiesRequest
+$get_liabilities_request = new \FuseClient\Model\GetLiabilitiesRequest(); // \FuseClient\Model\GetLiabilitiesRequest
 
 try {
     $result = $apiInstance->v1FinancialConnectionsLiabilitiesPost($get_liabilities_request);
@@ -1875,11 +1875,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **get_liabilities_request** | [**\OpenAPI\Client\Model\GetLiabilitiesRequest**](../Model/GetLiabilitiesRequest.md)|  | |
+| **get_liabilities_request** | [**\FuseClient\Model\GetLiabilitiesRequest**](../Model/GetLiabilitiesRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetLiabilitiesResponse**](../Model/GetLiabilitiesResponse.md)
+[**\FuseClient\Model\GetLiabilitiesResponse**](../Model/GetLiabilitiesResponse.md)
 
 ### Authorization
 

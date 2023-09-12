@@ -7,14 +7,14 @@ Name | Type | Description | Notes
 **remote_id** | **string** | Remote Id of the account, ie Plaid or Teller account id |
 **currency** | **string** | The ISO-4217 currency code of the account. |
 **fingerprint** | **string** | Uniquely identifies this account across all accounts for a single financial connection. Used for reconnection deduplication. See more information here: https://letsfuse.readme.io/docs/duplicate-accounts |
-**institution** | [**\OpenAPI\Client\Model\FinancialConnectionsAccountInstitution**](FinancialConnectionsAccountInstitution.md) |  | [optional]
+**institution** | [**\FuseClient\Model\FinancialConnectionsAccountInstitution**](FinancialConnectionsAccountInstitution.md) |  | [optional]
 **mask** | **string** | The partial account number. | [optional]
 **name** | **string** | The account&#39;s name, ie &#39;My Checking&#39; |
-**type** | [**\OpenAPI\Client\Model\AccountType**](AccountType.md) |  |
-**subtype** | [**\OpenAPI\Client\Model\AccountSubtype**](AccountSubtype.md) |  | [optional]
-**balance** | [**\OpenAPI\Client\Model\FinancialConnectionsAccountCachedBalance**](FinancialConnectionsAccountCachedBalance.md) |  |
+**type** | [**\FuseClient\Model\AccountType**](AccountType.md) |  |
+**subtype** | [**\FuseClient\Model\AccountSubtype**](AccountSubtype.md) |  | [optional]
+**balance** | [**\FuseClient\Model\FinancialConnectionsAccountCachedBalance**](FinancialConnectionsAccountCachedBalance.md) |  |
 **remote_data** | **mixed** |  |
-**aprs** | [**\OpenAPI\Client\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]**](FinancialConnectionsAccountLiabilityAllOfAprs.md) | The various interest rates that apply to the account. If APR data is not available, this array will be empty. | [optional]
+**aprs** | [**\FuseClient\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]**](FinancialConnectionsAccountLiabilityAllOfAprs.md) | The various interest rates that apply to the account. If APR data is not available, this array will be empty. | [optional]
 **interest_rate_percentage** | **float** | The interest rate on the loan as a percentage. | [optional]
 **origination_principal_amount** | **float** | The original principal balance of the loan. | [optional]
 **next_payment_due_date** | **string** | The due date for the next payment. The due date is null if a payment is not expected. | [optional]

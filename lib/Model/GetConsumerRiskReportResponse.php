@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetConsumerRiskReportResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetConsumerRiskReportResponse implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'consumer_risk_report' => '\OpenAPI\Client\Model\ConsumerRiskReport',
+        'consumer_risk_report' => '\FuseClient\Model\ConsumerRiskReport',
         'request_id' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class GetConsumerRiskReportResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets consumer_risk_report
      *
-     * @return \OpenAPI\Client\Model\ConsumerRiskReport
+     * @return \FuseClient\Model\ConsumerRiskReport
      */
     public function getConsumerRiskReport()
     {
@@ -315,7 +315,7 @@ class GetConsumerRiskReportResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets consumer_risk_report
      *
-     * @param \OpenAPI\Client\Model\ConsumerRiskReport $consumer_risk_report consumer_risk_report
+     * @param \FuseClient\Model\ConsumerRiskReport $consumer_risk_report consumer_risk_report
      *
      * @return self
      */

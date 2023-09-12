@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * MigrateFinancialConnectionsAggregatorConnectionData Class Doc Comment
  *
  * @category Class
  * @description The input data for the financial connections to be migrated into the unified Fuse API.
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class MigrateFinancialConnectionsAggregatorConnectionData implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'plaid' => '\OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataPlaid',
-        'mx' => '\OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataMx',
-        'teller' => '\OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataTeller'
+        'plaid' => '\FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataPlaid',
+        'mx' => '\FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataMx',
+        'teller' => '\FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataTeller'
     ];
 
     /**
@@ -307,7 +307,7 @@ class MigrateFinancialConnectionsAggregatorConnectionData implements ModelInterf
     /**
      * Gets plaid
      *
-     * @return \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataPlaid|null
+     * @return \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataPlaid|null
      */
     public function getPlaid()
     {
@@ -317,7 +317,7 @@ class MigrateFinancialConnectionsAggregatorConnectionData implements ModelInterf
     /**
      * Sets plaid
      *
-     * @param \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataPlaid|null $plaid plaid
+     * @param \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataPlaid|null $plaid plaid
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class MigrateFinancialConnectionsAggregatorConnectionData implements ModelInterf
     /**
      * Gets mx
      *
-     * @return \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataMx|null
+     * @return \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataMx|null
      */
     public function getMx()
     {
@@ -344,7 +344,7 @@ class MigrateFinancialConnectionsAggregatorConnectionData implements ModelInterf
     /**
      * Sets mx
      *
-     * @param \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataMx|null $mx mx
+     * @param \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataMx|null $mx mx
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class MigrateFinancialConnectionsAggregatorConnectionData implements ModelInterf
     /**
      * Gets teller
      *
-     * @return \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataTeller|null
+     * @return \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataTeller|null
      */
     public function getTeller()
     {
@@ -371,7 +371,7 @@ class MigrateFinancialConnectionsAggregatorConnectionData implements ModelInterf
     /**
      * Sets teller
      *
-     * @param \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionDataTeller|null $teller teller
+     * @param \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionDataTeller|null $teller teller
      *
      * @return self
      */

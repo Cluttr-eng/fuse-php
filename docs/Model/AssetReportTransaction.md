@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **date** | **string** | Date of the transaction (YYYY-MM-DD) |
 **description** | **string** | Description of the transaction |
 **category** | **string[]** | Categories of the transaction, ie Computers and Electronics. &#39;-&#39; means we could not map the upstream category. |
-**merchant** | [**\OpenAPI\Client\Model\TransactionMerchant**](TransactionMerchant.md) |  |
+**merchant** | [**\FuseClient\Model\TransactionMerchant**](TransactionMerchant.md) |  |
 **status** | **string** | The status of the transaction. This will be either posted or pending. |
 **iso_currency_code** | **string** | The ISO-4217 currency code of the transaction | [optional]
 **remote_data** | **mixed** |  |

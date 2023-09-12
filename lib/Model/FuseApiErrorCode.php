@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace FuseClient\Model;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FuseApiErrorCode Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,6 +132,10 @@ class FuseApiErrorCode
 
     public const MISSING_AKOYA_CLIENT_SECRET_HEADER = 'missing_akoya_client_secret_header';
 
+    public const MISSING_SALTEDGE_APP_ID_HEADER = 'missing_saltedge_app_id_header';
+
+    public const MISSING_SALTEDGE_APP_SECRET_HEADER = 'missing_saltedge_app_secret_header';
+
     public const AGGREGATOR_ERROR = 'aggregator_error';
 
     public const AGGREGATOR_DISCONNECTED_ERROR = 'aggregator_disconnected_error';
@@ -208,6 +212,8 @@ class FuseApiErrorCode
             self::MISSING_FUSE_VERIFICATION_HEADER,
             self::MISSING_AKOYA_CLIENT_ID_HEADER,
             self::MISSING_AKOYA_CLIENT_SECRET_HEADER,
+            self::MISSING_SALTEDGE_APP_ID_HEADER,
+            self::MISSING_SALTEDGE_APP_SECRET_HEADER,
             self::AGGREGATOR_ERROR,
             self::AGGREGATOR_DISCONNECTED_ERROR,
             self::AGGREGATOR_CONNECTION_FINISHED_ERROR,

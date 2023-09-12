@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsAccount Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,12 +60,12 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
         'remote_id' => 'string',
         'currency' => 'string',
         'fingerprint' => 'string',
-        'institution' => '\OpenAPI\Client\Model\FinancialConnectionsAccountInstitution',
+        'institution' => '\FuseClient\Model\FinancialConnectionsAccountInstitution',
         'mask' => 'string',
         'name' => 'string',
-        'type' => '\OpenAPI\Client\Model\AccountType',
-        'subtype' => '\OpenAPI\Client\Model\AccountSubtype',
-        'balance' => '\OpenAPI\Client\Model\FinancialConnectionsAccountCachedBalance',
+        'type' => '\FuseClient\Model\AccountType',
+        'subtype' => '\FuseClient\Model\AccountSubtype',
+        'balance' => '\FuseClient\Model\FinancialConnectionsAccountCachedBalance',
         'remote_data' => 'mixed'
     ];
 
@@ -457,7 +457,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets institution
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountInstitution|null
+     * @return \FuseClient\Model\FinancialConnectionsAccountInstitution|null
      */
     public function getInstitution()
     {
@@ -467,7 +467,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets institution
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountInstitution|null $institution institution
+     * @param \FuseClient\Model\FinancialConnectionsAccountInstitution|null $institution institution
      *
      * @return self
      */
@@ -538,7 +538,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\AccountType
+     * @return \FuseClient\Model\AccountType
      */
     public function getType()
     {
@@ -548,7 +548,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\AccountType $type type
+     * @param \FuseClient\Model\AccountType $type type
      *
      * @return self
      */
@@ -565,7 +565,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets subtype
      *
-     * @return \OpenAPI\Client\Model\AccountSubtype|null
+     * @return \FuseClient\Model\AccountSubtype|null
      */
     public function getSubtype()
     {
@@ -575,7 +575,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets subtype
      *
-     * @param \OpenAPI\Client\Model\AccountSubtype|null $subtype subtype
+     * @param \FuseClient\Model\AccountSubtype|null $subtype subtype
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets balance
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountCachedBalance
+     * @return \FuseClient\Model\FinancialConnectionsAccountCachedBalance
      */
     public function getBalance()
     {
@@ -609,7 +609,7 @@ class FinancialConnectionsAccount implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets balance
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountCachedBalance $balance balance
+     * @param \FuseClient\Model\FinancialConnectionsAccountCachedBalance $balance balance
      *
      * @return self
      */

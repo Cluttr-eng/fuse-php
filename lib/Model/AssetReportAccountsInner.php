@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * AssetReportAccountsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class AssetReportAccountsInner implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'remote_id' => 'string',
-        'balance' => '\OpenAPI\Client\Model\AssetReportAccountsInnerBalance',
-        'historical_balances' => '\OpenAPI\Client\Model\AssetReportAccountsInnerHistoricalBalancesInner[]',
-        'transactions' => '\OpenAPI\Client\Model\AssetReportTransaction[]'
+        'balance' => '\FuseClient\Model\AssetReportAccountsInnerBalance',
+        'historical_balances' => '\FuseClient\Model\AssetReportAccountsInnerHistoricalBalancesInner[]',
+        'transactions' => '\FuseClient\Model\AssetReportTransaction[]'
     ];
 
     /**
@@ -340,7 +340,7 @@ class AssetReportAccountsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets balance
      *
-     * @return \OpenAPI\Client\Model\AssetReportAccountsInnerBalance|null
+     * @return \FuseClient\Model\AssetReportAccountsInnerBalance|null
      */
     public function getBalance()
     {
@@ -350,7 +350,7 @@ class AssetReportAccountsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets balance
      *
-     * @param \OpenAPI\Client\Model\AssetReportAccountsInnerBalance|null $balance balance
+     * @param \FuseClient\Model\AssetReportAccountsInnerBalance|null $balance balance
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class AssetReportAccountsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets historical_balances
      *
-     * @return \OpenAPI\Client\Model\AssetReportAccountsInnerHistoricalBalancesInner[]|null
+     * @return \FuseClient\Model\AssetReportAccountsInnerHistoricalBalancesInner[]|null
      */
     public function getHistoricalBalances()
     {
@@ -377,7 +377,7 @@ class AssetReportAccountsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets historical_balances
      *
-     * @param \OpenAPI\Client\Model\AssetReportAccountsInnerHistoricalBalancesInner[]|null $historical_balances An array of historical balances for the account.
+     * @param \FuseClient\Model\AssetReportAccountsInnerHistoricalBalancesInner[]|null $historical_balances An array of historical balances for the account.
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class AssetReportAccountsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets transactions
      *
-     * @return \OpenAPI\Client\Model\AssetReportTransaction[]|null
+     * @return \FuseClient\Model\AssetReportTransaction[]|null
      */
     public function getTransactions()
     {
@@ -404,7 +404,7 @@ class AssetReportAccountsInner implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets transactions
      *
-     * @param \OpenAPI\Client\Model\AssetReportTransaction[]|null $transactions An array of historical transactions for the account.
+     * @param \FuseClient\Model\AssetReportTransaction[]|null $transactions An array of historical transactions for the account.
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\RiskReportApi
+# FuseClient\RiskReportApi
 
 All URIs are relative to https://sandbox-api.letsfuse.com, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://sandbox-api.letsfuse.com, except if the operati
 ## `deleteConsumerRiskReport()`
 
 ```php
-deleteConsumerRiskReport($consumer_risk_report_id, $fuse_client_id, $fuse_api_key): \OpenAPI\Client\Model\DeleteConsumerRiskReportResponse
+deleteConsumerRiskReport($consumer_risk_report_id, $fuse_client_id, $fuse_api_key): \FuseClient\Model\DeleteConsumerRiskReportResponse
 ```
 
 Delete consumer risk report
@@ -24,17 +24,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\RiskReportApi(
+$apiInstance = new FuseClient\Api\RiskReportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeleteConsumerRiskReportResponse**](../Model/DeleteConsumerRiskReportResponse.md)
+[**\FuseClient\Model\DeleteConsumerRiskReportResponse**](../Model/DeleteConsumerRiskReportResponse.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ try {
 ## `getConsumerRiskReportCustomization()`
 
 ```php
-getConsumerRiskReportCustomization($consumer_risk_report_customization_id, $fuse_client_id, $fuse_api_key): \OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse
+getConsumerRiskReportCustomization($consumer_risk_report_customization_id, $fuse_client_id, $fuse_api_key): \FuseClient\Model\GetConsumerRiskReportCustomizationResponse
 ```
 
 Get consumer risk report customization
@@ -93,17 +93,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: fuseApiKey
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
 
 // Configure API key authorization: fuseClientId
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\RiskReportApi(
+$apiInstance = new FuseClient\Api\RiskReportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -131,7 +131,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse**](../Model/GetConsumerRiskReportCustomizationResponse.md)
+[**\FuseClient\Model\GetConsumerRiskReportCustomizationResponse**](../Model/GetConsumerRiskReportCustomizationResponse.md)
 
 ### Authorization
 

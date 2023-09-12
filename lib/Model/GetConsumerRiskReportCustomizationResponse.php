@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetConsumerRiskReportCustomizationResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetConsumerRiskReportCustomizationResponse implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'consumer_risk_report_customization' => '\OpenAPI\Client\Model\ConsumerRiskReportCustomization',
+        'consumer_risk_report_customization' => '\FuseClient\Model\ConsumerRiskReportCustomization',
         'request_id' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class GetConsumerRiskReportCustomizationResponse implements ModelInterface, Arra
     /**
      * Gets consumer_risk_report_customization
      *
-     * @return \OpenAPI\Client\Model\ConsumerRiskReportCustomization
+     * @return \FuseClient\Model\ConsumerRiskReportCustomization
      */
     public function getConsumerRiskReportCustomization()
     {
@@ -315,7 +315,7 @@ class GetConsumerRiskReportCustomizationResponse implements ModelInterface, Arra
     /**
      * Sets consumer_risk_report_customization
      *
-     * @param \OpenAPI\Client\Model\ConsumerRiskReportCustomization $consumer_risk_report_customization consumer_risk_report_customization
+     * @param \FuseClient\Model\ConsumerRiskReportCustomization $consumer_risk_report_customization consumer_risk_report_customization
      *
      * @return self
      */

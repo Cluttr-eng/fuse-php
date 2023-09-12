@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetFinancialConnectionsTransactionsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetFinancialConnectionsTransactionsResponse implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transactions' => '\OpenAPI\Client\Model\Transaction[]',
+        'transactions' => '\FuseClient\Model\Transaction[]',
         'total_transactions' => 'float',
         'request_id' => 'string'
     ];
@@ -315,7 +315,7 @@ class GetFinancialConnectionsTransactionsResponse implements ModelInterface, Arr
     /**
      * Gets transactions
      *
-     * @return \OpenAPI\Client\Model\Transaction[]
+     * @return \FuseClient\Model\Transaction[]
      */
     public function getTransactions()
     {
@@ -325,7 +325,7 @@ class GetFinancialConnectionsTransactionsResponse implements ModelInterface, Arr
     /**
      * Sets transactions
      *
-     * @param \OpenAPI\Client\Model\Transaction[] $transactions transactions
+     * @param \FuseClient\Model\Transaction[] $transactions transactions
      *
      * @return self
      */

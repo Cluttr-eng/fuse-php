@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * ExternalTransactionEvent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class ExternalTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'id' => 'string',
         'event_type' => 'string',
-        'status' => '\OpenAPI\Client\Model\ExternalTransactionEventStatus',
+        'status' => '\FuseClient\Model\ExternalTransactionEventStatus',
         'amount' => 'float',
         'country_code' => 'string',
         'iso_currency_code' => 'string',
-        'transaction_type' => '\OpenAPI\Client\Model\TransactionEventType',
+        'transaction_type' => '\FuseClient\Model\TransactionEventType',
         'transaction_description' => 'string',
         'transaction_owner_type' => 'string',
         'merchant_name' => 'string',
@@ -500,7 +500,7 @@ class ExternalTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\ExternalTransactionEventStatus
+     * @return \FuseClient\Model\ExternalTransactionEventStatus
      */
     public function getStatus()
     {
@@ -510,7 +510,7 @@ class ExternalTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\ExternalTransactionEventStatus $status status
+     * @param \FuseClient\Model\ExternalTransactionEventStatus $status status
      *
      * @return self
      */
@@ -608,7 +608,7 @@ class ExternalTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets transaction_type
      *
-     * @return \OpenAPI\Client\Model\TransactionEventType|null
+     * @return \FuseClient\Model\TransactionEventType|null
      */
     public function getTransactionType()
     {
@@ -618,7 +618,7 @@ class ExternalTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets transaction_type
      *
-     * @param \OpenAPI\Client\Model\TransactionEventType|null $transaction_type transaction_type
+     * @param \FuseClient\Model\TransactionEventType|null $transaction_type transaction_type
      *
      * @return self
      */

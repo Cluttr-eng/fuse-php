@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,19 +61,20 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
         'connection_status' => 'string',
         'connection_status_updated_at' => 'string',
         'is_oauth' => 'bool',
-        'aggregator' => '\OpenAPI\Client\Model\Aggregator',
-        'plaid' => '\OpenAPI\Client\Model\FinancialConnectionDetailsPlaid',
-        'teller' => '\OpenAPI\Client\Model\FinancialConnectionDetailsTeller',
-        'mx' => '\OpenAPI\Client\Model\FinancialConnectionDetailsMx',
-        'snaptrade' => '\OpenAPI\Client\Model\FinancialConnectionDetailsSnaptrade',
-        'flinks' => '\OpenAPI\Client\Model\FinancialConnectionDetailsFlinks',
-        'mono' => '\OpenAPI\Client\Model\FinancialConnectionDetailsMono',
-        'truelayer' => '\OpenAPI\Client\Model\FinancialConnectionDetailsTruelayer',
-        'finverse' => '\OpenAPI\Client\Model\FinancialConnectionDetailsFinverse',
-        'basiq' => '\OpenAPI\Client\Model\FinancialConnectionDetailsBasiq',
-        'belvo' => '\OpenAPI\Client\Model\FinancialConnectionDetailsBelvo',
-        'finicity' => '\OpenAPI\Client\Model\FinancialConnectionDetailsFinicity',
-        'akoya' => '\OpenAPI\Client\Model\FinancialConnectionDetailsAkoya'
+        'aggregator' => '\FuseClient\Model\Aggregator',
+        'plaid' => '\FuseClient\Model\FinancialConnectionDetailsPlaid',
+        'teller' => '\FuseClient\Model\FinancialConnectionDetailsTeller',
+        'mx' => '\FuseClient\Model\FinancialConnectionDetailsMx',
+        'snaptrade' => '\FuseClient\Model\FinancialConnectionDetailsSnaptrade',
+        'flinks' => '\FuseClient\Model\FinancialConnectionDetailsFlinks',
+        'mono' => '\FuseClient\Model\FinancialConnectionDetailsMono',
+        'truelayer' => '\FuseClient\Model\FinancialConnectionDetailsTruelayer',
+        'finverse' => '\FuseClient\Model\FinancialConnectionDetailsFinverse',
+        'basiq' => '\FuseClient\Model\FinancialConnectionDetailsBasiq',
+        'belvo' => '\FuseClient\Model\FinancialConnectionDetailsBelvo',
+        'finicity' => '\FuseClient\Model\FinancialConnectionDetailsFinicity',
+        'akoya' => '\FuseClient\Model\FinancialConnectionDetailsAkoya',
+        'saltedge' => '\FuseClient\Model\FinancialConnectionDetailsSaltedge'
     ];
 
     /**
@@ -100,7 +101,8 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
         'basiq' => null,
         'belvo' => null,
         'finicity' => null,
-        'akoya' => null
+        'akoya' => null,
+        'saltedge' => null
     ];
 
     /**
@@ -125,7 +127,8 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
 		'basiq' => false,
 		'belvo' => false,
 		'finicity' => false,
-		'akoya' => false
+		'akoya' => false,
+		'saltedge' => false
     ];
 
     /**
@@ -230,7 +233,8 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
         'basiq' => 'basiq',
         'belvo' => 'belvo',
         'finicity' => 'finicity',
-        'akoya' => 'akoya'
+        'akoya' => 'akoya',
+        'saltedge' => 'saltedge'
     ];
 
     /**
@@ -255,7 +259,8 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
         'basiq' => 'setBasiq',
         'belvo' => 'setBelvo',
         'finicity' => 'setFinicity',
-        'akoya' => 'setAkoya'
+        'akoya' => 'setAkoya',
+        'saltedge' => 'setSaltedge'
     ];
 
     /**
@@ -280,7 +285,8 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
         'basiq' => 'getBasiq',
         'belvo' => 'getBelvo',
         'finicity' => 'getFinicity',
-        'akoya' => 'getAkoya'
+        'akoya' => 'getAkoya',
+        'saltedge' => 'getSaltedge'
     ];
 
     /**
@@ -374,6 +380,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
         $this->setIfExists('belvo', $data ?? [], null);
         $this->setIfExists('finicity', $data ?? [], null);
         $this->setIfExists('akoya', $data ?? [], null);
+        $this->setIfExists('saltedge', $data ?? [], null);
     }
 
     /**
@@ -563,7 +570,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets aggregator
      *
-     * @return \OpenAPI\Client\Model\Aggregator
+     * @return \FuseClient\Model\Aggregator
      */
     public function getAggregator()
     {
@@ -573,7 +580,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets aggregator
      *
-     * @param \OpenAPI\Client\Model\Aggregator $aggregator aggregator
+     * @param \FuseClient\Model\Aggregator $aggregator aggregator
      *
      * @return self
      */
@@ -590,7 +597,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets plaid
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsPlaid|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsPlaid|null
      */
     public function getPlaid()
     {
@@ -600,7 +607,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets plaid
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsPlaid|null $plaid plaid
+     * @param \FuseClient\Model\FinancialConnectionDetailsPlaid|null $plaid plaid
      *
      * @return self
      */
@@ -617,7 +624,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets teller
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsTeller|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsTeller|null
      */
     public function getTeller()
     {
@@ -627,7 +634,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets teller
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsTeller|null $teller teller
+     * @param \FuseClient\Model\FinancialConnectionDetailsTeller|null $teller teller
      *
      * @return self
      */
@@ -644,7 +651,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets mx
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsMx|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsMx|null
      */
     public function getMx()
     {
@@ -654,7 +661,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets mx
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsMx|null $mx mx
+     * @param \FuseClient\Model\FinancialConnectionDetailsMx|null $mx mx
      *
      * @return self
      */
@@ -671,7 +678,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets snaptrade
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsSnaptrade|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsSnaptrade|null
      */
     public function getSnaptrade()
     {
@@ -681,7 +688,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets snaptrade
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsSnaptrade|null $snaptrade snaptrade
+     * @param \FuseClient\Model\FinancialConnectionDetailsSnaptrade|null $snaptrade snaptrade
      *
      * @return self
      */
@@ -698,7 +705,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets flinks
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsFlinks|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsFlinks|null
      */
     public function getFlinks()
     {
@@ -708,7 +715,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets flinks
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsFlinks|null $flinks flinks
+     * @param \FuseClient\Model\FinancialConnectionDetailsFlinks|null $flinks flinks
      *
      * @return self
      */
@@ -725,7 +732,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets mono
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsMono|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsMono|null
      */
     public function getMono()
     {
@@ -735,7 +742,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets mono
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsMono|null $mono mono
+     * @param \FuseClient\Model\FinancialConnectionDetailsMono|null $mono mono
      *
      * @return self
      */
@@ -752,7 +759,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets truelayer
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsTruelayer|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsTruelayer|null
      */
     public function getTruelayer()
     {
@@ -762,7 +769,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets truelayer
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsTruelayer|null $truelayer truelayer
+     * @param \FuseClient\Model\FinancialConnectionDetailsTruelayer|null $truelayer truelayer
      *
      * @return self
      */
@@ -779,7 +786,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets finverse
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsFinverse|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsFinverse|null
      */
     public function getFinverse()
     {
@@ -789,7 +796,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets finverse
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsFinverse|null $finverse finverse
+     * @param \FuseClient\Model\FinancialConnectionDetailsFinverse|null $finverse finverse
      *
      * @return self
      */
@@ -806,7 +813,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets basiq
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsBasiq|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsBasiq|null
      */
     public function getBasiq()
     {
@@ -816,7 +823,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets basiq
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsBasiq|null $basiq basiq
+     * @param \FuseClient\Model\FinancialConnectionDetailsBasiq|null $basiq basiq
      *
      * @return self
      */
@@ -833,7 +840,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets belvo
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsBelvo|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsBelvo|null
      */
     public function getBelvo()
     {
@@ -843,7 +850,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets belvo
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsBelvo|null $belvo belvo
+     * @param \FuseClient\Model\FinancialConnectionDetailsBelvo|null $belvo belvo
      *
      * @return self
      */
@@ -860,7 +867,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets finicity
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsFinicity|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsFinicity|null
      */
     public function getFinicity()
     {
@@ -870,7 +877,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets finicity
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsFinicity|null $finicity finicity
+     * @param \FuseClient\Model\FinancialConnectionDetailsFinicity|null $finicity finicity
      *
      * @return self
      */
@@ -887,7 +894,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets akoya
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetailsAkoya|null
+     * @return \FuseClient\Model\FinancialConnectionDetailsAkoya|null
      */
     public function getAkoya()
     {
@@ -897,7 +904,7 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets akoya
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetailsAkoya|null $akoya akoya
+     * @param \FuseClient\Model\FinancialConnectionDetailsAkoya|null $akoya akoya
      *
      * @return self
      */
@@ -907,6 +914,33 @@ class FinancialConnectionDetails implements ModelInterface, ArrayAccess, \JsonSe
             throw new \InvalidArgumentException('non-nullable akoya cannot be null');
         }
         $this->container['akoya'] = $akoya;
+
+        return $this;
+    }
+
+    /**
+     * Gets saltedge
+     *
+     * @return \FuseClient\Model\FinancialConnectionDetailsSaltedge|null
+     */
+    public function getSaltedge()
+    {
+        return $this->container['saltedge'];
+    }
+
+    /**
+     * Sets saltedge
+     *
+     * @param \FuseClient\Model\FinancialConnectionDetailsSaltedge|null $saltedge saltedge
+     *
+     * @return self
+     */
+    public function setSaltedge($saltedge)
+    {
+        if (is_null($saltedge)) {
+            throw new \InvalidArgumentException('non-nullable saltedge cannot be null');
+        }
+        $this->container['saltedge'] = $saltedge;
 
         return $this;
     }

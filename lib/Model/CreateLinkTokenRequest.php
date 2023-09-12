@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * CreateLinkTokenRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,14 +58,14 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'institution_id' => 'string',
-        'entity' => '\OpenAPI\Client\Model\Entity',
+        'entity' => '\FuseClient\Model\Entity',
         'client_name' => 'string',
         'session_client_secret' => 'string',
         'webhook_url' => 'string',
-        'mx' => '\OpenAPI\Client\Model\CreateLinkTokenRequestMx',
-        'plaid' => '\OpenAPI\Client\Model\CreateLinkTokenRequestPlaid',
-        'teller' => '\OpenAPI\Client\Model\CreateLinkTokenRequestTeller',
-        'snaptrade' => '\OpenAPI\Client\Model\CreateLinkTokenRequestSnaptrade'
+        'mx' => '\FuseClient\Model\CreateLinkTokenRequestMx',
+        'plaid' => '\FuseClient\Model\CreateLinkTokenRequestPlaid',
+        'teller' => '\FuseClient\Model\CreateLinkTokenRequestTeller',
+        'snaptrade' => '\FuseClient\Model\CreateLinkTokenRequestSnaptrade'
     ];
 
     /**
@@ -387,7 +387,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets entity
      *
-     * @return \OpenAPI\Client\Model\Entity
+     * @return \FuseClient\Model\Entity
      */
     public function getEntity()
     {
@@ -397,7 +397,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets entity
      *
-     * @param \OpenAPI\Client\Model\Entity $entity entity
+     * @param \FuseClient\Model\Entity $entity entity
      *
      * @return self
      */
@@ -495,7 +495,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets mx
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestMx|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestMx|null
      */
     public function getMx()
     {
@@ -505,7 +505,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets mx
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestMx|null $mx mx
+     * @param \FuseClient\Model\CreateLinkTokenRequestMx|null $mx mx
      *
      * @return self
      */
@@ -522,7 +522,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets plaid
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestPlaid|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestPlaid|null
      */
     public function getPlaid()
     {
@@ -532,7 +532,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets plaid
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestPlaid|null $plaid plaid
+     * @param \FuseClient\Model\CreateLinkTokenRequestPlaid|null $plaid plaid
      *
      * @return self
      */
@@ -549,7 +549,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets teller
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestTeller|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestTeller|null
      */
     public function getTeller()
     {
@@ -559,7 +559,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets teller
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestTeller|null $teller teller
+     * @param \FuseClient\Model\CreateLinkTokenRequestTeller|null $teller teller
      *
      * @return self
      */
@@ -576,7 +576,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets snaptrade
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestSnaptrade|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestSnaptrade|null
      */
     public function getSnaptrade()
     {
@@ -586,7 +586,7 @@ class CreateLinkTokenRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets snaptrade
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestSnaptrade|null $snaptrade snaptrade
+     * @param \FuseClient\Model\CreateLinkTokenRequestSnaptrade|null $snaptrade snaptrade
      *
      * @return self
      */

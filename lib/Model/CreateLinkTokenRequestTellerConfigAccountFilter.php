@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * CreateLinkTokenRequestTellerConfigAccountFilter Class Doc Comment
  *
  * @category Class
  * @description Filter the types of account returned by Teller when enrolling a customer
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class CreateLinkTokenRequestTellerConfigAccountFilter implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'depository' => '\OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilterDepository',
-        'credit' => '\OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilterCredit'
+        'depository' => '\FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilterDepository',
+        'credit' => '\FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilterCredit'
     ];
 
     /**
@@ -300,7 +300,7 @@ class CreateLinkTokenRequestTellerConfigAccountFilter implements ModelInterface,
     /**
      * Gets depository
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilterDepository|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilterDepository|null
      */
     public function getDepository()
     {
@@ -310,7 +310,7 @@ class CreateLinkTokenRequestTellerConfigAccountFilter implements ModelInterface,
     /**
      * Sets depository
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilterDepository|null $depository depository
+     * @param \FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilterDepository|null $depository depository
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class CreateLinkTokenRequestTellerConfigAccountFilter implements ModelInterface,
     /**
      * Gets credit
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilterCredit|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilterCredit|null
      */
     public function getCredit()
     {
@@ -337,7 +337,7 @@ class CreateLinkTokenRequestTellerConfigAccountFilter implements ModelInterface,
     /**
      * Sets credit
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilterCredit|null $credit credit
+     * @param \FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilterCredit|null $credit credit
      *
      * @return self
      */

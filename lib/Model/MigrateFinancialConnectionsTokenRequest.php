@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * MigrateFinancialConnectionsTokenRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class MigrateFinancialConnectionsTokenRequest implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'connection_data' => '\OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionData',
+        'connection_data' => '\FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionData',
         'aggregator' => 'string',
-        'entity' => '\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequestEntity',
-        'fuse_products' => '\OpenAPI\Client\Model\Product[]'
+        'entity' => '\FuseClient\Model\MigrateFinancialConnectionsTokenRequestEntity',
+        'fuse_products' => '\FuseClient\Model\Product[]'
     ];
 
     /**
@@ -355,7 +355,7 @@ class MigrateFinancialConnectionsTokenRequest implements ModelInterface, ArrayAc
     /**
      * Gets connection_data
      *
-     * @return \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionData
+     * @return \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionData
      */
     public function getConnectionData()
     {
@@ -365,7 +365,7 @@ class MigrateFinancialConnectionsTokenRequest implements ModelInterface, ArrayAc
     /**
      * Sets connection_data
      *
-     * @param \OpenAPI\Client\Model\MigrateFinancialConnectionsAggregatorConnectionData $connection_data connection_data
+     * @param \FuseClient\Model\MigrateFinancialConnectionsAggregatorConnectionData $connection_data connection_data
      *
      * @return self
      */
@@ -419,7 +419,7 @@ class MigrateFinancialConnectionsTokenRequest implements ModelInterface, ArrayAc
     /**
      * Gets entity
      *
-     * @return \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequestEntity
+     * @return \FuseClient\Model\MigrateFinancialConnectionsTokenRequestEntity
      */
     public function getEntity()
     {
@@ -429,7 +429,7 @@ class MigrateFinancialConnectionsTokenRequest implements ModelInterface, ArrayAc
     /**
      * Sets entity
      *
-     * @param \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequestEntity $entity entity
+     * @param \FuseClient\Model\MigrateFinancialConnectionsTokenRequestEntity $entity entity
      *
      * @return self
      */
@@ -446,7 +446,7 @@ class MigrateFinancialConnectionsTokenRequest implements ModelInterface, ArrayAc
     /**
      * Gets fuse_products
      *
-     * @return \OpenAPI\Client\Model\Product[]
+     * @return \FuseClient\Model\Product[]
      */
     public function getFuseProducts()
     {
@@ -456,7 +456,7 @@ class MigrateFinancialConnectionsTokenRequest implements ModelInterface, ArrayAc
     /**
      * Sets fuse_products
      *
-     * @param \OpenAPI\Client\Model\Product[] $fuse_products A list of Fuse products that the migrated connection will have access to.
+     * @param \FuseClient\Model\Product[] $fuse_products A list of Fuse products that the migrated connection will have access to.
      *
      * @return self
      */

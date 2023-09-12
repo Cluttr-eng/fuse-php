@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * EvalConsumerRiskReportRequestEventsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class EvalConsumerRiskReportRequestEventsInner implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         'account_id' => 'string',
-        'event' => '\OpenAPI\Client\Model\AddAccountEventsRequestEventsInner'
+        'event' => '\FuseClient\Model\AddAccountEventsRequestEventsInner'
     ];
 
     /**
@@ -332,7 +332,7 @@ class EvalConsumerRiskReportRequestEventsInner implements ModelInterface, ArrayA
     /**
      * Gets event
      *
-     * @return \OpenAPI\Client\Model\AddAccountEventsRequestEventsInner
+     * @return \FuseClient\Model\AddAccountEventsRequestEventsInner
      */
     public function getEvent()
     {
@@ -342,7 +342,7 @@ class EvalConsumerRiskReportRequestEventsInner implements ModelInterface, ArrayA
     /**
      * Sets event
      *
-     * @param \OpenAPI\Client\Model\AddAccountEventsRequestEventsInner $event event
+     * @param \FuseClient\Model\AddAccountEventsRequestEventsInner $event event
      *
      * @return self
      */

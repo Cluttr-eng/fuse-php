@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetInvestmentTransactionsRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetInvestmentTransactionsRequest implements ModelInterface, ArrayAccess, \
         'end_date' => 'string',
         'page' => 'int',
         'records_per_page' => 'int',
-        'options' => '\OpenAPI\Client\Model\GetInvestmentTransactionsRequestOptions'
+        'options' => '\FuseClient\Model\GetInvestmentTransactionsRequestOptions'
     ];
 
     /**
@@ -502,7 +502,7 @@ class GetInvestmentTransactionsRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets options
      *
-     * @return \OpenAPI\Client\Model\GetInvestmentTransactionsRequestOptions|null
+     * @return \FuseClient\Model\GetInvestmentTransactionsRequestOptions|null
      */
     public function getOptions()
     {
@@ -512,7 +512,7 @@ class GetInvestmentTransactionsRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets options
      *
-     * @param \OpenAPI\Client\Model\GetInvestmentTransactionsRequestOptions|null $options options
+     * @param \FuseClient\Model\GetInvestmentTransactionsRequestOptions|null $options options
      *
      * @return self
      */

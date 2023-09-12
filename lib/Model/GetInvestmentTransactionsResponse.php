@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetInvestmentTransactionsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetInvestmentTransactionsResponse implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'accounts' => '\OpenAPI\Client\Model\FinancialConnectionsAccount[]',
-        'investment_transactions' => '\OpenAPI\Client\Model\FinancialConnectionsInvestmentTransaction[]',
+        'accounts' => '\FuseClient\Model\FinancialConnectionsAccount[]',
+        'investment_transactions' => '\FuseClient\Model\FinancialConnectionsInvestmentTransaction[]',
         'total_transactions' => 'float',
         'request_id' => 'string'
     ];
@@ -322,7 +322,7 @@ class GetInvestmentTransactionsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Gets accounts
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccount[]
+     * @return \FuseClient\Model\FinancialConnectionsAccount[]
      */
     public function getAccounts()
     {
@@ -332,7 +332,7 @@ class GetInvestmentTransactionsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Sets accounts
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccount[] $accounts accounts
+     * @param \FuseClient\Model\FinancialConnectionsAccount[] $accounts accounts
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class GetInvestmentTransactionsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Gets investment_transactions
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsInvestmentTransaction[]
+     * @return \FuseClient\Model\FinancialConnectionsInvestmentTransaction[]
      */
     public function getInvestmentTransactions()
     {
@@ -359,7 +359,7 @@ class GetInvestmentTransactionsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Sets investment_transactions
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsInvestmentTransaction[] $investment_transactions investment_transactions
+     * @param \FuseClient\Model\FinancialConnectionsInvestmentTransaction[] $investment_transactions investment_transactions
      *
      * @return self
      */

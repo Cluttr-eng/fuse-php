@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * UpdateConsumerRiskReportCustomizationRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UpdateConsumerRiskReportCustomizationRequest implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'timeframe' => '\OpenAPI\Client\Model\ConsumerRiskReportTimeFrame',
+        'timeframe' => '\FuseClient\Model\ConsumerRiskReportTimeFrame',
         'min_limit' => 'float',
         'max_limit' => 'float',
         'risk_tolerance' => 'float'
@@ -329,7 +329,7 @@ class UpdateConsumerRiskReportCustomizationRequest implements ModelInterface, Ar
     /**
      * Gets timeframe
      *
-     * @return \OpenAPI\Client\Model\ConsumerRiskReportTimeFrame|null
+     * @return \FuseClient\Model\ConsumerRiskReportTimeFrame|null
      */
     public function getTimeframe()
     {
@@ -339,7 +339,7 @@ class UpdateConsumerRiskReportCustomizationRequest implements ModelInterface, Ar
     /**
      * Sets timeframe
      *
-     * @param \OpenAPI\Client\Model\ConsumerRiskReportTimeFrame|null $timeframe timeframe
+     * @param \FuseClient\Model\ConsumerRiskReportTimeFrame|null $timeframe timeframe
      *
      * @return self
      */

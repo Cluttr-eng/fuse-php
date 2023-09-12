@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace FuseClient\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description FinancialConnectionDetails
- * @package     OpenAPI\Client
+ * @package     FuseClient
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
@@ -227,6 +227,15 @@ class FinancialConnectionDetailsTest extends TestCase
      * Test attribute "akoya"
      */
     public function testPropertyAkoya()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "saltedge"
+     */
+    public function testPropertySaltedge()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');

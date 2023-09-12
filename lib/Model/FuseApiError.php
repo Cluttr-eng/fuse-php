@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FuseApiError Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,10 +60,10 @@ class FuseApiError implements ModelInterface, ArrayAccess, \JsonSerializable
         'request_id' => 'string',
         'title' => 'string',
         'details' => 'string',
-        'code' => '\OpenAPI\Client\Model\FuseApiErrorCode',
-        'type' => '\OpenAPI\Client\Model\FuseApiErrorType',
+        'code' => '\FuseClient\Model\FuseApiErrorCode',
+        'type' => '\FuseClient\Model\FuseApiErrorType',
         'source' => 'string',
-        'data' => '\OpenAPI\Client\Model\FuseApiErrorData'
+        'data' => '\FuseClient\Model\FuseApiErrorData'
     ];
 
     /**
@@ -457,7 +457,7 @@ class FuseApiError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets code
      *
-     * @return \OpenAPI\Client\Model\FuseApiErrorCode
+     * @return \FuseClient\Model\FuseApiErrorCode
      */
     public function getCode()
     {
@@ -467,7 +467,7 @@ class FuseApiError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets code
      *
-     * @param \OpenAPI\Client\Model\FuseApiErrorCode $code code
+     * @param \FuseClient\Model\FuseApiErrorCode $code code
      *
      * @return self
      */
@@ -484,7 +484,7 @@ class FuseApiError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\FuseApiErrorType
+     * @return \FuseClient\Model\FuseApiErrorType
      */
     public function getType()
     {
@@ -494,7 +494,7 @@ class FuseApiError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\FuseApiErrorType $type type
+     * @param \FuseClient\Model\FuseApiErrorType $type type
      *
      * @return self
      */
@@ -548,7 +548,7 @@ class FuseApiError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\FuseApiErrorData|null
+     * @return \FuseClient\Model\FuseApiErrorData|null
      */
     public function getData()
     {
@@ -558,7 +558,7 @@ class FuseApiError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\FuseApiErrorData|null $data data
+     * @param \FuseClient\Model\FuseApiErrorData|null $data data
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialInstitution Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class FinancialInstitution implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'logo' => '\OpenAPI\Client\Model\FinancialInstitutionLogo',
+        'logo' => '\FuseClient\Model\FinancialInstitutionLogo',
         'website' => 'string',
-        'country_codes' => '\OpenAPI\Client\Model\CountryCode[]'
+        'country_codes' => '\FuseClient\Model\CountryCode[]'
     ];
 
     /**
@@ -383,7 +383,7 @@ class FinancialInstitution implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets logo
      *
-     * @return \OpenAPI\Client\Model\FinancialInstitutionLogo|null
+     * @return \FuseClient\Model\FinancialInstitutionLogo|null
      */
     public function getLogo()
     {
@@ -393,7 +393,7 @@ class FinancialInstitution implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets logo
      *
-     * @param \OpenAPI\Client\Model\FinancialInstitutionLogo|null $logo logo
+     * @param \FuseClient\Model\FinancialInstitutionLogo|null $logo logo
      *
      * @return self
      */
@@ -437,7 +437,7 @@ class FinancialInstitution implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets country_codes
      *
-     * @return \OpenAPI\Client\Model\CountryCode[]
+     * @return \FuseClient\Model\CountryCode[]
      */
     public function getCountryCodes()
     {
@@ -447,7 +447,7 @@ class FinancialInstitution implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets country_codes
      *
-     * @param \OpenAPI\Client\Model\CountryCode[] $country_codes List of country codes supported by this institution
+     * @param \FuseClient\Model\CountryCode[] $country_codes List of country codes supported by this institution
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FuseApiErrorData Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class FuseApiErrorData implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aggregator' => '\OpenAPI\Client\Model\Aggregator',
-        'errors' => '\OpenAPI\Client\Model\FuseApiAggregatorError[]'
+        'aggregator' => '\FuseClient\Model\Aggregator',
+        'errors' => '\FuseClient\Model\FuseApiAggregatorError[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class FuseApiErrorData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aggregator
      *
-     * @return \OpenAPI\Client\Model\Aggregator|null
+     * @return \FuseClient\Model\Aggregator|null
      */
     public function getAggregator()
     {
@@ -309,7 +309,7 @@ class FuseApiErrorData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aggregator
      *
-     * @param \OpenAPI\Client\Model\Aggregator|null $aggregator aggregator
+     * @param \FuseClient\Model\Aggregator|null $aggregator aggregator
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class FuseApiErrorData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\FuseApiAggregatorError[]|null
+     * @return \FuseClient\Model\FuseApiAggregatorError[]|null
      */
     public function getErrors()
     {
@@ -336,7 +336,7 @@ class FuseApiErrorData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\FuseApiAggregatorError[]|null $errors errors
+     * @param \FuseClient\Model\FuseApiAggregatorError[]|null $errors errors
      *
      * @return self
      */

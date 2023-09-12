@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FuseApiWarning Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class FuseApiWarning implements ModelInterface, ArrayAccess, \JsonSerializable
         'code' => 'string',
         'type' => 'string',
         'source' => 'string',
-        'data' => '\OpenAPI\Client\Model\FuseApiWarningData'
+        'data' => '\FuseClient\Model\FuseApiWarningData'
     ];
 
     /**
@@ -496,7 +496,7 @@ class FuseApiWarning implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\FuseApiWarningData|null
+     * @return \FuseClient\Model\FuseApiWarningData|null
      */
     public function getData()
     {
@@ -506,7 +506,7 @@ class FuseApiWarning implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\FuseApiWarningData|null $data data
+     * @param \FuseClient\Model\FuseApiWarningData|null $data data
      *
      * @return self
      */
