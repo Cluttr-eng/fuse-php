@@ -3,6 +3,11 @@
 ## Quick start
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
 
+Install
+```
+composer require cluttr-eng/fuse-php:VERSION
+```
+
 ```
 <?php
 
