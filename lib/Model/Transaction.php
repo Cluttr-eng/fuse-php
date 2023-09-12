@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * Transaction Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class Transaction implements ModelInterface, ArrayAccess, \JsonSerializable
         'date' => 'string',
         'description' => 'string',
         'category' => 'string[]',
-        'merchant' => '\OpenAPI\Client\Model\TransactionMerchant',
+        'merchant' => '\FuseClient\Model\TransactionMerchant',
         'status' => 'string',
         'type' => 'string',
         'iso_currency_code' => 'string',
@@ -1916,7 +1916,7 @@ class Transaction implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets merchant
      *
-     * @return \OpenAPI\Client\Model\TransactionMerchant
+     * @return \FuseClient\Model\TransactionMerchant
      */
     public function getMerchant()
     {
@@ -1926,7 +1926,7 @@ class Transaction implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets merchant
      *
-     * @param \OpenAPI\Client\Model\TransactionMerchant $merchant merchant
+     * @param \FuseClient\Model\TransactionMerchant $merchant merchant
      *
      * @return self
      */

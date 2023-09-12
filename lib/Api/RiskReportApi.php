@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace FuseClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use FuseClient\ApiException;
+use FuseClient\Configuration;
+use FuseClient\HeaderSelector;
+use FuseClient\ObjectSerializer;
 
 /**
  * RiskReportApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -135,9 +135,9 @@ class RiskReportApi
      * @param  string $fuse_api_key fuse_api_key (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteConsumerRiskReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteConsumerRiskReportResponse
+     * @return \FuseClient\Model\DeleteConsumerRiskReportResponse
      */
     public function deleteConsumerRiskReport($consumer_risk_report_id, $fuse_client_id, $fuse_api_key, string $contentType = self::contentTypes['deleteConsumerRiskReport'][0])
     {
@@ -155,9 +155,9 @@ class RiskReportApi
      * @param  string $fuse_api_key (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteConsumerRiskReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteConsumerRiskReportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\DeleteConsumerRiskReportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteConsumerRiskReportWithHttpInfo($consumer_risk_report_id, $fuse_client_id, $fuse_api_key, string $contentType = self::contentTypes['deleteConsumerRiskReport'][0])
     {
@@ -200,23 +200,23 @@ class RiskReportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeleteConsumerRiskReportResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\DeleteConsumerRiskReportResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DeleteConsumerRiskReportResponse' !== 'string') {
+                        if ('\FuseClient\Model\DeleteConsumerRiskReportResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeleteConsumerRiskReportResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\DeleteConsumerRiskReportResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeleteConsumerRiskReportResponse';
+            $returnType = '\FuseClient\Model\DeleteConsumerRiskReportResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -237,7 +237,7 @@ class RiskReportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteConsumerRiskReportResponse',
+                        '\FuseClient\Model\DeleteConsumerRiskReportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class RiskReportApi
      */
     public function deleteConsumerRiskReportAsyncWithHttpInfo($consumer_risk_report_id, $fuse_client_id, $fuse_api_key, string $contentType = self::contentTypes['deleteConsumerRiskReport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteConsumerRiskReportResponse';
+        $returnType = '\FuseClient\Model\DeleteConsumerRiskReportResponse';
         $request = $this->deleteConsumerRiskReportRequest($consumer_risk_report_id, $fuse_client_id, $fuse_api_key, $contentType);
 
         return $this->client
@@ -460,9 +460,9 @@ class RiskReportApi
      * @param  string $fuse_api_key fuse_api_key (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getConsumerRiskReportCustomization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse
+     * @return \FuseClient\Model\GetConsumerRiskReportCustomizationResponse
      */
     public function getConsumerRiskReportCustomization($consumer_risk_report_customization_id, $fuse_client_id, $fuse_api_key, string $contentType = self::contentTypes['getConsumerRiskReportCustomization'][0])
     {
@@ -480,9 +480,9 @@ class RiskReportApi
      * @param  string $fuse_api_key (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getConsumerRiskReportCustomization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetConsumerRiskReportCustomizationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getConsumerRiskReportCustomizationWithHttpInfo($consumer_risk_report_customization_id, $fuse_client_id, $fuse_api_key, string $contentType = self::contentTypes['getConsumerRiskReportCustomization'][0])
     {
@@ -525,23 +525,23 @@ class RiskReportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetConsumerRiskReportCustomizationResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetConsumerRiskReportCustomizationResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetConsumerRiskReportCustomizationResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse';
+            $returnType = '\FuseClient\Model\GetConsumerRiskReportCustomizationResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -562,7 +562,7 @@ class RiskReportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse',
+                        '\FuseClient\Model\GetConsumerRiskReportCustomizationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -610,7 +610,7 @@ class RiskReportApi
      */
     public function getConsumerRiskReportCustomizationAsyncWithHttpInfo($consumer_risk_report_customization_id, $fuse_client_id, $fuse_api_key, string $contentType = self::contentTypes['getConsumerRiskReportCustomization'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetConsumerRiskReportCustomizationResponse';
+        $returnType = '\FuseClient\Model\GetConsumerRiskReportCustomizationResponse';
         $request = $this->getConsumerRiskReportCustomizationRequest($consumer_risk_report_customization_id, $fuse_client_id, $fuse_api_key, $contentType);
 
         return $this->client

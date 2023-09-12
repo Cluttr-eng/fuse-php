@@ -6,9 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | Id of the entity |
 **email** | **string** | Email of the entity | [optional]
-**aggregators** | [**\OpenAPI\Client\Model\Aggregator[]**](Aggregator.md) | These will force the user to connect through all of these aggregators | [optional]
+**aggregators** | [**\FuseClient\Model\Aggregator[]**](Aggregator.md) | These will force the user to connect through all of these aggregators | [optional]
 **institution_ids** | **string[]** |  | [optional]
-**financial_connections** | [**\OpenAPI\Client\Model\FinancialConnectionDetails[]**](FinancialConnectionDetails.md) | Data needed to query data from the various aggregators |
+**financial_connections** | [**\FuseClient\Model\FinancialConnectionDetails[]**](FinancialConnectionDetails.md) | Data needed to query data from the various aggregators |
 **request_id** | **string** | An identifier that is exclusive to the request and can serve as a means for investigating and resolving issues. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

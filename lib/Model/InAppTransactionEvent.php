@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * InAppTransactionEvent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class InAppTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeriali
     protected static $openAPITypes = [
         'id' => 'string',
         'event_type' => 'string',
-        'status' => '\OpenAPI\Client\Model\InAppTransactionEventStatus',
+        'status' => '\FuseClient\Model\InAppTransactionEventStatus',
         'amount' => 'float',
         'iso_currency_code' => 'string',
-        'transaction_type' => '\OpenAPI\Client\Model\TransactionEventType',
+        'transaction_type' => '\FuseClient\Model\TransactionEventType',
         'merchant_name' => 'string',
         'timestamp' => 'string',
         'balance' => 'float'
@@ -455,7 +455,7 @@ class InAppTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\InAppTransactionEventStatus
+     * @return \FuseClient\Model\InAppTransactionEventStatus
      */
     public function getStatus()
     {
@@ -465,7 +465,7 @@ class InAppTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\InAppTransactionEventStatus $status status
+     * @param \FuseClient\Model\InAppTransactionEventStatus $status status
      *
      * @return self
      */
@@ -536,7 +536,7 @@ class InAppTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets transaction_type
      *
-     * @return \OpenAPI\Client\Model\TransactionEventType|null
+     * @return \FuseClient\Model\TransactionEventType|null
      */
     public function getTransactionType()
     {
@@ -546,7 +546,7 @@ class InAppTransactionEvent implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets transaction_type
      *
-     * @param \OpenAPI\Client\Model\TransactionEventType|null $transaction_type transaction_type
+     * @param \FuseClient\Model\TransactionEventType|null $transaction_type transaction_type
      *
      * @return self
      */

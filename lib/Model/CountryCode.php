@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace FuseClient\Model;
+use \FuseClient\ObjectSerializer;
 
 /**
  * CountryCode Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -56,6 +56,8 @@ class CountryCode
 
     public const BE = 'BE';
 
+    public const BG = 'BG';
+
     public const BH = 'BH';
 
     public const BM = 'BM';
@@ -65,6 +67,8 @@ class CountryCode
     public const BR = 'BR';
 
     public const BW = 'BW';
+
+    public const BY = 'BY';
 
     public const CA = 'CA';
 
@@ -84,7 +88,11 @@ class CountryCode
 
     public const DE = 'DE';
 
+    public const _DO = 'DO';
+
     public const DZ = 'DZ';
+
+    public const EC = 'EC';
 
     public const EG = 'EG';
 
@@ -107,6 +115,8 @@ class CountryCode
     public const GR = 'GR';
 
     public const HK = 'HK';
+
+    public const HU = 'HU';
 
     public const ID = 'ID';
 
@@ -146,6 +156,10 @@ class CountryCode
 
     public const MC = 'MC';
 
+    public const MD = 'MD';
+
+    public const MK = 'MK';
+
     public const MO = 'MO';
 
     public const MT = 'MT';
@@ -180,6 +194,8 @@ class CountryCode
 
     public const QA = 'QA';
 
+    public const RO = 'RO';
+
     public const RU = 'RU';
 
     public const SA = 'SA';
@@ -187,6 +203,8 @@ class CountryCode
     public const SE = 'SE';
 
     public const SG = 'SG';
+
+    public const SK = 'SK';
 
     public const SL = 'SL';
 
@@ -197,6 +215,8 @@ class CountryCode
     public const TW = 'TW';
 
     public const TZ = 'TZ';
+
+    public const UA = 'UA';
 
     public const UG = 'UG';
 
@@ -226,11 +246,13 @@ class CountryCode
             self::AU,
             self::BD,
             self::BE,
+            self::BG,
             self::BH,
             self::BM,
             self::BN,
             self::BR,
             self::BW,
+            self::BY,
             self::CA,
             self::CH,
             self::CI,
@@ -240,7 +262,9 @@ class CountryCode
             self::CO,
             self::CZ,
             self::DE,
+            self::_DO,
             self::DZ,
+            self::EC,
             self::EG,
             self::ES,
             self::FI,
@@ -252,6 +276,7 @@ class CountryCode
             self::GM,
             self::GR,
             self::HK,
+            self::HU,
             self::ID,
             self::IE,
             self::IL,
@@ -271,6 +296,8 @@ class CountryCode
             self::LT,
             self::LU,
             self::MC,
+            self::MD,
+            self::MK,
             self::MO,
             self::MT,
             self::MU,
@@ -288,15 +315,18 @@ class CountryCode
             self::PL,
             self::PT,
             self::QA,
+            self::RO,
             self::RU,
             self::SA,
             self::SE,
             self::SG,
+            self::SK,
             self::SL,
             self::TH,
             self::TR,
             self::TW,
             self::TZ,
+            self::UA,
             self::UG,
             self::US,
             self::UY,

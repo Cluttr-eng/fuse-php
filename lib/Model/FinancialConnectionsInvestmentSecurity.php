@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsInvestmentSecurity Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,10 +63,10 @@ class FinancialConnectionsInvestmentSecurity implements ModelInterface, ArrayAcc
         'sedol' => 'string',
         'cusip' => 'string',
         'close_price' => 'float',
-        'currency' => '\OpenAPI\Client\Model\Currency',
+        'currency' => '\FuseClient\Model\Currency',
         'name' => 'string',
-        'type' => '\OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurityType',
-        'exchange' => '\OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurityExchange'
+        'type' => '\FuseClient\Model\FinancialConnectionsInvestmentSecurityType',
+        'exchange' => '\FuseClient\Model\FinancialConnectionsInvestmentSecurityExchange'
     ];
 
     /**
@@ -526,7 +526,7 @@ class FinancialConnectionsInvestmentSecurity implements ModelInterface, ArrayAcc
     /**
      * Gets currency
      *
-     * @return \OpenAPI\Client\Model\Currency
+     * @return \FuseClient\Model\Currency
      */
     public function getCurrency()
     {
@@ -536,7 +536,7 @@ class FinancialConnectionsInvestmentSecurity implements ModelInterface, ArrayAcc
     /**
      * Sets currency
      *
-     * @param \OpenAPI\Client\Model\Currency $currency currency
+     * @param \FuseClient\Model\Currency $currency currency
      *
      * @return self
      */
@@ -580,7 +580,7 @@ class FinancialConnectionsInvestmentSecurity implements ModelInterface, ArrayAcc
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurityType|null
+     * @return \FuseClient\Model\FinancialConnectionsInvestmentSecurityType|null
      */
     public function getType()
     {
@@ -590,7 +590,7 @@ class FinancialConnectionsInvestmentSecurity implements ModelInterface, ArrayAcc
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurityType|null $type type
+     * @param \FuseClient\Model\FinancialConnectionsInvestmentSecurityType|null $type type
      *
      * @return self
      */
@@ -607,7 +607,7 @@ class FinancialConnectionsInvestmentSecurity implements ModelInterface, ArrayAcc
     /**
      * Gets exchange
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurityExchange|null
+     * @return \FuseClient\Model\FinancialConnectionsInvestmentSecurityExchange|null
      */
     public function getExchange()
     {
@@ -617,7 +617,7 @@ class FinancialConnectionsInvestmentSecurity implements ModelInterface, ArrayAcc
     /**
      * Sets exchange
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurityExchange|null $exchange exchange
+     * @param \FuseClient\Model\FinancialConnectionsInvestmentSecurityExchange|null $exchange exchange
      *
      * @return self
      */

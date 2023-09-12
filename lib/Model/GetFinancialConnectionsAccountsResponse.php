@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetFinancialConnectionsAccountsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetFinancialConnectionsAccountsResponse implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'accounts' => '\OpenAPI\Client\Model\FinancialConnectionsAccount[]',
-        'financial_connection' => '\OpenAPI\Client\Model\FinancialConnectionData',
+        'accounts' => '\FuseClient\Model\FinancialConnectionsAccount[]',
+        'financial_connection' => '\FuseClient\Model\FinancialConnectionData',
         'request_id' => 'string'
     ];
 
@@ -315,7 +315,7 @@ class GetFinancialConnectionsAccountsResponse implements ModelInterface, ArrayAc
     /**
      * Gets accounts
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccount[]
+     * @return \FuseClient\Model\FinancialConnectionsAccount[]
      */
     public function getAccounts()
     {
@@ -325,7 +325,7 @@ class GetFinancialConnectionsAccountsResponse implements ModelInterface, ArrayAc
     /**
      * Sets accounts
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccount[] $accounts accounts
+     * @param \FuseClient\Model\FinancialConnectionsAccount[] $accounts accounts
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class GetFinancialConnectionsAccountsResponse implements ModelInterface, ArrayAc
     /**
      * Gets financial_connection
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionData
+     * @return \FuseClient\Model\FinancialConnectionData
      */
     public function getFinancialConnection()
     {
@@ -352,7 +352,7 @@ class GetFinancialConnectionsAccountsResponse implements ModelInterface, ArrayAc
     /**
      * Sets financial_connection
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionData $financial_connection financial_connection
+     * @param \FuseClient\Model\FinancialConnectionData $financial_connection financial_connection
      *
      * @return self
      */

@@ -6,11 +6,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | ID of the transaction |
 **event_type** | **string** |  |
-**status** | [**\OpenAPI\Client\Model\ExternalTransactionEventStatus**](ExternalTransactionEventStatus.md) |  |
+**status** | [**\FuseClient\Model\ExternalTransactionEventStatus**](ExternalTransactionEventStatus.md) |  |
 **amount** | **float** | Amount in cents associated with the transaction. Use positive values to represent money going out and negative to represent money going in. |
 **country_code** | **string** |  | [optional] [default to 'US']
 **iso_currency_code** | **string** | The ISO-4217 currency code. |
-**transaction_type** | [**\OpenAPI\Client\Model\TransactionEventType**](TransactionEventType.md) |  | [optional]
+**transaction_type** | [**\FuseClient\Model\TransactionEventType**](TransactionEventType.md) |  | [optional]
 **transaction_description** | **string** |  | [optional]
 **transaction_owner_type** | **string** |  | [optional] [default to 'consumer']
 **merchant_name** | **string** |  |

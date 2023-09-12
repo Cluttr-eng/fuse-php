@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * CreateLinkTokenRequestTellerConfig Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CreateLinkTokenRequestTellerConfig implements ModelInterface, ArrayAccess,
       */
     protected static $openAPITypes = [
         'select_account' => 'string',
-        'account_filter' => '\OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilter'
+        'account_filter' => '\FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilter'
     ];
 
     /**
@@ -362,7 +362,7 @@ class CreateLinkTokenRequestTellerConfig implements ModelInterface, ArrayAccess,
     /**
      * Gets account_filter
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilter|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilter|null
      */
     public function getAccountFilter()
     {
@@ -372,7 +372,7 @@ class CreateLinkTokenRequestTellerConfig implements ModelInterface, ArrayAccess,
     /**
      * Sets account_filter
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestTellerConfigAccountFilter|null $account_filter account_filter
+     * @param \FuseClient\Model\CreateLinkTokenRequestTellerConfigAccountFilter|null $account_filter account_filter
      *
      * @return self
      */

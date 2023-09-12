@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * TransactionCategory Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class TransactionCategory implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'primary' => '\OpenAPI\Client\Model\TransactionCategoryPrimary',
-        'detailed' => '\OpenAPI\Client\Model\TransactionCategoryDetailed'
+        'primary' => '\FuseClient\Model\TransactionCategoryPrimary',
+        'detailed' => '\FuseClient\Model\TransactionCategoryDetailed'
     ];
 
     /**
@@ -305,7 +305,7 @@ class TransactionCategory implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets primary
      *
-     * @return \OpenAPI\Client\Model\TransactionCategoryPrimary
+     * @return \FuseClient\Model\TransactionCategoryPrimary
      */
     public function getPrimary()
     {
@@ -315,7 +315,7 @@ class TransactionCategory implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets primary
      *
-     * @param \OpenAPI\Client\Model\TransactionCategoryPrimary $primary primary
+     * @param \FuseClient\Model\TransactionCategoryPrimary $primary primary
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class TransactionCategory implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets detailed
      *
-     * @return \OpenAPI\Client\Model\TransactionCategoryDetailed
+     * @return \FuseClient\Model\TransactionCategoryDetailed
      */
     public function getDetailed()
     {
@@ -342,7 +342,7 @@ class TransactionCategory implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets detailed
      *
-     * @param \OpenAPI\Client\Model\TransactionCategoryDetailed $detailed detailed
+     * @param \FuseClient\Model\TransactionCategoryDetailed $detailed detailed
      *
      * @return self
      */

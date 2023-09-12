@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * CreateLinkTokenRequestSnaptrade Class Doc Comment
  *
  * @category Class
  * @description An object specifying information about the SnapTrade configuration to use when creating a link token.
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CreateLinkTokenRequestSnaptrade implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'config' => '\OpenAPI\Client\Model\CreateLinkTokenRequestSnaptradeConfig'
+        'config' => '\FuseClient\Model\CreateLinkTokenRequestSnaptradeConfig'
     ];
 
     /**
@@ -293,7 +293,7 @@ class CreateLinkTokenRequestSnaptrade implements ModelInterface, ArrayAccess, \J
     /**
      * Gets config
      *
-     * @return \OpenAPI\Client\Model\CreateLinkTokenRequestSnaptradeConfig|null
+     * @return \FuseClient\Model\CreateLinkTokenRequestSnaptradeConfig|null
      */
     public function getConfig()
     {
@@ -303,7 +303,7 @@ class CreateLinkTokenRequestSnaptrade implements ModelInterface, ArrayAccess, \J
     /**
      * Sets config
      *
-     * @param \OpenAPI\Client\Model\CreateLinkTokenRequestSnaptradeConfig|null $config config
+     * @param \FuseClient\Model\CreateLinkTokenRequestSnaptradeConfig|null $config config
      *
      * @return self
      */

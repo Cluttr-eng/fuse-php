@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * Merchant Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class Merchant implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'logo' => '\OpenAPI\Client\Model\MerchantLogo'
+        'logo' => '\FuseClient\Model\MerchantLogo'
     ];
 
     /**
@@ -366,7 +366,7 @@ class Merchant implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets logo
      *
-     * @return \OpenAPI\Client\Model\MerchantLogo|null
+     * @return \FuseClient\Model\MerchantLogo|null
      */
     public function getLogo()
     {
@@ -376,7 +376,7 @@ class Merchant implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets logo
      *
-     * @param \OpenAPI\Client\Model\MerchantLogo|null $logo logo
+     * @param \FuseClient\Model\MerchantLogo|null $logo logo
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetFinancialInstitutionResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetFinancialInstitutionResponse implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'financial_institution' => '\OpenAPI\Client\Model\FinancialInstitution',
+        'financial_institution' => '\FuseClient\Model\FinancialInstitution',
         'request_id' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class GetFinancialInstitutionResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Gets financial_institution
      *
-     * @return \OpenAPI\Client\Model\FinancialInstitution
+     * @return \FuseClient\Model\FinancialInstitution
      */
     public function getFinancialInstitution()
     {
@@ -315,7 +315,7 @@ class GetFinancialInstitutionResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Sets financial_institution
      *
-     * @param \OpenAPI\Client\Model\FinancialInstitution $financial_institution financial_institution
+     * @param \FuseClient\Model\FinancialInstitution $financial_institution financial_institution
      *
      * @return self
      */

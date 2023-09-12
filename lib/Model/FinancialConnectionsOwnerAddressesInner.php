@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsOwnerAddressesInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class FinancialConnectionsOwnerAddressesInner implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\OpenAPI\Client\Model\FinancialConnectionsOwnerAddressesInnerData',
+        'data' => '\FuseClient\Model\FinancialConnectionsOwnerAddressesInnerData',
         'primary' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class FinancialConnectionsOwnerAddressesInner implements ModelInterface, ArrayAc
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsOwnerAddressesInnerData|null
+     * @return \FuseClient\Model\FinancialConnectionsOwnerAddressesInnerData|null
      */
     public function getData()
     {
@@ -309,7 +309,7 @@ class FinancialConnectionsOwnerAddressesInner implements ModelInterface, ArrayAc
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsOwnerAddressesInnerData|null $data data
+     * @param \FuseClient\Model\FinancialConnectionsOwnerAddressesInnerData|null $data data
      *
      * @return self
      */

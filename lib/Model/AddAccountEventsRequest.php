@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * AddAccountEventsRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AddAccountEventsRequest implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'events' => '\OpenAPI\Client\Model\AddAccountEventsRequestEventsInner[]'
+        'events' => '\FuseClient\Model\AddAccountEventsRequestEventsInner[]'
     ];
 
     /**
@@ -303,7 +303,7 @@ class AddAccountEventsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets events
      *
-     * @return \OpenAPI\Client\Model\AddAccountEventsRequestEventsInner[]
+     * @return \FuseClient\Model\AddAccountEventsRequestEventsInner[]
      */
     public function getEvents()
     {
@@ -313,7 +313,7 @@ class AddAccountEventsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets events
      *
-     * @param \OpenAPI\Client\Model\AddAccountEventsRequestEventsInner[] $events events
+     * @param \FuseClient\Model\AddAccountEventsRequestEventsInner[] $events events
      *
      * @return self
      */

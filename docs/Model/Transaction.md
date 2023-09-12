@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **date** | **string** | Date of the transaction (YYYY-MM-DD) |
 **description** | **string** | Description of the transaction |
 **category** | **string[]** | Categories of the transaction, i.e., Computers and Electronics. You can download the categories from [here](https://fuse-public-bucket.s3.amazonaws.com/transaction-categories.csv) |
-**merchant** | [**\OpenAPI\Client\Model\TransactionMerchant**](TransactionMerchant.md) |  |
+**merchant** | [**\FuseClient\Model\TransactionMerchant**](TransactionMerchant.md) |  |
 **status** | **string** | The status of the transaction. This will be either posted or pending. |
 **type** | **string** | Type of the transaction, ie adjustment. &#39;-&#39; means we were not able to map the upstream type. |
 **iso_currency_code** | **string** | The ISO-4217 currency code of the transaction | [optional]

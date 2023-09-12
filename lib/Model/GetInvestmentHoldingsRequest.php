@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetInvestmentHoldingsRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetInvestmentHoldingsRequest implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'access_token' => 'string',
-        'options' => '\OpenAPI\Client\Model\GetInvestmentHoldingsRequestOptions'
+        'options' => '\FuseClient\Model\GetInvestmentHoldingsRequestOptions'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetInvestmentHoldingsRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets options
      *
-     * @return \OpenAPI\Client\Model\GetInvestmentHoldingsRequestOptions|null
+     * @return \FuseClient\Model\GetInvestmentHoldingsRequestOptions|null
      */
     public function getOptions()
     {
@@ -339,7 +339,7 @@ class GetInvestmentHoldingsRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets options
      *
-     * @param \OpenAPI\Client\Model\GetInvestmentHoldingsRequestOptions|null $options options
+     * @param \FuseClient\Model\GetInvestmentHoldingsRequestOptions|null $options options
      *
      * @return self
      */

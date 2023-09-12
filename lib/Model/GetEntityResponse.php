@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetEntityResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class GetEntityResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     protected static $openAPITypes = [
         'id' => 'string',
         'email' => 'string',
-        'aggregators' => '\OpenAPI\Client\Model\Aggregator[]',
+        'aggregators' => '\FuseClient\Model\Aggregator[]',
         'institution_ids' => 'string[]',
-        'financial_connections' => '\OpenAPI\Client\Model\FinancialConnectionDetails[]',
+        'financial_connections' => '\FuseClient\Model\FinancialConnectionDetails[]',
         'request_id' => 'string'
     ];
 
@@ -394,7 +394,7 @@ class GetEntityResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets aggregators
      *
-     * @return \OpenAPI\Client\Model\Aggregator[]|null
+     * @return \FuseClient\Model\Aggregator[]|null
      */
     public function getAggregators()
     {
@@ -404,7 +404,7 @@ class GetEntityResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets aggregators
      *
-     * @param \OpenAPI\Client\Model\Aggregator[]|null $aggregators These will force the user to connect through all of these aggregators
+     * @param \FuseClient\Model\Aggregator[]|null $aggregators These will force the user to connect through all of these aggregators
      *
      * @return self
      */
@@ -453,7 +453,7 @@ class GetEntityResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets financial_connections
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetails[]
+     * @return \FuseClient\Model\FinancialConnectionDetails[]
      */
     public function getFinancialConnections()
     {
@@ -463,7 +463,7 @@ class GetEntityResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets financial_connections
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetails[] $financial_connections Data needed to query data from the various aggregators
+     * @param \FuseClient\Model\FinancialConnectionDetails[] $financial_connections Data needed to query data from the various aggregators
      *
      * @return self
      */

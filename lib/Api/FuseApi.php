@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace FuseClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use FuseClient\ApiException;
+use FuseClient\Configuration;
+use FuseClient\HeaderSelector;
+use FuseClient\ObjectSerializer;
 
 /**
  * FuseApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -207,12 +207,12 @@ class FuseApi
      * Operation addAccountEvents
      *
      * @param  string $account_id account_id (required)
-     * @param  \OpenAPI\Client\Model\AddAccountEventsRequest $add_account_events_request add_account_events_request (optional)
+     * @param  \FuseClient\Model\AddAccountEventsRequest $add_account_events_request add_account_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEvents'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AddAccountEventsResponse
+     * @return \FuseClient\Model\AddAccountEventsResponse
      */
     public function addAccountEvents($account_id, $add_account_events_request = null, string $contentType = self::contentTypes['addAccountEvents'][0])
     {
@@ -224,12 +224,12 @@ class FuseApi
      * Operation addAccountEventsWithHttpInfo
      *
      * @param  string $account_id (required)
-     * @param  \OpenAPI\Client\Model\AddAccountEventsRequest $add_account_events_request (optional)
+     * @param  \FuseClient\Model\AddAccountEventsRequest $add_account_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEvents'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AddAccountEventsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\AddAccountEventsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function addAccountEventsWithHttpInfo($account_id, $add_account_events_request = null, string $contentType = self::contentTypes['addAccountEvents'][0])
     {
@@ -272,23 +272,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AddAccountEventsResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\AddAccountEventsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AddAccountEventsResponse' !== 'string') {
+                        if ('\FuseClient\Model\AddAccountEventsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AddAccountEventsResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\AddAccountEventsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\AddAccountEventsResponse';
+            $returnType = '\FuseClient\Model\AddAccountEventsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -309,7 +309,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AddAccountEventsResponse',
+                        '\FuseClient\Model\AddAccountEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -323,7 +323,7 @@ class FuseApi
      * Operation addAccountEventsAsync
      *
      * @param  string $account_id (required)
-     * @param  \OpenAPI\Client\Model\AddAccountEventsRequest $add_account_events_request (optional)
+     * @param  \FuseClient\Model\AddAccountEventsRequest $add_account_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEvents'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -343,7 +343,7 @@ class FuseApi
      * Operation addAccountEventsAsyncWithHttpInfo
      *
      * @param  string $account_id (required)
-     * @param  \OpenAPI\Client\Model\AddAccountEventsRequest $add_account_events_request (optional)
+     * @param  \FuseClient\Model\AddAccountEventsRequest $add_account_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEvents'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -351,7 +351,7 @@ class FuseApi
      */
     public function addAccountEventsAsyncWithHttpInfo($account_id, $add_account_events_request = null, string $contentType = self::contentTypes['addAccountEvents'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AddAccountEventsResponse';
+        $returnType = '\FuseClient\Model\AddAccountEventsResponse';
         $request = $this->addAccountEventsRequest($account_id, $add_account_events_request, $contentType);
 
         return $this->client
@@ -394,7 +394,7 @@ class FuseApi
      * Create request for operation 'addAccountEvents'
      *
      * @param  string $account_id (required)
-     * @param  \OpenAPI\Client\Model\AddAccountEventsRequest $add_account_events_request (optional)
+     * @param  \FuseClient\Model\AddAccountEventsRequest $add_account_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEvents'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -504,12 +504,12 @@ class FuseApi
     /**
      * Operation createAssetReport
      *
-     * @param  \OpenAPI\Client\Model\CreateAssetReportRequest $create_asset_report_request create_asset_report_request (optional)
+     * @param  \FuseClient\Model\CreateAssetReportRequest $create_asset_report_request create_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAssetReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateAssetReportResponse
+     * @return \FuseClient\Model\CreateAssetReportResponse
      */
     public function createAssetReport($create_asset_report_request = null, string $contentType = self::contentTypes['createAssetReport'][0])
     {
@@ -520,12 +520,12 @@ class FuseApi
     /**
      * Operation createAssetReportWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateAssetReportRequest $create_asset_report_request (optional)
+     * @param  \FuseClient\Model\CreateAssetReportRequest $create_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAssetReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateAssetReportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\CreateAssetReportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAssetReportWithHttpInfo($create_asset_report_request = null, string $contentType = self::contentTypes['createAssetReport'][0])
     {
@@ -568,23 +568,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateAssetReportResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\CreateAssetReportResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateAssetReportResponse' !== 'string') {
+                        if ('\FuseClient\Model\CreateAssetReportResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateAssetReportResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\CreateAssetReportResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateAssetReportResponse';
+            $returnType = '\FuseClient\Model\CreateAssetReportResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -605,7 +605,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateAssetReportResponse',
+                        '\FuseClient\Model\CreateAssetReportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -618,7 +618,7 @@ class FuseApi
     /**
      * Operation createAssetReportAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateAssetReportRequest $create_asset_report_request (optional)
+     * @param  \FuseClient\Model\CreateAssetReportRequest $create_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -637,7 +637,7 @@ class FuseApi
     /**
      * Operation createAssetReportAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateAssetReportRequest $create_asset_report_request (optional)
+     * @param  \FuseClient\Model\CreateAssetReportRequest $create_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -645,7 +645,7 @@ class FuseApi
      */
     public function createAssetReportAsyncWithHttpInfo($create_asset_report_request = null, string $contentType = self::contentTypes['createAssetReport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateAssetReportResponse';
+        $returnType = '\FuseClient\Model\CreateAssetReportResponse';
         $request = $this->createAssetReportRequest($create_asset_report_request, $contentType);
 
         return $this->client
@@ -687,7 +687,7 @@ class FuseApi
     /**
      * Create request for operation 'createAssetReport'
      *
-     * @param  \OpenAPI\Client\Model\CreateAssetReportRequest $create_asset_report_request (optional)
+     * @param  \FuseClient\Model\CreateAssetReportRequest $create_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -782,12 +782,12 @@ class FuseApi
     /**
      * Operation createConsumerRiskReport
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request create_consumer_risk_report_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request create_consumer_risk_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateConsumerRiskReportResponse
+     * @return \FuseClient\Model\CreateConsumerRiskReportResponse
      */
     public function createConsumerRiskReport($create_consumer_risk_report_request = null, string $contentType = self::contentTypes['createConsumerRiskReport'][0])
     {
@@ -798,12 +798,12 @@ class FuseApi
     /**
      * Operation createConsumerRiskReportWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateConsumerRiskReportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\CreateConsumerRiskReportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createConsumerRiskReportWithHttpInfo($create_consumer_risk_report_request = null, string $contentType = self::contentTypes['createConsumerRiskReport'][0])
     {
@@ -846,23 +846,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateConsumerRiskReportResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\CreateConsumerRiskReportResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateConsumerRiskReportResponse' !== 'string') {
+                        if ('\FuseClient\Model\CreateConsumerRiskReportResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateConsumerRiskReportResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\CreateConsumerRiskReportResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateConsumerRiskReportResponse';
+            $returnType = '\FuseClient\Model\CreateConsumerRiskReportResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -883,7 +883,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateConsumerRiskReportResponse',
+                        '\FuseClient\Model\CreateConsumerRiskReportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -896,7 +896,7 @@ class FuseApi
     /**
      * Operation createConsumerRiskReportAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class FuseApi
     /**
      * Operation createConsumerRiskReportAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class FuseApi
      */
     public function createConsumerRiskReportAsyncWithHttpInfo($create_consumer_risk_report_request = null, string $contentType = self::contentTypes['createConsumerRiskReport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateConsumerRiskReportResponse';
+        $returnType = '\FuseClient\Model\CreateConsumerRiskReportResponse';
         $request = $this->createConsumerRiskReportRequest($create_consumer_risk_report_request, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class FuseApi
     /**
      * Create request for operation 'createConsumerRiskReport'
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportRequest $create_consumer_risk_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1060,12 +1060,12 @@ class FuseApi
     /**
      * Operation createConsumerRiskReportCustomization
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request create_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request create_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReportCustomization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse
+     * @return \FuseClient\Model\CreateConsumerRiskReportCustomizationResponse
      */
     public function createConsumerRiskReportCustomization($create_consumer_risk_report_customization_request = null, string $contentType = self::contentTypes['createConsumerRiskReportCustomization'][0])
     {
@@ -1076,12 +1076,12 @@ class FuseApi
     /**
      * Operation createConsumerRiskReportCustomizationWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReportCustomization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\CreateConsumerRiskReportCustomizationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createConsumerRiskReportCustomizationWithHttpInfo($create_consumer_risk_report_customization_request = null, string $contentType = self::contentTypes['createConsumerRiskReportCustomization'][0])
     {
@@ -1124,23 +1124,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\CreateConsumerRiskReportCustomizationResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse' !== 'string') {
+                        if ('\FuseClient\Model\CreateConsumerRiskReportCustomizationResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\CreateConsumerRiskReportCustomizationResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse';
+            $returnType = '\FuseClient\Model\CreateConsumerRiskReportCustomizationResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1161,7 +1161,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse',
+                        '\FuseClient\Model\CreateConsumerRiskReportCustomizationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1174,7 +1174,7 @@ class FuseApi
     /**
      * Operation createConsumerRiskReportCustomizationAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReportCustomization'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1193,7 +1193,7 @@ class FuseApi
     /**
      * Operation createConsumerRiskReportCustomizationAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReportCustomization'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1201,7 +1201,7 @@ class FuseApi
      */
     public function createConsumerRiskReportCustomizationAsyncWithHttpInfo($create_consumer_risk_report_customization_request = null, string $contentType = self::contentTypes['createConsumerRiskReportCustomization'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationResponse';
+        $returnType = '\FuseClient\Model\CreateConsumerRiskReportCustomizationResponse';
         $request = $this->createConsumerRiskReportCustomizationRequest($create_consumer_risk_report_customization_request, $contentType);
 
         return $this->client
@@ -1243,7 +1243,7 @@ class FuseApi
     /**
      * Create request for operation 'createConsumerRiskReportCustomization'
      *
-     * @param  \OpenAPI\Client\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\CreateConsumerRiskReportCustomizationRequest $create_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createConsumerRiskReportCustomization'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1338,12 +1338,12 @@ class FuseApi
     /**
      * Operation createLinkToken
      *
-     * @param  \OpenAPI\Client\Model\CreateLinkTokenRequest $create_link_token_request create_link_token_request (optional)
+     * @param  \FuseClient\Model\CreateLinkTokenRequest $create_link_token_request create_link_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createLinkToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateLinkTokenResponse
+     * @return \FuseClient\Model\CreateLinkTokenResponse
      */
     public function createLinkToken($create_link_token_request = null, string $contentType = self::contentTypes['createLinkToken'][0])
     {
@@ -1354,12 +1354,12 @@ class FuseApi
     /**
      * Operation createLinkTokenWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateLinkTokenRequest $create_link_token_request (optional)
+     * @param  \FuseClient\Model\CreateLinkTokenRequest $create_link_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createLinkToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateLinkTokenResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\CreateLinkTokenResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createLinkTokenWithHttpInfo($create_link_token_request = null, string $contentType = self::contentTypes['createLinkToken'][0])
     {
@@ -1402,23 +1402,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateLinkTokenResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\CreateLinkTokenResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateLinkTokenResponse' !== 'string') {
+                        if ('\FuseClient\Model\CreateLinkTokenResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateLinkTokenResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\CreateLinkTokenResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateLinkTokenResponse';
+            $returnType = '\FuseClient\Model\CreateLinkTokenResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1439,7 +1439,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateLinkTokenResponse',
+                        '\FuseClient\Model\CreateLinkTokenResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1452,7 +1452,7 @@ class FuseApi
     /**
      * Operation createLinkTokenAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateLinkTokenRequest $create_link_token_request (optional)
+     * @param  \FuseClient\Model\CreateLinkTokenRequest $create_link_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createLinkToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1471,7 +1471,7 @@ class FuseApi
     /**
      * Operation createLinkTokenAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateLinkTokenRequest $create_link_token_request (optional)
+     * @param  \FuseClient\Model\CreateLinkTokenRequest $create_link_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createLinkToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1479,7 +1479,7 @@ class FuseApi
      */
     public function createLinkTokenAsyncWithHttpInfo($create_link_token_request = null, string $contentType = self::contentTypes['createLinkToken'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateLinkTokenResponse';
+        $returnType = '\FuseClient\Model\CreateLinkTokenResponse';
         $request = $this->createLinkTokenRequest($create_link_token_request, $contentType);
 
         return $this->client
@@ -1521,7 +1521,7 @@ class FuseApi
     /**
      * Create request for operation 'createLinkToken'
      *
-     * @param  \OpenAPI\Client\Model\CreateLinkTokenRequest $create_link_token_request (optional)
+     * @param  \FuseClient\Model\CreateLinkTokenRequest $create_link_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createLinkToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1616,12 +1616,12 @@ class FuseApi
     /**
      * Operation createSession
      *
-     * @param  \OpenAPI\Client\Model\CreateSessionRequest $create_session_request create_session_request (optional)
+     * @param  \FuseClient\Model\CreateSessionRequest $create_session_request create_session_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSession'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateSessionResponse
+     * @return \FuseClient\Model\CreateSessionResponse
      */
     public function createSession($create_session_request = null, string $contentType = self::contentTypes['createSession'][0])
     {
@@ -1632,12 +1632,12 @@ class FuseApi
     /**
      * Operation createSessionWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateSessionRequest $create_session_request (optional)
+     * @param  \FuseClient\Model\CreateSessionRequest $create_session_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSession'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateSessionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\CreateSessionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createSessionWithHttpInfo($create_session_request = null, string $contentType = self::contentTypes['createSession'][0])
     {
@@ -1680,23 +1680,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateSessionResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\CreateSessionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateSessionResponse' !== 'string') {
+                        if ('\FuseClient\Model\CreateSessionResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateSessionResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\CreateSessionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateSessionResponse';
+            $returnType = '\FuseClient\Model\CreateSessionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1717,7 +1717,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateSessionResponse',
+                        '\FuseClient\Model\CreateSessionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1730,7 +1730,7 @@ class FuseApi
     /**
      * Operation createSessionAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateSessionRequest $create_session_request (optional)
+     * @param  \FuseClient\Model\CreateSessionRequest $create_session_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSession'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1749,7 +1749,7 @@ class FuseApi
     /**
      * Operation createSessionAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateSessionRequest $create_session_request (optional)
+     * @param  \FuseClient\Model\CreateSessionRequest $create_session_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSession'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1757,7 +1757,7 @@ class FuseApi
      */
     public function createSessionAsyncWithHttpInfo($create_session_request = null, string $contentType = self::contentTypes['createSession'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateSessionResponse';
+        $returnType = '\FuseClient\Model\CreateSessionResponse';
         $request = $this->createSessionRequest($create_session_request, $contentType);
 
         return $this->client
@@ -1799,7 +1799,7 @@ class FuseApi
     /**
      * Create request for operation 'createSession'
      *
-     * @param  \OpenAPI\Client\Model\CreateSessionRequest $create_session_request (optional)
+     * @param  \FuseClient\Model\CreateSessionRequest $create_session_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSession'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1899,9 +1899,9 @@ class FuseApi
      * @param  string $financial_connection_id_to_delete financial_connection_id_to_delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFinancialConnection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeleteFinancialConnectionResponse
+     * @return \FuseClient\Model\DeleteFinancialConnectionResponse
      */
     public function deleteFinancialConnection($financial_connection_id_to_delete, string $contentType = self::contentTypes['deleteFinancialConnection'][0])
     {
@@ -1917,9 +1917,9 @@ class FuseApi
      * @param  string $financial_connection_id_to_delete (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFinancialConnection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeleteFinancialConnectionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\DeleteFinancialConnectionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteFinancialConnectionWithHttpInfo($financial_connection_id_to_delete, string $contentType = self::contentTypes['deleteFinancialConnection'][0])
     {
@@ -1962,23 +1962,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeleteFinancialConnectionResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\DeleteFinancialConnectionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DeleteFinancialConnectionResponse' !== 'string') {
+                        if ('\FuseClient\Model\DeleteFinancialConnectionResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeleteFinancialConnectionResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\DeleteFinancialConnectionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeleteFinancialConnectionResponse';
+            $returnType = '\FuseClient\Model\DeleteFinancialConnectionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1999,7 +1999,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeleteFinancialConnectionResponse',
+                        '\FuseClient\Model\DeleteFinancialConnectionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2043,7 +2043,7 @@ class FuseApi
      */
     public function deleteFinancialConnectionAsyncWithHttpInfo($financial_connection_id_to_delete, string $contentType = self::contentTypes['deleteFinancialConnection'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeleteFinancialConnectionResponse';
+        $returnType = '\FuseClient\Model\DeleteFinancialConnectionResponse';
         $request = $this->deleteFinancialConnectionRequest($financial_connection_id_to_delete, $contentType);
 
         return $this->client
@@ -2189,12 +2189,12 @@ class FuseApi
      *
      * @param  string $fuse_client_id fuse_client_id (required)
      * @param  string $fuse_api_key fuse_api_key (required)
-     * @param  \OpenAPI\Client\Model\EnrichTransactionsRequest $enrich_transactions_request enrich_transactions_request (optional)
+     * @param  \FuseClient\Model\EnrichTransactionsRequest $enrich_transactions_request enrich_transactions_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['enrichTransactions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EnrichTransactionsResponse
+     * @return \FuseClient\Model\EnrichTransactionsResponse
      */
     public function enrichTransactions($fuse_client_id, $fuse_api_key, $enrich_transactions_request = null, string $contentType = self::contentTypes['enrichTransactions'][0])
     {
@@ -2207,12 +2207,12 @@ class FuseApi
      *
      * @param  string $fuse_client_id (required)
      * @param  string $fuse_api_key (required)
-     * @param  \OpenAPI\Client\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
+     * @param  \FuseClient\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['enrichTransactions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EnrichTransactionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\EnrichTransactionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function enrichTransactionsWithHttpInfo($fuse_client_id, $fuse_api_key, $enrich_transactions_request = null, string $contentType = self::contentTypes['enrichTransactions'][0])
     {
@@ -2255,23 +2255,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EnrichTransactionsResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\EnrichTransactionsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EnrichTransactionsResponse' !== 'string') {
+                        if ('\FuseClient\Model\EnrichTransactionsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EnrichTransactionsResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\EnrichTransactionsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EnrichTransactionsResponse';
+            $returnType = '\FuseClient\Model\EnrichTransactionsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2292,7 +2292,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EnrichTransactionsResponse',
+                        '\FuseClient\Model\EnrichTransactionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2307,7 +2307,7 @@ class FuseApi
      *
      * @param  string $fuse_client_id (required)
      * @param  string $fuse_api_key (required)
-     * @param  \OpenAPI\Client\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
+     * @param  \FuseClient\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['enrichTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2328,7 +2328,7 @@ class FuseApi
      *
      * @param  string $fuse_client_id (required)
      * @param  string $fuse_api_key (required)
-     * @param  \OpenAPI\Client\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
+     * @param  \FuseClient\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['enrichTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2336,7 +2336,7 @@ class FuseApi
      */
     public function enrichTransactionsAsyncWithHttpInfo($fuse_client_id, $fuse_api_key, $enrich_transactions_request = null, string $contentType = self::contentTypes['enrichTransactions'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EnrichTransactionsResponse';
+        $returnType = '\FuseClient\Model\EnrichTransactionsResponse';
         $request = $this->enrichTransactionsRequest($fuse_client_id, $fuse_api_key, $enrich_transactions_request, $contentType);
 
         return $this->client
@@ -2380,7 +2380,7 @@ class FuseApi
      *
      * @param  string $fuse_client_id (required)
      * @param  string $fuse_api_key (required)
-     * @param  \OpenAPI\Client\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
+     * @param  \FuseClient\Model\EnrichTransactionsRequest $enrich_transactions_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['enrichTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2497,12 +2497,12 @@ class FuseApi
     /**
      * Operation exchangeFinancialConnectionsPublicToken
      *
-     * @param  \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request exchange_financial_connections_public_token_request (optional)
+     * @param  \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request exchange_financial_connections_public_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['exchangeFinancialConnectionsPublicToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse
+     * @return \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse
      */
     public function exchangeFinancialConnectionsPublicToken($exchange_financial_connections_public_token_request = null, string $contentType = self::contentTypes['exchangeFinancialConnectionsPublicToken'][0])
     {
@@ -2513,12 +2513,12 @@ class FuseApi
     /**
      * Operation exchangeFinancialConnectionsPublicTokenWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
+     * @param  \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['exchangeFinancialConnectionsPublicToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function exchangeFinancialConnectionsPublicTokenWithHttpInfo($exchange_financial_connections_public_token_request = null, string $contentType = self::contentTypes['exchangeFinancialConnectionsPublicToken'][0])
     {
@@ -2561,23 +2561,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse' !== 'string') {
+                        if ('\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse';
+            $returnType = '\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2598,7 +2598,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse',
+                        '\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2611,7 +2611,7 @@ class FuseApi
     /**
      * Operation exchangeFinancialConnectionsPublicTokenAsync
      *
-     * @param  \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
+     * @param  \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['exchangeFinancialConnectionsPublicToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2630,7 +2630,7 @@ class FuseApi
     /**
      * Operation exchangeFinancialConnectionsPublicTokenAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
+     * @param  \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['exchangeFinancialConnectionsPublicToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2638,7 +2638,7 @@ class FuseApi
      */
     public function exchangeFinancialConnectionsPublicTokenAsyncWithHttpInfo($exchange_financial_connections_public_token_request = null, string $contentType = self::contentTypes['exchangeFinancialConnectionsPublicToken'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenResponse';
+        $returnType = '\FuseClient\Model\ExchangeFinancialConnectionsPublicTokenResponse';
         $request = $this->exchangeFinancialConnectionsPublicTokenRequest($exchange_financial_connections_public_token_request, $contentType);
 
         return $this->client
@@ -2680,7 +2680,7 @@ class FuseApi
     /**
      * Create request for operation 'exchangeFinancialConnectionsPublicToken'
      *
-     * @param  \OpenAPI\Client\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
+     * @param  \FuseClient\Model\ExchangeFinancialConnectionsPublicTokenRequest $exchange_financial_connections_public_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['exchangeFinancialConnectionsPublicToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2775,12 +2775,12 @@ class FuseApi
     /**
      * Operation getAssetReport
      *
-     * @param  \OpenAPI\Client\Model\GetAssetReportRequest $get_asset_report_request get_asset_report_request (optional)
+     * @param  \FuseClient\Model\GetAssetReportRequest $get_asset_report_request get_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAssetReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RefreshAssetReportResponse
+     * @return \FuseClient\Model\RefreshAssetReportResponse
      */
     public function getAssetReport($get_asset_report_request = null, string $contentType = self::contentTypes['getAssetReport'][0])
     {
@@ -2791,12 +2791,12 @@ class FuseApi
     /**
      * Operation getAssetReportWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\GetAssetReportRequest $get_asset_report_request (optional)
+     * @param  \FuseClient\Model\GetAssetReportRequest $get_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAssetReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RefreshAssetReportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\RefreshAssetReportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAssetReportWithHttpInfo($get_asset_report_request = null, string $contentType = self::contentTypes['getAssetReport'][0])
     {
@@ -2839,23 +2839,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\RefreshAssetReportResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\RefreshAssetReportResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RefreshAssetReportResponse' !== 'string') {
+                        if ('\FuseClient\Model\RefreshAssetReportResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RefreshAssetReportResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\RefreshAssetReportResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\RefreshAssetReportResponse';
+            $returnType = '\FuseClient\Model\RefreshAssetReportResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2876,7 +2876,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RefreshAssetReportResponse',
+                        '\FuseClient\Model\RefreshAssetReportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2889,7 +2889,7 @@ class FuseApi
     /**
      * Operation getAssetReportAsync
      *
-     * @param  \OpenAPI\Client\Model\GetAssetReportRequest $get_asset_report_request (optional)
+     * @param  \FuseClient\Model\GetAssetReportRequest $get_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2908,7 +2908,7 @@ class FuseApi
     /**
      * Operation getAssetReportAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\GetAssetReportRequest $get_asset_report_request (optional)
+     * @param  \FuseClient\Model\GetAssetReportRequest $get_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2916,7 +2916,7 @@ class FuseApi
      */
     public function getAssetReportAsyncWithHttpInfo($get_asset_report_request = null, string $contentType = self::contentTypes['getAssetReport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RefreshAssetReportResponse';
+        $returnType = '\FuseClient\Model\RefreshAssetReportResponse';
         $request = $this->getAssetReportRequest($get_asset_report_request, $contentType);
 
         return $this->client
@@ -2958,7 +2958,7 @@ class FuseApi
     /**
      * Create request for operation 'getAssetReport'
      *
-     * @param  \OpenAPI\Client\Model\GetAssetReportRequest $get_asset_report_request (optional)
+     * @param  \FuseClient\Model\GetAssetReportRequest $get_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3059,9 +3059,9 @@ class FuseApi
      * @param  bool $recalculate An optional boolean parameter. If set to true, the system will recalculate before returning the risk report. If omitted or set to false, the current risk report will be returned without recalculation. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getConsumerRiskReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetConsumerRiskReportResponse
+     * @return \FuseClient\Model\GetConsumerRiskReportResponse
      */
     public function getConsumerRiskReport($consumer_risk_report_id, $recalculate = null, string $contentType = self::contentTypes['getConsumerRiskReport'][0])
     {
@@ -3078,9 +3078,9 @@ class FuseApi
      * @param  bool $recalculate An optional boolean parameter. If set to true, the system will recalculate before returning the risk report. If omitted or set to false, the current risk report will be returned without recalculation. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getConsumerRiskReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetConsumerRiskReportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetConsumerRiskReportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getConsumerRiskReportWithHttpInfo($consumer_risk_report_id, $recalculate = null, string $contentType = self::contentTypes['getConsumerRiskReport'][0])
     {
@@ -3123,23 +3123,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetConsumerRiskReportResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetConsumerRiskReportResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetConsumerRiskReportResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetConsumerRiskReportResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetConsumerRiskReportResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetConsumerRiskReportResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetConsumerRiskReportResponse';
+            $returnType = '\FuseClient\Model\GetConsumerRiskReportResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3160,7 +3160,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetConsumerRiskReportResponse',
+                        '\FuseClient\Model\GetConsumerRiskReportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3206,7 +3206,7 @@ class FuseApi
      */
     public function getConsumerRiskReportAsyncWithHttpInfo($consumer_risk_report_id, $recalculate = null, string $contentType = self::contentTypes['getConsumerRiskReport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetConsumerRiskReportResponse';
+        $returnType = '\FuseClient\Model\GetConsumerRiskReportResponse';
         $request = $this->getConsumerRiskReportRequest($consumer_risk_report_id, $recalculate, $contentType);
 
         return $this->client
@@ -3366,9 +3366,9 @@ class FuseApi
      * @param  string $entity_id entity_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getEntity'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetEntityResponse
+     * @return \FuseClient\Model\GetEntityResponse
      */
     public function getEntity($entity_id, string $contentType = self::contentTypes['getEntity'][0])
     {
@@ -3384,9 +3384,9 @@ class FuseApi
      * @param  string $entity_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getEntity'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetEntityResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetEntityResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEntityWithHttpInfo($entity_id, string $contentType = self::contentTypes['getEntity'][0])
     {
@@ -3429,23 +3429,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetEntityResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetEntityResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetEntityResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetEntityResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetEntityResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetEntityResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetEntityResponse';
+            $returnType = '\FuseClient\Model\GetEntityResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3466,7 +3466,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetEntityResponse',
+                        '\FuseClient\Model\GetEntityResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3510,7 +3510,7 @@ class FuseApi
      */
     public function getEntityAsyncWithHttpInfo($entity_id, string $contentType = self::contentTypes['getEntity'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetEntityResponse';
+        $returnType = '\FuseClient\Model\GetEntityResponse';
         $request = $this->getEntityRequest($entity_id, $contentType);
 
         return $this->client
@@ -3659,9 +3659,9 @@ class FuseApi
      * @param  string $account_id account_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinanceScore'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinanceScoreResponse
+     * @return \FuseClient\Model\GetFinanceScoreResponse
      */
     public function getFinanceScore($account_id, string $contentType = self::contentTypes['getFinanceScore'][0])
     {
@@ -3677,9 +3677,9 @@ class FuseApi
      * @param  string $account_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinanceScore'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinanceScoreResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinanceScoreResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinanceScoreWithHttpInfo($account_id, string $contentType = self::contentTypes['getFinanceScore'][0])
     {
@@ -3722,23 +3722,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinanceScoreResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinanceScoreResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinanceScoreResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinanceScoreResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinanceScoreResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinanceScoreResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinanceScoreResponse';
+            $returnType = '\FuseClient\Model\GetFinanceScoreResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3759,7 +3759,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinanceScoreResponse',
+                        '\FuseClient\Model\GetFinanceScoreResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3803,7 +3803,7 @@ class FuseApi
      */
     public function getFinanceScoreAsyncWithHttpInfo($account_id, string $contentType = self::contentTypes['getFinanceScore'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinanceScoreResponse';
+        $returnType = '\FuseClient\Model\GetFinanceScoreResponse';
         $request = $this->getFinanceScoreRequest($account_id, $contentType);
 
         return $this->client
@@ -3952,9 +3952,9 @@ class FuseApi
      * @param  string $financial_connection_id financial_connection_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialConnectionResponse
+     * @return \FuseClient\Model\GetFinancialConnectionResponse
      */
     public function getFinancialConnection($financial_connection_id, string $contentType = self::contentTypes['getFinancialConnection'][0])
     {
@@ -3970,9 +3970,9 @@ class FuseApi
      * @param  string $financial_connection_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialConnectionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialConnectionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialConnectionWithHttpInfo($financial_connection_id, string $contentType = self::contentTypes['getFinancialConnection'][0])
     {
@@ -4015,23 +4015,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialConnectionResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialConnectionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialConnectionResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialConnectionResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialConnectionResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialConnectionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionResponse';
+            $returnType = '\FuseClient\Model\GetFinancialConnectionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4052,7 +4052,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialConnectionResponse',
+                        '\FuseClient\Model\GetFinancialConnectionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4096,7 +4096,7 @@ class FuseApi
      */
     public function getFinancialConnectionAsyncWithHttpInfo($financial_connection_id, string $contentType = self::contentTypes['getFinancialConnection'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionResponse';
+        $returnType = '\FuseClient\Model\GetFinancialConnectionResponse';
         $request = $this->getFinancialConnectionRequest($financial_connection_id, $contentType);
 
         return $this->client
@@ -4242,12 +4242,12 @@ class FuseApi
      *
      * Get account details
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request get_financial_connections_account_details_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request get_financial_connections_account_details_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountDetails'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse
+     * @return \FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse
      */
     public function getFinancialConnectionsAccountDetails($get_financial_connections_account_details_request, string $contentType = self::contentTypes['getFinancialConnectionsAccountDetails'][0])
     {
@@ -4260,12 +4260,12 @@ class FuseApi
      *
      * Get account details
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountDetails'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialConnectionsAccountDetailsWithHttpInfo($get_financial_connections_account_details_request, string $contentType = self::contentTypes['getFinancialConnectionsAccountDetails'][0])
     {
@@ -4308,23 +4308,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse';
+            $returnType = '\FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4345,7 +4345,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse',
+                        '\FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4360,7 +4360,7 @@ class FuseApi
      *
      * Get account details
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountDetails'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4381,7 +4381,7 @@ class FuseApi
      *
      * Get account details
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountDetails'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4389,7 +4389,7 @@ class FuseApi
      */
     public function getFinancialConnectionsAccountDetailsAsyncWithHttpInfo($get_financial_connections_account_details_request, string $contentType = self::contentTypes['getFinancialConnectionsAccountDetails'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsResponse';
+        $returnType = '\FuseClient\Model\GetFinancialConnectionsAccountDetailsResponse';
         $request = $this->getFinancialConnectionsAccountDetailsRequest($get_financial_connections_account_details_request, $contentType);
 
         return $this->client
@@ -4431,7 +4431,7 @@ class FuseApi
     /**
      * Create request for operation 'getFinancialConnectionsAccountDetails'
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountDetailsRequest $get_financial_connections_account_details_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountDetails'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4532,12 +4532,12 @@ class FuseApi
     /**
      * Operation getFinancialConnectionsAccountStatement
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request get_financial_connections_account_statement_request (optional)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request get_financial_connections_account_statement_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountStatement'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse
+     * @return \FuseClient\Model\GetFinancialConnectionsAccountStatementResponse
      */
     public function getFinancialConnectionsAccountStatement($get_financial_connections_account_statement_request = null, string $contentType = self::contentTypes['getFinancialConnectionsAccountStatement'][0])
     {
@@ -4548,12 +4548,12 @@ class FuseApi
     /**
      * Operation getFinancialConnectionsAccountStatementWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountStatement'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialConnectionsAccountStatementResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialConnectionsAccountStatementWithHttpInfo($get_financial_connections_account_statement_request = null, string $contentType = self::contentTypes['getFinancialConnectionsAccountStatement'][0])
     {
@@ -4596,23 +4596,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialConnectionsAccountStatementResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialConnectionsAccountStatementResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialConnectionsAccountStatementResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse';
+            $returnType = '\FuseClient\Model\GetFinancialConnectionsAccountStatementResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4633,7 +4633,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse',
+                        '\FuseClient\Model\GetFinancialConnectionsAccountStatementResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4646,7 +4646,7 @@ class FuseApi
     /**
      * Operation getFinancialConnectionsAccountStatementAsync
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountStatement'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4665,7 +4665,7 @@ class FuseApi
     /**
      * Operation getFinancialConnectionsAccountStatementAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountStatement'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4673,7 +4673,7 @@ class FuseApi
      */
     public function getFinancialConnectionsAccountStatementAsyncWithHttpInfo($get_financial_connections_account_statement_request = null, string $contentType = self::contentTypes['getFinancialConnectionsAccountStatement'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementResponse';
+        $returnType = '\FuseClient\Model\GetFinancialConnectionsAccountStatementResponse';
         $request = $this->getFinancialConnectionsAccountStatementRequest($get_financial_connections_account_statement_request, $contentType);
 
         return $this->client
@@ -4715,7 +4715,7 @@ class FuseApi
     /**
      * Create request for operation 'getFinancialConnectionsAccountStatement'
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountStatementRequest $get_financial_connections_account_statement_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccountStatement'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4812,12 +4812,12 @@ class FuseApi
      *
      * Get accounts
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request get_financial_connections_accounts_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request get_financial_connections_accounts_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccounts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse
+     * @return \FuseClient\Model\GetFinancialConnectionsAccountsResponse
      */
     public function getFinancialConnectionsAccounts($get_financial_connections_accounts_request, string $contentType = self::contentTypes['getFinancialConnectionsAccounts'][0])
     {
@@ -4830,12 +4830,12 @@ class FuseApi
      *
      * Get accounts
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccounts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialConnectionsAccountsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialConnectionsAccountsWithHttpInfo($get_financial_connections_accounts_request, string $contentType = self::contentTypes['getFinancialConnectionsAccounts'][0])
     {
@@ -4878,23 +4878,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialConnectionsAccountsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialConnectionsAccountsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialConnectionsAccountsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse';
+            $returnType = '\FuseClient\Model\GetFinancialConnectionsAccountsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4915,7 +4915,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse',
+                        '\FuseClient\Model\GetFinancialConnectionsAccountsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4930,7 +4930,7 @@ class FuseApi
      *
      * Get accounts
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccounts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4951,7 +4951,7 @@ class FuseApi
      *
      * Get accounts
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccounts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4959,7 +4959,7 @@ class FuseApi
      */
     public function getFinancialConnectionsAccountsAsyncWithHttpInfo($get_financial_connections_accounts_request, string $contentType = self::contentTypes['getFinancialConnectionsAccounts'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsAccountsResponse';
+        $returnType = '\FuseClient\Model\GetFinancialConnectionsAccountsResponse';
         $request = $this->getFinancialConnectionsAccountsRequest($get_financial_connections_accounts_request, $contentType);
 
         return $this->client
@@ -5001,7 +5001,7 @@ class FuseApi
     /**
      * Create request for operation 'getFinancialConnectionsAccounts'
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsAccountsRequest $get_financial_connections_accounts_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsAccounts'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5104,12 +5104,12 @@ class FuseApi
      *
      * Get balances
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request get_financial_connections_balance_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request get_financial_connections_balance_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsBalances'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse
+     * @return \FuseClient\Model\GetFinancialConnectionsBalanceResponse
      */
     public function getFinancialConnectionsBalances($get_financial_connections_balance_request, string $contentType = self::contentTypes['getFinancialConnectionsBalances'][0])
     {
@@ -5122,12 +5122,12 @@ class FuseApi
      *
      * Get balances
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsBalances'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialConnectionsBalanceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialConnectionsBalancesWithHttpInfo($get_financial_connections_balance_request, string $contentType = self::contentTypes['getFinancialConnectionsBalances'][0])
     {
@@ -5170,23 +5170,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialConnectionsBalanceResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialConnectionsBalanceResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialConnectionsBalanceResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse';
+            $returnType = '\FuseClient\Model\GetFinancialConnectionsBalanceResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5207,7 +5207,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse',
+                        '\FuseClient\Model\GetFinancialConnectionsBalanceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5222,7 +5222,7 @@ class FuseApi
      *
      * Get balances
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsBalances'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5243,7 +5243,7 @@ class FuseApi
      *
      * Get balances
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsBalances'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5251,7 +5251,7 @@ class FuseApi
      */
     public function getFinancialConnectionsBalancesAsyncWithHttpInfo($get_financial_connections_balance_request, string $contentType = self::contentTypes['getFinancialConnectionsBalances'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsBalanceResponse';
+        $returnType = '\FuseClient\Model\GetFinancialConnectionsBalanceResponse';
         $request = $this->getFinancialConnectionsBalancesRequest($get_financial_connections_balance_request, $contentType);
 
         return $this->client
@@ -5293,7 +5293,7 @@ class FuseApi
     /**
      * Create request for operation 'getFinancialConnectionsBalances'
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsBalanceRequest $get_financial_connections_balance_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsBalances'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5396,12 +5396,12 @@ class FuseApi
      *
      * Get account owners
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request get_financial_connections_owners_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request get_financial_connections_owners_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsOwners'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse
+     * @return \FuseClient\Model\GetFinancialConnectionsOwnersResponse
      */
     public function getFinancialConnectionsOwners($get_financial_connections_owners_request, string $contentType = self::contentTypes['getFinancialConnectionsOwners'][0])
     {
@@ -5414,12 +5414,12 @@ class FuseApi
      *
      * Get account owners
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsOwners'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialConnectionsOwnersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialConnectionsOwnersWithHttpInfo($get_financial_connections_owners_request, string $contentType = self::contentTypes['getFinancialConnectionsOwners'][0])
     {
@@ -5462,23 +5462,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialConnectionsOwnersResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialConnectionsOwnersResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialConnectionsOwnersResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse';
+            $returnType = '\FuseClient\Model\GetFinancialConnectionsOwnersResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5499,7 +5499,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse',
+                        '\FuseClient\Model\GetFinancialConnectionsOwnersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5514,7 +5514,7 @@ class FuseApi
      *
      * Get account owners
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsOwners'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5535,7 +5535,7 @@ class FuseApi
      *
      * Get account owners
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsOwners'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5543,7 +5543,7 @@ class FuseApi
      */
     public function getFinancialConnectionsOwnersAsyncWithHttpInfo($get_financial_connections_owners_request, string $contentType = self::contentTypes['getFinancialConnectionsOwners'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsOwnersResponse';
+        $returnType = '\FuseClient\Model\GetFinancialConnectionsOwnersResponse';
         $request = $this->getFinancialConnectionsOwnersRequest($get_financial_connections_owners_request, $contentType);
 
         return $this->client
@@ -5585,7 +5585,7 @@ class FuseApi
     /**
      * Create request for operation 'getFinancialConnectionsOwners'
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsOwnersRequest $get_financial_connections_owners_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsOwners'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5688,12 +5688,12 @@ class FuseApi
      *
      * Get transactions
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request get_financial_connections_transactions_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request get_financial_connections_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsTransactions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse
+     * @return \FuseClient\Model\GetFinancialConnectionsTransactionsResponse
      */
     public function getFinancialConnectionsTransactions($get_financial_connections_transactions_request, string $contentType = self::contentTypes['getFinancialConnectionsTransactions'][0])
     {
@@ -5706,12 +5706,12 @@ class FuseApi
      *
      * Get transactions
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsTransactions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialConnectionsTransactionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialConnectionsTransactionsWithHttpInfo($get_financial_connections_transactions_request, string $contentType = self::contentTypes['getFinancialConnectionsTransactions'][0])
     {
@@ -5754,23 +5754,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialConnectionsTransactionsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialConnectionsTransactionsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialConnectionsTransactionsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse';
+            $returnType = '\FuseClient\Model\GetFinancialConnectionsTransactionsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5791,7 +5791,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse',
+                        '\FuseClient\Model\GetFinancialConnectionsTransactionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5806,7 +5806,7 @@ class FuseApi
      *
      * Get transactions
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5827,7 +5827,7 @@ class FuseApi
      *
      * Get transactions
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5835,7 +5835,7 @@ class FuseApi
      */
     public function getFinancialConnectionsTransactionsAsyncWithHttpInfo($get_financial_connections_transactions_request, string $contentType = self::contentTypes['getFinancialConnectionsTransactions'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialConnectionsTransactionsResponse';
+        $returnType = '\FuseClient\Model\GetFinancialConnectionsTransactionsResponse';
         $request = $this->getFinancialConnectionsTransactionsRequest($get_financial_connections_transactions_request, $contentType);
 
         return $this->client
@@ -5877,7 +5877,7 @@ class FuseApi
     /**
      * Create request for operation 'getFinancialConnectionsTransactions'
      *
-     * @param  \OpenAPI\Client\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
+     * @param  \FuseClient\Model\GetFinancialConnectionsTransactionsRequest $get_financial_connections_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialConnectionsTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5983,9 +5983,9 @@ class FuseApi
      * @param  string $institution_id institution_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialInstitution'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFinancialInstitutionResponse
+     * @return \FuseClient\Model\GetFinancialInstitutionResponse
      */
     public function getFinancialInstitution($institution_id, string $contentType = self::contentTypes['getFinancialInstitution'][0])
     {
@@ -6001,9 +6001,9 @@ class FuseApi
      * @param  string $institution_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFinancialInstitution'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFinancialInstitutionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetFinancialInstitutionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFinancialInstitutionWithHttpInfo($institution_id, string $contentType = self::contentTypes['getFinancialInstitution'][0])
     {
@@ -6046,23 +6046,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFinancialInstitutionResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetFinancialInstitutionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFinancialInstitutionResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetFinancialInstitutionResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFinancialInstitutionResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetFinancialInstitutionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFinancialInstitutionResponse';
+            $returnType = '\FuseClient\Model\GetFinancialInstitutionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6083,7 +6083,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFinancialInstitutionResponse',
+                        '\FuseClient\Model\GetFinancialInstitutionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6127,7 +6127,7 @@ class FuseApi
      */
     public function getFinancialInstitutionAsyncWithHttpInfo($institution_id, string $contentType = self::contentTypes['getFinancialInstitution'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFinancialInstitutionResponse';
+        $returnType = '\FuseClient\Model\GetFinancialInstitutionResponse';
         $request = $this->getFinancialInstitutionRequest($institution_id, $contentType);
 
         return $this->client
@@ -6273,12 +6273,12 @@ class FuseApi
      *
      * Get investment holdings
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request get_investment_holdings_request (required)
+     * @param  \FuseClient\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request get_investment_holdings_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentHoldings'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetInvestmentHoldingsResponse
+     * @return \FuseClient\Model\GetInvestmentHoldingsResponse
      */
     public function getInvestmentHoldings($get_investment_holdings_request, string $contentType = self::contentTypes['getInvestmentHoldings'][0])
     {
@@ -6291,12 +6291,12 @@ class FuseApi
      *
      * Get investment holdings
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
+     * @param  \FuseClient\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentHoldings'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetInvestmentHoldingsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetInvestmentHoldingsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvestmentHoldingsWithHttpInfo($get_investment_holdings_request, string $contentType = self::contentTypes['getInvestmentHoldings'][0])
     {
@@ -6339,23 +6339,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetInvestmentHoldingsResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetInvestmentHoldingsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetInvestmentHoldingsResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetInvestmentHoldingsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetInvestmentHoldingsResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetInvestmentHoldingsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetInvestmentHoldingsResponse';
+            $returnType = '\FuseClient\Model\GetInvestmentHoldingsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6376,7 +6376,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetInvestmentHoldingsResponse',
+                        '\FuseClient\Model\GetInvestmentHoldingsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6391,7 +6391,7 @@ class FuseApi
      *
      * Get investment holdings
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
+     * @param  \FuseClient\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentHoldings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6412,7 +6412,7 @@ class FuseApi
      *
      * Get investment holdings
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
+     * @param  \FuseClient\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentHoldings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6420,7 +6420,7 @@ class FuseApi
      */
     public function getInvestmentHoldingsAsyncWithHttpInfo($get_investment_holdings_request, string $contentType = self::contentTypes['getInvestmentHoldings'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetInvestmentHoldingsResponse';
+        $returnType = '\FuseClient\Model\GetInvestmentHoldingsResponse';
         $request = $this->getInvestmentHoldingsRequest($get_investment_holdings_request, $contentType);
 
         return $this->client
@@ -6462,7 +6462,7 @@ class FuseApi
     /**
      * Create request for operation 'getInvestmentHoldings'
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
+     * @param  \FuseClient\Model\GetInvestmentHoldingsRequest $get_investment_holdings_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentHoldings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6565,12 +6565,12 @@ class FuseApi
      *
      * Get investment transactions
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request get_investment_transactions_request (required)
+     * @param  \FuseClient\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request get_investment_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentTransactions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetInvestmentTransactionsResponse
+     * @return \FuseClient\Model\GetInvestmentTransactionsResponse
      */
     public function getInvestmentTransactions($get_investment_transactions_request, string $contentType = self::contentTypes['getInvestmentTransactions'][0])
     {
@@ -6583,12 +6583,12 @@ class FuseApi
      *
      * Get investment transactions
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
+     * @param  \FuseClient\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentTransactions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetInvestmentTransactionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetInvestmentTransactionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvestmentTransactionsWithHttpInfo($get_investment_transactions_request, string $contentType = self::contentTypes['getInvestmentTransactions'][0])
     {
@@ -6631,23 +6631,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetInvestmentTransactionsResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetInvestmentTransactionsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetInvestmentTransactionsResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetInvestmentTransactionsResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetInvestmentTransactionsResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetInvestmentTransactionsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetInvestmentTransactionsResponse';
+            $returnType = '\FuseClient\Model\GetInvestmentTransactionsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6668,7 +6668,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetInvestmentTransactionsResponse',
+                        '\FuseClient\Model\GetInvestmentTransactionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6683,7 +6683,7 @@ class FuseApi
      *
      * Get investment transactions
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
+     * @param  \FuseClient\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6704,7 +6704,7 @@ class FuseApi
      *
      * Get investment transactions
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
+     * @param  \FuseClient\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6712,7 +6712,7 @@ class FuseApi
      */
     public function getInvestmentTransactionsAsyncWithHttpInfo($get_investment_transactions_request, string $contentType = self::contentTypes['getInvestmentTransactions'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetInvestmentTransactionsResponse';
+        $returnType = '\FuseClient\Model\GetInvestmentTransactionsResponse';
         $request = $this->getInvestmentTransactionsRequest($get_investment_transactions_request, $contentType);
 
         return $this->client
@@ -6754,7 +6754,7 @@ class FuseApi
     /**
      * Create request for operation 'getInvestmentTransactions'
      *
-     * @param  \OpenAPI\Client\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
+     * @param  \FuseClient\Model\GetInvestmentTransactionsRequest $get_investment_transactions_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getInvestmentTransactions'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6857,12 +6857,12 @@ class FuseApi
      *
      * Migrate financial connection
      *
-     * @param  \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request migrate_financial_connections_token_request (optional)
+     * @param  \FuseClient\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request migrate_financial_connections_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['migrateFinancialConnection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse
+     * @return \FuseClient\Model\MigrateFinancialConnectionsTokenResponse
      */
     public function migrateFinancialConnection($migrate_financial_connections_token_request = null, string $contentType = self::contentTypes['migrateFinancialConnection'][0])
     {
@@ -6875,12 +6875,12 @@ class FuseApi
      *
      * Migrate financial connection
      *
-     * @param  \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
+     * @param  \FuseClient\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['migrateFinancialConnection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\MigrateFinancialConnectionsTokenResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function migrateFinancialConnectionWithHttpInfo($migrate_financial_connections_token_request = null, string $contentType = self::contentTypes['migrateFinancialConnection'][0])
     {
@@ -6923,23 +6923,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\MigrateFinancialConnectionsTokenResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse' !== 'string') {
+                        if ('\FuseClient\Model\MigrateFinancialConnectionsTokenResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\MigrateFinancialConnectionsTokenResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse';
+            $returnType = '\FuseClient\Model\MigrateFinancialConnectionsTokenResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6960,7 +6960,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse',
+                        '\FuseClient\Model\MigrateFinancialConnectionsTokenResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6975,7 +6975,7 @@ class FuseApi
      *
      * Migrate financial connection
      *
-     * @param  \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
+     * @param  \FuseClient\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['migrateFinancialConnection'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6996,7 +6996,7 @@ class FuseApi
      *
      * Migrate financial connection
      *
-     * @param  \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
+     * @param  \FuseClient\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['migrateFinancialConnection'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7004,7 +7004,7 @@ class FuseApi
      */
     public function migrateFinancialConnectionAsyncWithHttpInfo($migrate_financial_connections_token_request = null, string $contentType = self::contentTypes['migrateFinancialConnection'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\MigrateFinancialConnectionsTokenResponse';
+        $returnType = '\FuseClient\Model\MigrateFinancialConnectionsTokenResponse';
         $request = $this->migrateFinancialConnectionRequest($migrate_financial_connections_token_request, $contentType);
 
         return $this->client
@@ -7046,7 +7046,7 @@ class FuseApi
     /**
      * Create request for operation 'migrateFinancialConnection'
      *
-     * @param  \OpenAPI\Client\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
+     * @param  \FuseClient\Model\MigrateFinancialConnectionsTokenRequest $migrate_financial_connections_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['migrateFinancialConnection'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7141,12 +7141,12 @@ class FuseApi
     /**
      * Operation refreshAssetReport
      *
-     * @param  \OpenAPI\Client\Model\RefreshAssetReportRequest $refresh_asset_report_request refresh_asset_report_request (optional)
+     * @param  \FuseClient\Model\RefreshAssetReportRequest $refresh_asset_report_request refresh_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['refreshAssetReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AssetReportResponse
+     * @return \FuseClient\Model\AssetReportResponse
      */
     public function refreshAssetReport($refresh_asset_report_request = null, string $contentType = self::contentTypes['refreshAssetReport'][0])
     {
@@ -7157,12 +7157,12 @@ class FuseApi
     /**
      * Operation refreshAssetReportWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
+     * @param  \FuseClient\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['refreshAssetReport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AssetReportResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\AssetReportResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function refreshAssetReportWithHttpInfo($refresh_asset_report_request = null, string $contentType = self::contentTypes['refreshAssetReport'][0])
     {
@@ -7205,23 +7205,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AssetReportResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\AssetReportResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AssetReportResponse' !== 'string') {
+                        if ('\FuseClient\Model\AssetReportResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AssetReportResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\AssetReportResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\AssetReportResponse';
+            $returnType = '\FuseClient\Model\AssetReportResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7242,7 +7242,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AssetReportResponse',
+                        '\FuseClient\Model\AssetReportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7255,7 +7255,7 @@ class FuseApi
     /**
      * Operation refreshAssetReportAsync
      *
-     * @param  \OpenAPI\Client\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
+     * @param  \FuseClient\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['refreshAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7274,7 +7274,7 @@ class FuseApi
     /**
      * Operation refreshAssetReportAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
+     * @param  \FuseClient\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['refreshAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7282,7 +7282,7 @@ class FuseApi
      */
     public function refreshAssetReportAsyncWithHttpInfo($refresh_asset_report_request = null, string $contentType = self::contentTypes['refreshAssetReport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AssetReportResponse';
+        $returnType = '\FuseClient\Model\AssetReportResponse';
         $request = $this->refreshAssetReportRequest($refresh_asset_report_request, $contentType);
 
         return $this->client
@@ -7324,7 +7324,7 @@ class FuseApi
     /**
      * Create request for operation 'refreshAssetReport'
      *
-     * @param  \OpenAPI\Client\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
+     * @param  \FuseClient\Model\RefreshAssetReportRequest $refresh_asset_report_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['refreshAssetReport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7425,9 +7425,9 @@ class FuseApi
      * @param  object $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['syncFinancialConnectionsData'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse
+     * @return \FuseClient\Model\SyncFinancialConnectionsDataResponse
      */
     public function syncFinancialConnectionsData($fuse_verification, $body, string $contentType = self::contentTypes['syncFinancialConnectionsData'][0])
     {
@@ -7444,9 +7444,9 @@ class FuseApi
      * @param  object $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['syncFinancialConnectionsData'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\SyncFinancialConnectionsDataResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function syncFinancialConnectionsDataWithHttpInfo($fuse_verification, $body, string $contentType = self::contentTypes['syncFinancialConnectionsData'][0])
     {
@@ -7489,23 +7489,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\SyncFinancialConnectionsDataResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse' !== 'string') {
+                        if ('\FuseClient\Model\SyncFinancialConnectionsDataResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\SyncFinancialConnectionsDataResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse';
+            $returnType = '\FuseClient\Model\SyncFinancialConnectionsDataResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7526,7 +7526,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse',
+                        '\FuseClient\Model\SyncFinancialConnectionsDataResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7572,7 +7572,7 @@ class FuseApi
      */
     public function syncFinancialConnectionsDataAsyncWithHttpInfo($fuse_verification, $body, string $contentType = self::contentTypes['syncFinancialConnectionsData'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SyncFinancialConnectionsDataResponse';
+        $returnType = '\FuseClient\Model\SyncFinancialConnectionsDataResponse';
         $request = $this->syncFinancialConnectionsDataRequest($fuse_verification, $body, $contentType);
 
         return $this->client
@@ -7730,12 +7730,12 @@ class FuseApi
      * Update consumer risk report customization
      *
      * @param  string $consumer_risk_report_customization_id consumer_risk_report_customization_id (required)
-     * @param  \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request update_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request update_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateConsumerRiskReportCustomization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse
+     * @return \FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse
      */
     public function updateConsumerRiskReportCustomization($consumer_risk_report_customization_id, $update_consumer_risk_report_customization_request = null, string $contentType = self::contentTypes['updateConsumerRiskReportCustomization'][0])
     {
@@ -7749,12 +7749,12 @@ class FuseApi
      * Update consumer risk report customization
      *
      * @param  string $consumer_risk_report_customization_id (required)
-     * @param  \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateConsumerRiskReportCustomization'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateConsumerRiskReportCustomizationWithHttpInfo($consumer_risk_report_customization_id, $update_consumer_risk_report_customization_request = null, string $contentType = self::contentTypes['updateConsumerRiskReportCustomization'][0])
     {
@@ -7797,23 +7797,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse' !== 'string') {
+                        if ('\FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse';
+            $returnType = '\FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7834,7 +7834,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse',
+                        '\FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7850,7 +7850,7 @@ class FuseApi
      * Update consumer risk report customization
      *
      * @param  string $consumer_risk_report_customization_id (required)
-     * @param  \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateConsumerRiskReportCustomization'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7872,7 +7872,7 @@ class FuseApi
      * Update consumer risk report customization
      *
      * @param  string $consumer_risk_report_customization_id (required)
-     * @param  \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateConsumerRiskReportCustomization'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7880,7 +7880,7 @@ class FuseApi
      */
     public function updateConsumerRiskReportCustomizationAsyncWithHttpInfo($consumer_risk_report_customization_id, $update_consumer_risk_report_customization_request = null, string $contentType = self::contentTypes['updateConsumerRiskReportCustomization'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationResponse';
+        $returnType = '\FuseClient\Model\UpdateConsumerRiskReportCustomizationResponse';
         $request = $this->updateConsumerRiskReportCustomizationRequest($consumer_risk_report_customization_id, $update_consumer_risk_report_customization_request, $contentType);
 
         return $this->client
@@ -7923,7 +7923,7 @@ class FuseApi
      * Create request for operation 'updateConsumerRiskReportCustomization'
      *
      * @param  string $consumer_risk_report_customization_id (required)
-     * @param  \OpenAPI\Client\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
+     * @param  \FuseClient\Model\UpdateConsumerRiskReportCustomizationRequest $update_consumer_risk_report_customization_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateConsumerRiskReportCustomization'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8035,12 +8035,12 @@ class FuseApi
      *
      * Get liabilities
      *
-     * @param  \OpenAPI\Client\Model\GetLiabilitiesRequest $get_liabilities_request get_liabilities_request (required)
+     * @param  \FuseClient\Model\GetLiabilitiesRequest $get_liabilities_request get_liabilities_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['v1FinancialConnectionsLiabilitiesPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetLiabilitiesResponse
+     * @return \FuseClient\Model\GetLiabilitiesResponse
      */
     public function v1FinancialConnectionsLiabilitiesPost($get_liabilities_request, string $contentType = self::contentTypes['v1FinancialConnectionsLiabilitiesPost'][0])
     {
@@ -8053,12 +8053,12 @@ class FuseApi
      *
      * Get liabilities
      *
-     * @param  \OpenAPI\Client\Model\GetLiabilitiesRequest $get_liabilities_request (required)
+     * @param  \FuseClient\Model\GetLiabilitiesRequest $get_liabilities_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['v1FinancialConnectionsLiabilitiesPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \FuseClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetLiabilitiesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FuseClient\Model\GetLiabilitiesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function v1FinancialConnectionsLiabilitiesPostWithHttpInfo($get_liabilities_request, string $contentType = self::contentTypes['v1FinancialConnectionsLiabilitiesPost'][0])
     {
@@ -8101,23 +8101,23 @@ class FuseApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetLiabilitiesResponse' === '\SplFileObject') {
+                    if ('\FuseClient\Model\GetLiabilitiesResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetLiabilitiesResponse' !== 'string') {
+                        if ('\FuseClient\Model\GetLiabilitiesResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetLiabilitiesResponse', []),
+                        ObjectSerializer::deserialize($content, '\FuseClient\Model\GetLiabilitiesResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetLiabilitiesResponse';
+            $returnType = '\FuseClient\Model\GetLiabilitiesResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -8138,7 +8138,7 @@ class FuseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetLiabilitiesResponse',
+                        '\FuseClient\Model\GetLiabilitiesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8153,7 +8153,7 @@ class FuseApi
      *
      * Get liabilities
      *
-     * @param  \OpenAPI\Client\Model\GetLiabilitiesRequest $get_liabilities_request (required)
+     * @param  \FuseClient\Model\GetLiabilitiesRequest $get_liabilities_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['v1FinancialConnectionsLiabilitiesPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8174,7 +8174,7 @@ class FuseApi
      *
      * Get liabilities
      *
-     * @param  \OpenAPI\Client\Model\GetLiabilitiesRequest $get_liabilities_request (required)
+     * @param  \FuseClient\Model\GetLiabilitiesRequest $get_liabilities_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['v1FinancialConnectionsLiabilitiesPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8182,7 +8182,7 @@ class FuseApi
      */
     public function v1FinancialConnectionsLiabilitiesPostAsyncWithHttpInfo($get_liabilities_request, string $contentType = self::contentTypes['v1FinancialConnectionsLiabilitiesPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetLiabilitiesResponse';
+        $returnType = '\FuseClient\Model\GetLiabilitiesResponse';
         $request = $this->v1FinancialConnectionsLiabilitiesPostRequest($get_liabilities_request, $contentType);
 
         return $this->client
@@ -8224,7 +8224,7 @@ class FuseApi
     /**
      * Create request for operation 'v1FinancialConnectionsLiabilitiesPost'
      *
-     * @param  \OpenAPI\Client\Model\GetLiabilitiesRequest $get_liabilities_request (required)
+     * @param  \FuseClient\Model\GetLiabilitiesRequest $get_liabilities_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['v1FinancialConnectionsLiabilitiesPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

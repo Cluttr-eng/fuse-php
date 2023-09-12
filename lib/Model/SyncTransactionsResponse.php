@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * SyncTransactionsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class SyncTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'added' => '\OpenAPI\Client\Model\Transaction[]',
-        'modified' => '\OpenAPI\Client\Model\Transaction[]',
-        'removed' => '\OpenAPI\Client\Model\SyncTransactionsResponseRemovedInner[]',
+        'added' => '\FuseClient\Model\Transaction[]',
+        'modified' => '\FuseClient\Model\Transaction[]',
+        'removed' => '\FuseClient\Model\SyncTransactionsResponseRemovedInner[]',
         'next_cursor' => 'string',
         'has_next' => 'bool',
         'request_id' => 'string'
@@ -327,7 +327,7 @@ class SyncTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets added
      *
-     * @return \OpenAPI\Client\Model\Transaction[]|null
+     * @return \FuseClient\Model\Transaction[]|null
      */
     public function getAdded()
     {
@@ -337,7 +337,7 @@ class SyncTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets added
      *
-     * @param \OpenAPI\Client\Model\Transaction[]|null $added Transactions that have been added to the item since `cursor` ordered by ascending last modified time.
+     * @param \FuseClient\Model\Transaction[]|null $added Transactions that have been added to the item since `cursor` ordered by ascending last modified time.
      *
      * @return self
      */
@@ -354,7 +354,7 @@ class SyncTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets modified
      *
-     * @return \OpenAPI\Client\Model\Transaction[]|null
+     * @return \FuseClient\Model\Transaction[]|null
      */
     public function getModified()
     {
@@ -364,7 +364,7 @@ class SyncTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets modified
      *
-     * @param \OpenAPI\Client\Model\Transaction[]|null $modified Transactions that have been modified on the item since `cursor` ordered by ascending last modified time.
+     * @param \FuseClient\Model\Transaction[]|null $modified Transactions that have been modified on the item since `cursor` ordered by ascending last modified time.
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class SyncTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets removed
      *
-     * @return \OpenAPI\Client\Model\SyncTransactionsResponseRemovedInner[]|null
+     * @return \FuseClient\Model\SyncTransactionsResponseRemovedInner[]|null
      */
     public function getRemoved()
     {
@@ -391,7 +391,7 @@ class SyncTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets removed
      *
-     * @param \OpenAPI\Client\Model\SyncTransactionsResponseRemovedInner[]|null $removed Transactions that have been removed from the item since `cursor` ordered by ascending last modified time.
+     * @param \FuseClient\Model\SyncTransactionsResponseRemovedInner[]|null $removed Transactions that have been removed from the item since `cursor` ordered by ascending last modified time.
      *
      * @return self
      */

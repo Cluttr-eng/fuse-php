@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetFinancialConnectionsOwnersResponseAccountsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetFinancialConnectionsOwnersResponseAccountsInner implements ModelInterfa
       */
     protected static $openAPITypes = [
         'remote_account_id' => 'string',
-        'owners' => '\OpenAPI\Client\Model\FinancialConnectionsOwner[]'
+        'owners' => '\FuseClient\Model\FinancialConnectionsOwner[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class GetFinancialConnectionsOwnersResponseAccountsInner implements ModelInterfa
     /**
      * Gets owners
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsOwner[]
+     * @return \FuseClient\Model\FinancialConnectionsOwner[]
      */
     public function getOwners()
     {
@@ -342,7 +342,7 @@ class GetFinancialConnectionsOwnersResponseAccountsInner implements ModelInterfa
     /**
      * Sets owners
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsOwner[] $owners owners
+     * @param \FuseClient\Model\FinancialConnectionsOwner[] $owners owners
      *
      * @return self
      */

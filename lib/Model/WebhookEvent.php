@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * WebhookEvent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class WebhookEvent implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => '\OpenAPI\Client\Model\WebhookType',
+        'type' => '\FuseClient\Model\WebhookType',
         'financial_connection_id' => 'string',
         'environment' => 'string',
-        'source' => '\OpenAPI\Client\Model\WebhookSource',
+        'source' => '\FuseClient\Model\WebhookSource',
         'verification_token' => 'string',
         'asset_report_id' => 'string',
         'historical_transactions_available' => 'bool',
@@ -387,7 +387,7 @@ class WebhookEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\WebhookType
+     * @return \FuseClient\Model\WebhookType
      */
     public function getType()
     {
@@ -397,7 +397,7 @@ class WebhookEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\WebhookType $type type
+     * @param \FuseClient\Model\WebhookType $type type
      *
      * @return self
      */
@@ -478,7 +478,7 @@ class WebhookEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets source
      *
-     * @return \OpenAPI\Client\Model\WebhookSource
+     * @return \FuseClient\Model\WebhookSource
      */
     public function getSource()
     {
@@ -488,7 +488,7 @@ class WebhookEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets source
      *
-     * @param \OpenAPI\Client\Model\WebhookSource $source source
+     * @param \FuseClient\Model\WebhookSource $source source
      *
      * @return self
      */

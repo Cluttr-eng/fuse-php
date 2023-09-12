@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetFinancialConnectionResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetFinancialConnectionResponse implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'financial_connection' => '\OpenAPI\Client\Model\FinancialConnectionDetails',
+        'financial_connection' => '\FuseClient\Model\FinancialConnectionDetails',
         'request_id' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class GetFinancialConnectionResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets financial_connection
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionDetails
+     * @return \FuseClient\Model\FinancialConnectionDetails
      */
     public function getFinancialConnection()
     {
@@ -315,7 +315,7 @@ class GetFinancialConnectionResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets financial_connection
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionDetails $financial_connection financial_connection
+     * @param \FuseClient\Model\FinancialConnectionDetails $financial_connection financial_connection
      *
      * @return self
      */

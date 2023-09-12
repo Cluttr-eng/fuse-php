@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * ConsumerRiskReport Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class ConsumerRiskReport implements ModelInterface, ArrayAccess, \JsonSerializab
         'pending_payments_amount' => 'float',
         'iso_currency_code' => 'string',
         'last_updated' => 'string',
-        'finance_score' => '\OpenAPI\Client\Model\FinanceScore',
+        'finance_score' => '\FuseClient\Model\FinanceScore',
         'predicted_balance' => 'float'
     ];
 
@@ -564,7 +564,7 @@ class ConsumerRiskReport implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets finance_score
      *
-     * @return \OpenAPI\Client\Model\FinanceScore
+     * @return \FuseClient\Model\FinanceScore
      */
     public function getFinanceScore()
     {
@@ -574,7 +574,7 @@ class ConsumerRiskReport implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets finance_score
      *
-     * @param \OpenAPI\Client\Model\FinanceScore $finance_score finance_score
+     * @param \FuseClient\Model\FinanceScore $finance_score finance_score
      *
      * @return self
      */

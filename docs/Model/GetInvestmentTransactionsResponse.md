@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**accounts** | [**\OpenAPI\Client\Model\FinancialConnectionsAccount[]**](FinancialConnectionsAccount.md) |  |
-**investment_transactions** | [**\OpenAPI\Client\Model\FinancialConnectionsInvestmentTransaction[]**](FinancialConnectionsInvestmentTransaction.md) |  |
+**accounts** | [**\FuseClient\Model\FinancialConnectionsAccount[]**](FinancialConnectionsAccount.md) |  |
+**investment_transactions** | [**\FuseClient\Model\FinancialConnectionsInvestmentTransaction[]**](FinancialConnectionsInvestmentTransaction.md) |  |
 **total_transactions** | **float** | The total number of transactions within the specified date range. | [optional]
 **request_id** | **string** | An identifier that is exclusive to the request and can serve as a means for investigating and resolving issues. |
 

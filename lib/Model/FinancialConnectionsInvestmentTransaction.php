@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsInvestmentTransaction Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,13 +63,13 @@ class FinancialConnectionsInvestmentTransaction implements ModelInterface, Array
         'amount' => 'float',
         'description' => 'string',
         'fees' => 'float',
-        'currency' => '\OpenAPI\Client\Model\Currency',
+        'currency' => '\FuseClient\Model\Currency',
         'date' => '\DateTime',
         'type' => 'string',
-        'subtype' => '\OpenAPI\Client\Model\FinancialConnectionsInvestmentTransactionSubtype',
+        'subtype' => '\FuseClient\Model\FinancialConnectionsInvestmentTransactionSubtype',
         'quantity' => 'float',
         'price' => 'float',
-        'security' => '\OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurity'
+        'security' => '\FuseClient\Model\FinancialConnectionsInvestmentSecurity'
     ];
 
     /**
@@ -605,7 +605,7 @@ class FinancialConnectionsInvestmentTransaction implements ModelInterface, Array
     /**
      * Gets currency
      *
-     * @return \OpenAPI\Client\Model\Currency
+     * @return \FuseClient\Model\Currency
      */
     public function getCurrency()
     {
@@ -615,7 +615,7 @@ class FinancialConnectionsInvestmentTransaction implements ModelInterface, Array
     /**
      * Sets currency
      *
-     * @param \OpenAPI\Client\Model\Currency $currency currency
+     * @param \FuseClient\Model\Currency $currency currency
      *
      * @return self
      */
@@ -696,7 +696,7 @@ class FinancialConnectionsInvestmentTransaction implements ModelInterface, Array
     /**
      * Gets subtype
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsInvestmentTransactionSubtype|null
+     * @return \FuseClient\Model\FinancialConnectionsInvestmentTransactionSubtype|null
      */
     public function getSubtype()
     {
@@ -706,7 +706,7 @@ class FinancialConnectionsInvestmentTransaction implements ModelInterface, Array
     /**
      * Sets subtype
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsInvestmentTransactionSubtype|null $subtype subtype
+     * @param \FuseClient\Model\FinancialConnectionsInvestmentTransactionSubtype|null $subtype subtype
      *
      * @return self
      */
@@ -777,7 +777,7 @@ class FinancialConnectionsInvestmentTransaction implements ModelInterface, Array
     /**
      * Gets security
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurity
+     * @return \FuseClient\Model\FinancialConnectionsInvestmentSecurity
      */
     public function getSecurity()
     {
@@ -787,7 +787,7 @@ class FinancialConnectionsInvestmentTransaction implements ModelInterface, Array
     /**
      * Sets security
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurity $security security
+     * @param \FuseClient\Model\FinancialConnectionsInvestmentSecurity $security security
      *
      * @return self
      */

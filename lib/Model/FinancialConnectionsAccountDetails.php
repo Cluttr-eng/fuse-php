@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsAccountDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class FinancialConnectionsAccountDetails implements ModelInterface, ArrayAccess,
       */
     protected static $openAPITypes = [
         'remote_id' => 'string',
-        'ach' => '\OpenAPI\Client\Model\FinancialConnectionsAccountDetailsAch',
-        'account_number' => '\OpenAPI\Client\Model\FinancialConnectionsAccountDetailsAccountNumber',
+        'ach' => '\FuseClient\Model\FinancialConnectionsAccountDetailsAch',
+        'account_number' => '\FuseClient\Model\FinancialConnectionsAccountDetailsAccountNumber',
         'remote_data' => 'mixed'
     ];
 
@@ -346,7 +346,7 @@ class FinancialConnectionsAccountDetails implements ModelInterface, ArrayAccess,
     /**
      * Gets ach
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountDetailsAch|null
+     * @return \FuseClient\Model\FinancialConnectionsAccountDetailsAch|null
      */
     public function getAch()
     {
@@ -356,7 +356,7 @@ class FinancialConnectionsAccountDetails implements ModelInterface, ArrayAccess,
     /**
      * Sets ach
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountDetailsAch|null $ach ach
+     * @param \FuseClient\Model\FinancialConnectionsAccountDetailsAch|null $ach ach
      *
      * @return self
      */
@@ -373,7 +373,7 @@ class FinancialConnectionsAccountDetails implements ModelInterface, ArrayAccess,
     /**
      * Gets account_number
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccountDetailsAccountNumber|null
+     * @return \FuseClient\Model\FinancialConnectionsAccountDetailsAccountNumber|null
      */
     public function getAccountNumber()
     {
@@ -383,7 +383,7 @@ class FinancialConnectionsAccountDetails implements ModelInterface, ArrayAccess,
     /**
      * Sets account_number
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccountDetailsAccountNumber|null $account_number account_number
+     * @param \FuseClient\Model\FinancialConnectionsAccountDetailsAccountNumber|null $account_number account_number
      *
      * @return self
      */

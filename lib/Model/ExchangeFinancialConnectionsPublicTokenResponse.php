@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * ExchangeFinancialConnectionsPublicTokenResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class ExchangeFinancialConnectionsPublicTokenResponse implements ModelInterface,
     protected static $openAPITypes = [
         'access_token' => 'string',
         'financial_connection_id' => 'string',
-        'institution' => '\OpenAPI\Client\Model\FinancialInstitution',
-        'aggregator' => '\OpenAPI\Client\Model\Aggregator',
+        'institution' => '\FuseClient\Model\FinancialInstitution',
+        'aggregator' => '\FuseClient\Model\Aggregator',
         'request_id' => 'string'
     ];
 
@@ -386,7 +386,7 @@ class ExchangeFinancialConnectionsPublicTokenResponse implements ModelInterface,
     /**
      * Gets institution
      *
-     * @return \OpenAPI\Client\Model\FinancialInstitution|null
+     * @return \FuseClient\Model\FinancialInstitution|null
      */
     public function getInstitution()
     {
@@ -396,7 +396,7 @@ class ExchangeFinancialConnectionsPublicTokenResponse implements ModelInterface,
     /**
      * Sets institution
      *
-     * @param \OpenAPI\Client\Model\FinancialInstitution|null $institution institution
+     * @param \FuseClient\Model\FinancialInstitution|null $institution institution
      *
      * @return self
      */
@@ -413,7 +413,7 @@ class ExchangeFinancialConnectionsPublicTokenResponse implements ModelInterface,
     /**
      * Gets aggregator
      *
-     * @return \OpenAPI\Client\Model\Aggregator
+     * @return \FuseClient\Model\Aggregator
      */
     public function getAggregator()
     {
@@ -423,7 +423,7 @@ class ExchangeFinancialConnectionsPublicTokenResponse implements ModelInterface,
     /**
      * Sets aggregator
      *
-     * @param \OpenAPI\Client\Model\Aggregator $aggregator aggregator
+     * @param \FuseClient\Model\Aggregator $aggregator aggregator
      *
      * @return self
      */

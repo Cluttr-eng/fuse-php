@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * CreateEntityRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CreateEntityRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     protected static $openAPITypes = [
         'id' => 'string',
         'email' => 'string',
-        'aggregators' => '\OpenAPI\Client\Model\Aggregator[]',
+        'aggregators' => '\FuseClient\Model\Aggregator[]',
         'institution_ids' => 'string[]'
     ];
 
@@ -371,7 +371,7 @@ class CreateEntityRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets aggregators
      *
-     * @return \OpenAPI\Client\Model\Aggregator[]|null
+     * @return \FuseClient\Model\Aggregator[]|null
      */
     public function getAggregators()
     {
@@ -381,7 +381,7 @@ class CreateEntityRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets aggregators
      *
-     * @param \OpenAPI\Client\Model\Aggregator[]|null $aggregators These will force the user to connect through all of these aggregators
+     * @param \FuseClient\Model\Aggregator[]|null $aggregators These will force the user to connect through all of these aggregators
      *
      * @return self
      */

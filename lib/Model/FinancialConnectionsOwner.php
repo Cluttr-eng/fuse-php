@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsOwner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'addresses' => '\OpenAPI\Client\Model\FinancialConnectionsOwnerAddressesInner[]',
-        'emails' => '\OpenAPI\Client\Model\FinancialConnectionsOwnerEmailsInner[]',
-        'names' => '\OpenAPI\Client\Model\FinancialConnectionsOwnerNamesInner[]',
-        'phone_numbers' => '\OpenAPI\Client\Model\FinancialConnectionsOwnerPhoneNumbersInner[]'
+        'addresses' => '\FuseClient\Model\FinancialConnectionsOwnerAddressesInner[]',
+        'emails' => '\FuseClient\Model\FinancialConnectionsOwnerEmailsInner[]',
+        'names' => '\FuseClient\Model\FinancialConnectionsOwnerNamesInner[]',
+        'phone_numbers' => '\FuseClient\Model\FinancialConnectionsOwnerPhoneNumbersInner[]'
     ];
 
     /**
@@ -325,7 +325,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets addresses
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsOwnerAddressesInner[]
+     * @return \FuseClient\Model\FinancialConnectionsOwnerAddressesInner[]
      */
     public function getAddresses()
     {
@@ -335,7 +335,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets addresses
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsOwnerAddressesInner[] $addresses addresses
+     * @param \FuseClient\Model\FinancialConnectionsOwnerAddressesInner[] $addresses addresses
      *
      * @return self
      */
@@ -352,7 +352,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets emails
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsOwnerEmailsInner[]
+     * @return \FuseClient\Model\FinancialConnectionsOwnerEmailsInner[]
      */
     public function getEmails()
     {
@@ -362,7 +362,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets emails
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsOwnerEmailsInner[] $emails emails
+     * @param \FuseClient\Model\FinancialConnectionsOwnerEmailsInner[] $emails emails
      *
      * @return self
      */
@@ -379,7 +379,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets names
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsOwnerNamesInner[]
+     * @return \FuseClient\Model\FinancialConnectionsOwnerNamesInner[]
      */
     public function getNames()
     {
@@ -389,7 +389,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets names
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsOwnerNamesInner[] $names List of names associated with the owner
+     * @param \FuseClient\Model\FinancialConnectionsOwnerNamesInner[] $names List of names associated with the owner
      *
      * @return self
      */
@@ -406,7 +406,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets phone_numbers
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsOwnerPhoneNumbersInner[]
+     * @return \FuseClient\Model\FinancialConnectionsOwnerPhoneNumbersInner[]
      */
     public function getPhoneNumbers()
     {
@@ -416,7 +416,7 @@ class FinancialConnectionsOwner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets phone_numbers
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsOwnerPhoneNumbersInner[] $phone_numbers phone_numbers
+     * @param \FuseClient\Model\FinancialConnectionsOwnerPhoneNumbersInner[] $phone_numbers phone_numbers
      *
      * @return self
      */

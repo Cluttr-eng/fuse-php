@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * AssetReport Class Doc Comment
  *
  * @category Class
  * @description The Asset Report in JSON format.
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class AssetReport implements ModelInterface, ArrayAccess, \JsonSerializable
         'asset_report_token' => 'string',
         'date_generated' => 'string',
         'days_requested' => 'int',
-        'accounts' => '\OpenAPI\Client\Model\AssetReportAccountsInner[]'
+        'accounts' => '\FuseClient\Model\AssetReportAccountsInner[]'
     ];
 
     /**
@@ -429,7 +429,7 @@ class AssetReport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets accounts
      *
-     * @return \OpenAPI\Client\Model\AssetReportAccountsInner[]|null
+     * @return \FuseClient\Model\AssetReportAccountsInner[]|null
      */
     public function getAccounts()
     {
@@ -439,7 +439,7 @@ class AssetReport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets accounts
      *
-     * @param \OpenAPI\Client\Model\AssetReportAccountsInner[]|null $accounts An array of Asset Reports, one for each account in the Asset Report.
+     * @param \FuseClient\Model\AssetReportAccountsInner[]|null $accounts An array of Asset Reports, one for each account in the Asset Report.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * CreateSessionRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'supported_financial_institution_aggregators' => '\OpenAPI\Client\Model\Aggregator[]',
-        'products' => '\OpenAPI\Client\Model\Product[]',
-        'country_codes' => '\OpenAPI\Client\Model\CountryCode[]',
-        'entity' => '\OpenAPI\Client\Model\Entity',
+        'supported_financial_institution_aggregators' => '\FuseClient\Model\Aggregator[]',
+        'products' => '\FuseClient\Model\Product[]',
+        'country_codes' => '\FuseClient\Model\CountryCode[]',
+        'entity' => '\FuseClient\Model\Entity',
         'access_token' => 'string',
         'is_web_view' => 'bool'
     ];
@@ -344,7 +344,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets supported_financial_institution_aggregators
      *
-     * @return \OpenAPI\Client\Model\Aggregator[]
+     * @return \FuseClient\Model\Aggregator[]
      */
     public function getSupportedFinancialInstitutionAggregators()
     {
@@ -354,7 +354,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets supported_financial_institution_aggregators
      *
-     * @param \OpenAPI\Client\Model\Aggregator[] $supported_financial_institution_aggregators supported_financial_institution_aggregators
+     * @param \FuseClient\Model\Aggregator[] $supported_financial_institution_aggregators supported_financial_institution_aggregators
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets products
      *
-     * @return \OpenAPI\Client\Model\Product[]
+     * @return \FuseClient\Model\Product[]
      */
     public function getProducts()
     {
@@ -386,7 +386,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets products
      *
-     * @param \OpenAPI\Client\Model\Product[] $products List of products that you would like the institutions to support
+     * @param \FuseClient\Model\Product[] $products List of products that you would like the institutions to support
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets country_codes
      *
-     * @return \OpenAPI\Client\Model\CountryCode[]|null
+     * @return \FuseClient\Model\CountryCode[]|null
      */
     public function getCountryCodes()
     {
@@ -418,7 +418,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets country_codes
      *
-     * @param \OpenAPI\Client\Model\CountryCode[]|null $country_codes List of country codes that you would like the institutions to support
+     * @param \FuseClient\Model\CountryCode[]|null $country_codes List of country codes that you would like the institutions to support
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets entity
      *
-     * @return \OpenAPI\Client\Model\Entity
+     * @return \FuseClient\Model\Entity
      */
     public function getEntity()
     {
@@ -445,7 +445,7 @@ class CreateSessionRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets entity
      *
-     * @param \OpenAPI\Client\Model\Entity $entity entity
+     * @param \FuseClient\Model\Entity $entity entity
      *
      * @return self
      */

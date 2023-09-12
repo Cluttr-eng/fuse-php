@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **account_id** | **string** | The id of the account that event belongs to |
-**event** | [**\OpenAPI\Client\Model\AddAccountEventsRequestEventsInner**](AddAccountEventsRequestEventsInner.md) |  |
+**event** | [**\FuseClient\Model\AddAccountEventsRequestEventsInner**](AddAccountEventsRequestEventsInner.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

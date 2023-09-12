@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * GetInvestmentHoldingsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetInvestmentHoldingsResponse implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'accounts' => '\OpenAPI\Client\Model\FinancialConnectionsAccount[]',
-        'holdings' => '\OpenAPI\Client\Model\FinancialConnectionsHolding[]',
+        'accounts' => '\FuseClient\Model\FinancialConnectionsAccount[]',
+        'holdings' => '\FuseClient\Model\FinancialConnectionsHolding[]',
         'request_id' => 'string'
     ];
 
@@ -315,7 +315,7 @@ class GetInvestmentHoldingsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets accounts
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsAccount[]
+     * @return \FuseClient\Model\FinancialConnectionsAccount[]
      */
     public function getAccounts()
     {
@@ -325,7 +325,7 @@ class GetInvestmentHoldingsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets accounts
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsAccount[] $accounts accounts
+     * @param \FuseClient\Model\FinancialConnectionsAccount[] $accounts accounts
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class GetInvestmentHoldingsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets holdings
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsHolding[]
+     * @return \FuseClient\Model\FinancialConnectionsHolding[]
      */
     public function getHoldings()
     {
@@ -352,7 +352,7 @@ class GetInvestmentHoldingsResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets holdings
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsHolding[] $holdings holdings
+     * @param \FuseClient\Model\FinancialConnectionsHolding[] $holdings holdings
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * FinancialConnectionsHolding Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class FinancialConnectionsHolding implements ModelInterface, ArrayAccess, \JsonS
         'value' => 'float',
         'quantity' => 'float',
         'institution_price' => 'float',
-        'security' => '\OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurity'
+        'security' => '\FuseClient\Model\FinancialConnectionsInvestmentSecurity'
     ];
 
     /**
@@ -480,7 +480,7 @@ class FinancialConnectionsHolding implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets security
      *
-     * @return \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurity
+     * @return \FuseClient\Model\FinancialConnectionsInvestmentSecurity
      */
     public function getSecurity()
     {
@@ -490,7 +490,7 @@ class FinancialConnectionsHolding implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets security
      *
-     * @param \OpenAPI\Client\Model\FinancialConnectionsInvestmentSecurity $security security
+     * @param \FuseClient\Model\FinancialConnectionsInvestmentSecurity $security security
      *
      * @return self
      */

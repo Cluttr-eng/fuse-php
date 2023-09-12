@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * EvalConsumerRiskReportRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class EvalConsumerRiskReportRequest implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'window_size' => 'float',
-        'time_frame' => '\OpenAPI\Client\Model\ConsumerRiskReportTimeFrame',
-        'events' => '\OpenAPI\Client\Model\EvalConsumerRiskReportRequestEventsInner[]'
+        'time_frame' => '\FuseClient\Model\ConsumerRiskReportTimeFrame',
+        'events' => '\FuseClient\Model\EvalConsumerRiskReportRequestEventsInner[]'
     ];
 
     /**
@@ -346,7 +346,7 @@ class EvalConsumerRiskReportRequest implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets time_frame
      *
-     * @return \OpenAPI\Client\Model\ConsumerRiskReportTimeFrame
+     * @return \FuseClient\Model\ConsumerRiskReportTimeFrame
      */
     public function getTimeFrame()
     {
@@ -356,7 +356,7 @@ class EvalConsumerRiskReportRequest implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets time_frame
      *
-     * @param \OpenAPI\Client\Model\ConsumerRiskReportTimeFrame $time_frame time_frame
+     * @param \FuseClient\Model\ConsumerRiskReportTimeFrame $time_frame time_frame
      *
      * @return self
      */
@@ -373,7 +373,7 @@ class EvalConsumerRiskReportRequest implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets events
      *
-     * @return \OpenAPI\Client\Model\EvalConsumerRiskReportRequestEventsInner[]
+     * @return \FuseClient\Model\EvalConsumerRiskReportRequestEventsInner[]
      */
     public function getEvents()
     {
@@ -383,7 +383,7 @@ class EvalConsumerRiskReportRequest implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets events
      *
-     * @param \OpenAPI\Client\Model\EvalConsumerRiskReportRequestEventsInner[] $events events
+     * @param \FuseClient\Model\EvalConsumerRiskReportRequestEventsInner[] $events events
      *
      * @return self
      */

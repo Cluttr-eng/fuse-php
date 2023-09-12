@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace FuseClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \FuseClient\ObjectSerializer;
 
 /**
  * EnrichTransactionsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  FuseClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class EnrichTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'enriched_transactions' => '\OpenAPI\Client\Model\EnrichedTransaction[]'
+        'enriched_transactions' => '\FuseClient\Model\EnrichedTransaction[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class EnrichTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets enriched_transactions
      *
-     * @return \OpenAPI\Client\Model\EnrichedTransaction[]|null
+     * @return \FuseClient\Model\EnrichedTransaction[]|null
      */
     public function getEnrichedTransactions()
     {
@@ -302,7 +302,7 @@ class EnrichTransactionsResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets enriched_transactions
      *
-     * @param \OpenAPI\Client\Model\EnrichedTransaction[]|null $enriched_transactions The enriched transactions.
+     * @param \FuseClient\Model\EnrichedTransaction[]|null $enriched_transactions The enriched transactions.
      *
      * @return self
      */

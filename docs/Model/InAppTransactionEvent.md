@@ -6,10 +6,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | ID of the transaction |
 **event_type** | **string** |  |
-**status** | [**\OpenAPI\Client\Model\InAppTransactionEventStatus**](InAppTransactionEventStatus.md) |  |
+**status** | [**\FuseClient\Model\InAppTransactionEventStatus**](InAppTransactionEventStatus.md) |  |
 **amount** | **float** |  |
 **iso_currency_code** | **string** | The ISO-4217 currency code. |
-**transaction_type** | [**\OpenAPI\Client\Model\TransactionEventType**](TransactionEventType.md) |  | [optional]
+**transaction_type** | [**\FuseClient\Model\TransactionEventType**](TransactionEventType.md) |  | [optional]
 **merchant_name** | **string** |  |
 **timestamp** | **string** | Datetime of the transaction In ISO-8601 format |
 **balance** | **float** | The running balance of the account after the transaction has occurred, in cents. | [optional]
