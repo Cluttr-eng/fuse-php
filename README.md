@@ -61,6 +61,7 @@ class FuseTest extends TestCase {
         );
 
 
+        //If you are using web SDKs, pass in the "is_web_view" property and set it to false, otherwise the Fuse frontend will not work. 
         $createSessionRequest = new CreateSessionRequest();
 
         $createSessionRequest['supported_financial_institution_aggregators'] = [
