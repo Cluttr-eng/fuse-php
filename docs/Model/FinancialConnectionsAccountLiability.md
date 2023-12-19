@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **type** | [**\FuseClient\Model\AccountType**](AccountType.md) |  |
 **subtype** | [**\FuseClient\Model\AccountSubtype**](AccountSubtype.md) |  | [optional]
 **balance** | [**\FuseClient\Model\FinancialConnectionsAccountCachedBalance**](FinancialConnectionsAccountCachedBalance.md) |  |
+**additional_balances** | [**\FuseClient\Model\FinancialConnectionsAccountCachedBalance[]**](FinancialConnectionsAccountCachedBalance.md) | An array of additional balances. This may be used for investment type accounts where the user can have multiple balances across different currencies. | [optional]
 **remote_data** | **mixed** |  |
 **aprs** | [**\FuseClient\Model\FinancialConnectionsAccountLiabilityAllOfAprs[]**](FinancialConnectionsAccountLiabilityAllOfAprs.md) | The various interest rates that apply to the account. If APR data is not available, this array will be empty. | [optional]
 **interest_rate_percentage** | **float** | The interest rate on the loan as a percentage. | [optional]
