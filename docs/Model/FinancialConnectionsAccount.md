@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **type** | [**\FuseClient\Model\AccountType**](AccountType.md) |  |
 **subtype** | [**\FuseClient\Model\AccountSubtype**](AccountSubtype.md) |  | [optional]
 **balance** | [**\FuseClient\Model\FinancialConnectionsAccountCachedBalance**](FinancialConnectionsAccountCachedBalance.md) |  |
+**additional_balances** | [**\FuseClient\Model\FinancialConnectionsAccountCachedBalance[]**](FinancialConnectionsAccountCachedBalance.md) | An array of additional balances. This may be used for investment type accounts where the user can have multiple balances across different currencies. | [optional]
 **remote_data** | **mixed** |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -27,8 +27,11 @@ All URIs are relative to https://sandbox-api.letsfuse.com, except if the operati
 | [**getFinancialInstitution()**](FuseApi.md#getFinancialInstitution) | **GET** /v1/financial_connections/institutions/{institution_id} | Get a financial institution |
 | [**getInvestmentHoldings()**](FuseApi.md#getInvestmentHoldings) | **POST** /v1/financial_connections/investments/holdings | Get investment holdings |
 | [**getInvestmentTransactions()**](FuseApi.md#getInvestmentTransactions) | **POST** /v1/financial_connections/investments/transactions | Get investment transactions |
+| [**getRecommendedFinancialInstitutions()**](FuseApi.md#getRecommendedFinancialInstitutions) | **POST** /v1/financial_connections/institutions/recommended |  |
 | [**migrateFinancialConnection()**](FuseApi.md#migrateFinancialConnection) | **POST** /v1/financial_connections/migrate | Migrate financial connection |
 | [**refreshAssetReport()**](FuseApi.md#refreshAssetReport) | **POST** /v1/financial_connections/asset_report/refresh |  |
+| [**searchFinancialInstitutions()**](FuseApi.md#searchFinancialInstitutions) | **POST** /v1/financial_connections/institutions/search |  |
+| [**selectFinancialInstitutions()**](FuseApi.md#selectFinancialInstitutions) | **POST** /v1/financial_connections/institutions/select |  |
 | [**syncFinancialConnectionsData()**](FuseApi.md#syncFinancialConnectionsData) | **POST** /v1/financial_connections/sync | Sync financial connections data |
 | [**updateConsumerRiskReportCustomization()**](FuseApi.md#updateConsumerRiskReportCustomization) | **POST** /v1/risk_report/consumer/customization/{consumer_risk_report_customization_id} | Update consumer risk report customization |
 | [**v1FinancialConnectionsLiabilitiesPost()**](FuseApi.md#v1FinancialConnectionsLiabilitiesPost) | **POST** /v1/financial_connections/liabilities | Get liabilities |
@@ -638,7 +641,7 @@ try {
 ## `getAssetReport()`
 
 ```php
-getAssetReport($get_asset_report_request): \FuseClient\Model\RefreshAssetReportResponse
+getAssetReport($get_asset_report_request): \FuseClient\Model\AssetReportResponse
 ```
 
 
@@ -689,7 +692,7 @@ try {
 
 ### Return type
 
-[**\FuseClient\Model\RefreshAssetReportResponse**](../Model/RefreshAssetReportResponse.md)
+[**\FuseClient\Model\AssetReportResponse**](../Model/AssetReportResponse.md)
 
 ### Authorization
 
@@ -1557,6 +1560,73 @@ try {
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getRecommendedFinancialInstitutions()`
+
+```php
+getRecommendedFinancialInstitutions($get_recommended_financial_institutions_request): \FuseClient\Model\GetRecommendedFinancialInstitutionsResponse
+```
+
+
+
+Get the default recommended list of institutions that will be displayed when the user is not searching for anything
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: fuseApiKey
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+
+// Configure API key authorization: fuseClientId
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+
+
+$apiInstance = new FuseClient\Api\FuseApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$get_recommended_financial_institutions_request = new \FuseClient\Model\GetRecommendedFinancialInstitutionsRequest(); // \FuseClient\Model\GetRecommendedFinancialInstitutionsRequest
+
+try {
+    $result = $apiInstance->getRecommendedFinancialInstitutions($get_recommended_financial_institutions_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling FuseApi->getRecommendedFinancialInstitutions: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **get_recommended_financial_institutions_request** | [**\FuseClient\Model\GetRecommendedFinancialInstitutionsRequest**](../Model/GetRecommendedFinancialInstitutionsRequest.md)|  | [optional] |
+
+### Return type
+
+[**\FuseClient\Model\GetRecommendedFinancialInstitutionsResponse**](../Model/GetRecommendedFinancialInstitutionsResponse.md)
+
+### Authorization
+
+[fuseApiKey](../../README.md#fuseApiKey), [fuseClientId](../../README.md#fuseClientId)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
 ## `migrateFinancialConnection()`
 
 ```php
@@ -1627,7 +1697,7 @@ try {
 ## `refreshAssetReport()`
 
 ```php
-refreshAssetReport($refresh_asset_report_request): \FuseClient\Model\AssetReportResponse
+refreshAssetReport($refresh_asset_report_request): \FuseClient\Model\RefreshAssetReportResponse
 ```
 
 
@@ -1678,7 +1748,141 @@ try {
 
 ### Return type
 
-[**\FuseClient\Model\AssetReportResponse**](../Model/AssetReportResponse.md)
+[**\FuseClient\Model\RefreshAssetReportResponse**](../Model/RefreshAssetReportResponse.md)
+
+### Authorization
+
+[fuseApiKey](../../README.md#fuseApiKey), [fuseClientId](../../README.md#fuseClientId)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `searchFinancialInstitutions()`
+
+```php
+searchFinancialInstitutions($search_financial_institutions_request): \FuseClient\Model\SearchFinancialInstitutionsResponse
+```
+
+
+
+Search for financial institutions given a search term.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: fuseApiKey
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+
+// Configure API key authorization: fuseClientId
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+
+
+$apiInstance = new FuseClient\Api\FuseApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$search_financial_institutions_request = new \FuseClient\Model\SearchFinancialInstitutionsRequest(); // \FuseClient\Model\SearchFinancialInstitutionsRequest
+
+try {
+    $result = $apiInstance->searchFinancialInstitutions($search_financial_institutions_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling FuseApi->searchFinancialInstitutions: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **search_financial_institutions_request** | [**\FuseClient\Model\SearchFinancialInstitutionsRequest**](../Model/SearchFinancialInstitutionsRequest.md)|  | [optional] |
+
+### Return type
+
+[**\FuseClient\Model\SearchFinancialInstitutionsResponse**](../Model/SearchFinancialInstitutionsResponse.md)
+
+### Authorization
+
+[fuseApiKey](../../README.md#fuseApiKey), [fuseClientId](../../README.md#fuseClientId)
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `selectFinancialInstitutions()`
+
+```php
+selectFinancialInstitutions($select_financial_institutions_request): \FuseClient\Model\SelectFinancialInstitutionsResponse
+```
+
+
+
+Endpoint to call when the user has selected a financial institution.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: fuseApiKey
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Api-Key', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Api-Key', 'Bearer');
+
+// Configure API key authorization: fuseClientId
+$config = FuseClient\Configuration::getDefaultConfiguration()->setApiKey('Fuse-Client-Id', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = FuseClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Fuse-Client-Id', 'Bearer');
+
+
+$apiInstance = new FuseClient\Api\FuseApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$select_financial_institutions_request = new \FuseClient\Model\SelectFinancialInstitutionsRequest(); // \FuseClient\Model\SelectFinancialInstitutionsRequest
+
+try {
+    $result = $apiInstance->selectFinancialInstitutions($select_financial_institutions_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling FuseApi->selectFinancialInstitutions: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **select_financial_institutions_request** | [**\FuseClient\Model\SelectFinancialInstitutionsRequest**](../Model/SelectFinancialInstitutionsRequest.md)|  | [optional] |
+
+### Return type
+
+[**\FuseClient\Model\SelectFinancialInstitutionsResponse**](../Model/SelectFinancialInstitutionsResponse.md)
 
 ### Authorization
 
