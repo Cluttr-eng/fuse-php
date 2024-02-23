@@ -22,5 +22,6 @@ Name | Type | Description | Notes
 **finicity** | [**\FuseClient\Model\FinancialConnectionDetailsFinicity**](FinancialConnectionDetailsFinicity.md) |  | [optional]
 **akoya** | [**\FuseClient\Model\FinancialConnectionDetailsAkoya**](FinancialConnectionDetailsAkoya.md) |  | [optional]
 **saltedge** | [**\FuseClient\Model\FinancialConnectionDetailsSaltedge**](FinancialConnectionDetailsSaltedge.md) |  | [optional]
+**sophtron** | [**\FuseClient\Model\FinancialConnectionDetailsSophtron**](FinancialConnectionDetailsSophtron.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
